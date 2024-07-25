@@ -5,18 +5,23 @@ import './App.css'
 
 import courseData from './csci381.json';
 
-const SlideDeck = ({ title, link }) => {
+const SlideDeck = ({ title, bgColor, onClick, onMouseEnter, onMouseLeave }) => {
+
   return (
-    <a href={link} target="_blank">
-      <div className="text button" style={{
+    <div
+      className="text button"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
+      style={{
         color: 'black',
         borderStyle: "solid",
+        backgroundColor: bgColor,
         margin: '2px',
         padding: '2px'
       }}>
-        {title}
-      </div>
-    </a>
+      {title}
+    </div>
   )
 }
 
@@ -38,6 +43,9 @@ const LectureSlides = () => {
 
   const colors = ["skyblue", '#EEEEFF']
   const [bgColor, setBgColor] = useState(colors[0]);
+  const [currentLecture, setCurrentLecture] = useState(0)
+
+  const [highlightedLecture, setHighlightedLecture] = useState(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,6 +54,22 @@ const LectureSlides = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    console.log("rerender")
+  }, [currentLecture]);
+
+  const handleClick = (index) => {
+    setCurrentLecture(index)
+  }
+
+  const handleMouseEnter = (index) => {
+    setHighlightedLecture(index)
+  }
+
+  const handleMouseLeave = (index) => {
+    setHighlightedLecture(null)
+  }
 
   return (
     <div style={{
@@ -59,21 +83,34 @@ const LectureSlides = () => {
         display: 'flex',
         flexFlow: 'column nowrap',
         justifyContent: 'stretch',
+        alignContent: 'stretch',
+        alignItems: 'stretch',
         height: '100%'
       }}>
+
+        <iframe style={{
+          flexGrow: 1,
+          flexShrink: 1,
+          width: 'inherit',
+        }} src={`${courseData.lectures[currentLecture].link}/preview`} width="100%" height="460px" allow="autoplay"></iframe>
 
         <div style={{
           display: 'flex',
           flexFlow: 'column wrap',
-          height: '620px'
+          height: '400px'
         }}>
-          {courseData.lectures.map(lecture => (
+          {courseData.lectures.map((lecture, i) => (
             <SlideDeck
               key={lecture.id}
               title={lecture.title.toLowerCase()}
-              link={lecture.link} />
+              onClick={() => handleClick(i)}
+              onMouseEnter={() => handleMouseEnter(i)}
+              onMouseLeave={() => handleMouseLeave(i)}
+              link={lecture.link}
+              bgColor={i == currentLecture ? "aqua" : (i == highlightedLecture ? "skyblue" : "whitesmoke")} />
           ))}
         </div>
+
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         <BoxTitle title="lectures" color="navy" />
       </div>
@@ -94,9 +131,9 @@ const CourseInfo = () => {
     }}>
       <div style={{
         display: 'flex',
-        flexFlow: 'column wrap',
-        justifyContent: 'stretch',
-        height: 'auto',
+        flexFlow: 'column nowrap',
+        justifyContent: 'center',
+        height: '100%',
         fontFamily: 'Futura',
         fontWeight: 'bold',
         fontSize: '20px'
@@ -145,19 +182,32 @@ const TeachingAssistants = () => {
   return (
     <div style={{
       backgroundColor: 'coral',
-      padding: '10px',
+      padding: '20px',
       flexGrow: 1,
       flexShrink: 1,
     }}>
       <div style={{
         display: 'flex',
-        flexFlow: 'row nowrap',
-        justifyContent: 'space-evenly'
+        flexFlow: 'column nowrap',
+        justifyContent: 'stretch',
+        alignContent: 'stretch',
+        alignItems: 'stretch',
+        height: '100%'
       }}>
-        <TeachingAssistant image="images/faulkner.jpeg" name="Michael" />
-        <TeachingAssistant image="images/laws.jpeg" name="Matt" />
+        <div style={{
+          display: 'flex',
+          flexFlow: 'row nowrap',
+          justifyContent: 'space-evenly'
+        }}>
+          <TeachingAssistant image="images/faulkner.jpeg" name="Michael" />
+          <TeachingAssistant image="images/laws.jpeg" name="Matt" />
+        </div>
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+        <div style={{ flexGrow: 0, flexShrink: 0 }}>
+        <BoxTitle title="tas" color="black" />
+        </div>
+        
       </div>
-      <BoxTitle title="tas" color="black" />
     </div>
   )
 }
@@ -165,21 +215,23 @@ const TeachingAssistants = () => {
 
 const Lab = ({ title, link, due, locked }) => {
 
-  const renderContent = () => {return <div
-    className={locked ? "text locked" : "text button"}
-    style={{
-      borderStyle: "solid",
-      margin: '2px',
-      padding: '2px',
-      color: 'black',
-    }}>
-    <span>{title}</span> {locked ? '🔒' : null}
-  </div>}
+  const renderContent = () => {
+    return <div
+      className={locked ? "text locked" : "text button"}
+      style={{
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        color: 'black',
+      }}>
+      <span>{title}</span> {locked ? '🔒' : null}
+    </div>
+  }
 
   return !locked ? (
-      <a href={link} target="_blank">
-        {renderContent()}
-      </a>
+    <a href={link} target="_blank">
+      {renderContent()}
+    </a>
   ) : renderContent()
 }
 

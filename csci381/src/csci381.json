@@ -3,167 +3,167 @@
         {
             "id": "lecture0",
             "title": "machine learning",
-            "link": "https://drive.google.com/file/d/13FDsbuttiwl1qEazSaGKZz96Y9dKL7q5/view?usp=sharing"            
+            "link": "https://drive.google.com/file/d/13FDsbuttiwl1qEazSaGKZz96Y9dKL7q5/"            
         },
         {
             "id": "lecture1",
             "title": "gradient descent",
-            "link": "https://drive.google.com/file/d/1bcrSLzB7kW6SwDoP3HUnHbkGx6dotDAX/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1bcrSLzB7kW6SwDoP3HUnHbkGx6dotDAX/"
         },
         {
             "id": "lecture2",
             "title": "variants of gradient descent",
-            "link": "https://drive.google.com/file/d/1_6N3tJhuNT1J5hcunauKcAnsqcrr_jE2/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1_6N3tJhuNT1J5hcunauKcAnsqcrr_jE2/"
         },
         {
             "id": "lecture3",
             "title": "multidimensional gradient descent",
-            "link": "https://drive.google.com/file/d/12Z1hvv-eNC3mOCwfNIadkdTbyj60YYic/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/12Z1hvv-eNC3mOCwfNIadkdTbyj60YYic/"
         },
         {
             "id": "lecture4",
             "title": "argmin and monotonicity",
-            "link": "https://drive.google.com/file/d/1artmr3bkuCSc0-Tz6AkIS3HLjq7ao7S4/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1artmr3bkuCSc0-Tz6AkIS3HLjq7ao7S4/"
         },
         {
             "id": "lecture5",
             "title": "linear regression",
-            "link": "https://drive.google.com/file/d/1OjcYTo-_b6A209odrMtyc7ibU1wt-moX/view?usp=drive_link"
+            "link": "https://drive.google.com/file/d/1OjcYTo-_b6A209odrMtyc7ibU1wt-moX/"
         },
         {
             "id": "lecture6",
             "title": "regularization",
-            "link": "https://drive.google.com/file/d/15EXfXSpF-mIh61p5zAU6FYMAjOo97YII/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/15EXfXSpF-mIh61p5zAU6FYMAjOo97YII/"
         },
         {
             "id": "lecture7",
             "title": "logistic regression",
-            "link": "https://drive.google.com/file/d/1SlLB2FkcNbrP62SzU0qTwXAMSXxka__C/view?usp=drive_link"
+            "link": "https://drive.google.com/file/d/1SlLB2FkcNbrP62SzU0qTwXAMSXxka__C/"
         },
         {
             "id": "lecture8",
             "title": "function graphs",
-            "link": "https://drive.google.com/file/d/1x-RfBEJolmdlsKrJ2hokxCsqYa274BtW/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1x-RfBEJolmdlsKrJ2hokxCsqYa274BtW/"
         },
         {
             "id": "lecture9",
             "title": "optimizing logistic regression",
-            "link": "https://drive.google.com/file/d/1Arz3LDTAePwCYuMD6-2yksj1nln-iTgQ/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1Arz3LDTAePwCYuMD6-2yksj1nln-iTgQ/"
         },
         {
             "id": "lecture10",
             "title": "limitations of linear models",
-            "link": "https://drive.google.com/file/d/1_EfkC_F-TB9BFrdNo9njkIO_7vHGFj4H/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1_EfkC_F-TB9BFrdNo9njkIO_7vHGFj4H/"
         },
         {
             "id": "lecture11",
             "title": "neural networks",
-            "link": "https://drive.google.com/file/d/1DqQiVuSuHvkPoYLlg2B--xcFOe1OVg89/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1DqQiVuSuHvkPoYLlg2B--xcFOe1OVg89/"
         },
         {
             "id": "lecture12",
             "title": "activation functions",
-            "link": "https://drive.google.com/file/d/1VqGBFDe7snAKAhBra1VnUVb3BbyuU7tp/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1VqGBFDe7snAKAhBra1VnUVb3BbyuU7tp/"
         },
         {
             "id": "lecture13",
             "title": "backpropagation",
-            "link": "https://drive.google.com/file/d/1XuYixMzsgp4u4qMSLYM8n_uF3HNwRpeB/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1XuYixMzsgp4u4qMSLYM8n_uF3HNwRpeB/"
         },
         {
             "id": "lecture14",
             "title": "minibatch gradient descent",
-            "link": "https://drive.google.com/file/d/1yHAAuQunbk12YhXykVl4BprQKKj7Y1Nt/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1yHAAuQunbk12YhXykVl4BprQKKj7Y1Nt/"
         },
         {
             "id": "lecture15",
             "title": "parameter initialization",
-            "link": "https://drive.google.com/file/d/1cLXGZ1Awjw9XnRzegtjCud9TuMzdDCJz/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1cLXGZ1Awjw9XnRzegtjCud9TuMzdDCJz/"
         },
         {
             "id": "lecture16",
             "title": "dropout",
-            "link": "https://drive.google.com/file/d/1M_mT7UV71emdI_Xdr-Te2BRrvRjjSiA4/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1M_mT7UV71emdI_Xdr-Te2BRrvRjjSiA4/"
         },
         {
             "id": "lecture17",
             "title": "convolutional neural networks",
-            "link": "https://drive.google.com/file/d/138aRZark3d3Sowpp-sdE9h0_QDfQxxVU/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/138aRZark3d3Sowpp-sdE9h0_QDfQxxVU/"
         },
         {
             "id": "lecture18",
             "title": "higher order kernels",
-            "link": "https://drive.google.com/file/d/1JQLp5i9Z3Uoandd0okC2cIC9upwi5YXY/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1JQLp5i9Z3Uoandd0okC2cIC9upwi5YXY/"
         },
         {
             "id": "lecture19",
             "title": "padding",
-            "link": "https://drive.google.com/file/d/1hl49gU1P2SI9-cMxm5jyCxhkDHOkV5rD/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1hl49gU1P2SI9-cMxm5jyCxhkDHOkV5rD/"
         },
         {
             "id": "lecture20",
             "title": "pooling",
-            "link": "https://drive.google.com/file/d/17AKdygm9zUkU-FImg7OR48eBdBaQCedp/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/17AKdygm9zUkU-FImg7OR48eBdBaQCedp/"
         },
         {
             "id": "lecture21",
             "title": "computing convolutions",
-            "link": "https://drive.google.com/file/d/1pHrK9mkCQ20wyeGnwGOa04ozp8l-qb44/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1pHrK9mkCQ20wyeGnwGOa04ozp8l-qb44/"
         },
         {
             "id": "lecture22",
             "title": "token embeddings",
-            "link": "https://drive.google.com/file/d/1FuzJB1dLsMf1HrSPO9C4qvyudFNaRoW9/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1FuzJB1dLsMf1HrSPO9C4qvyudFNaRoW9/"
         },
         {
             "id": "lecture23",
             "title": "recurrent neural networks",
-            "link": "https://drive.google.com/file/d/12vys3quOX_-mYs1Xh49mWeMaCS9meMJF/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/12vys3quOX_-mYs1Xh49mWeMaCS9meMJF/"
         },
         {
             "id": "lecture24",
             "title": "encoder-decoder models",
-            "link": "https://drive.google.com/file/d/1EMOp3gys_a_uWCr4YytSDMk0f76DGHbQ/view?usp=drive_link"
+            "link": "https://drive.google.com/file/d/1EMOp3gys_a_uWCr4YytSDMk0f76DGHbQ/"
         },
         {
             "id": "lecture25",
             "title": "attention",
-            "link": "https://drive.google.com/file/d/1EmyKB-UXco2xNA2SnoKXz9Tuezjv_XZ0/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1EmyKB-UXco2xNA2SnoKXz9Tuezjv_XZ0/"
         },
         {
             "id": "lecture26",
             "title": "parallel sequence encoding",
-            "link": "https://drive.google.com/file/d/1Tsrt5Tq-gxNbuKYOuWZcUvvU00dakCAB/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1Tsrt5Tq-gxNbuKYOuWZcUvvU00dakCAB/"
         },
         {
             "id": "lecture27",
             "title": "transformer decoders",
-            "link": "https://drive.google.com/file/d/1EuCgnBlMbz3oXiOoSncdpaqFSPFV1w04/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1EuCgnBlMbz3oXiOoSncdpaqFSPFV1w04/"
         },
         {
             "id": "lecture28",
             "title": "batch and layer normalization",
-            "link": "https://drive.google.com/file/d/1AqfJXF581zvgohKhtjqkm_YXGRe0lZNb/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1AqfJXF581zvgohKhtjqkm_YXGRe0lZNb/"
         },
         {
             "id": "lecture29",
             "title": "residual connections",
-            "link": "https://drive.google.com/file/d/19zWne_gLs-3em51Uy0leJfkEItScPrAc/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/19zWne_gLs-3em51Uy0leJfkEItScPrAc/"
         },
         {
             "id": "lecture30",
             "title": "multihead attention",
-            "link": "https://drive.google.com/file/d/1h6yxAzpSmj0gcQFM2ox46FmvzeNisP1U/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1h6yxAzpSmj0gcQFM2ox46FmvzeNisP1U/"
         },
         {
             "id": "lecture31",
             "title": "foundation models",
-            "link": "https://drive.google.com/file/d/1WWsQrZSyZFGPe0Uhe6gdXhi5KwFVwtp2/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1WWsQrZSyZFGPe0Uhe6gdXhi5KwFVwtp2/"
         },
         {
             "id": "lecture32",
             "title": "style transfer",
-            "link": "https://drive.google.com/file/d/1tAX5da49EVWiLpZ3NqQ17v_USHmkijPd/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1tAX5da49EVWiLpZ3NqQ17v_USHmkijPd/"
         }
     ],
     "labs": [
