@@ -65,7 +65,7 @@ const LectureSlides = () => {
         <div style={{
           display: 'flex',
           flexFlow: 'column wrap',
-          height: '500px'
+          height: '620px'
         }}>
           {courseData.lectures.map(lecture => (
             <SlideDeck
@@ -88,7 +88,7 @@ const CourseInfo = () => {
   return (
     <div style={{
       backgroundColor: 'pink',
-      padding: '10px',
+      padding: '5px',
       flexGrow: 1,
       flexShrink: 1,
     }}>
@@ -298,7 +298,7 @@ const Welcome = () => {
   return (
     <div className="welcome" style={{
       fontSize: "40px",
-      width: "220px"
+      width: "200px"
     }}>
       <div style={{
         display: 'flex',
@@ -345,7 +345,7 @@ function App() {
         justifyContent: 'stretch',
         gap: '20px',
         height: 'auto',
-        width: '400px',
+        width: '320px',
       }}>
         <div style={{
           display: 'flex',
