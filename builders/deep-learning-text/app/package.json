@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "vite build; cp dist/index.html ../../../pages/dl2/index.html; cp dist/assets/*.* ../../../pages/dl2/assets/; cp -R images/*.* ../../../pages/dl2/images/",
+    "deploy": "vite build; cp dist/index.html ../../../pages/dl2/index.html; cp dist/assets/*.* ../../../assets/; cp -R images/*.* ../../../pages/dl2/images/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server -p3001 --watch db.json"
