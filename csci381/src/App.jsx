@@ -47,26 +47,30 @@ const LectureSlides = () => {
     return () => clearInterval(interval);
   }, []);
 
+  console.log('width', window.innerWidth)
+
   return (
     <div style={{
       transition: 'background-color 2s linear',
       backgroundColor: bgColor,
       padding: '10px',
       flexGrow: 1,
-      flexShrink: 1
+      flexShrink: 1,
+      width: '500px'
     }}>
       
       <div style={{
         display: 'flex',
         flexFlow: 'column nowrap',
         justifyContent: 'stretch',
+        alignItems: 'stretch',
         height: '100%'
       }}>
 
         <div style={{
           display: 'flex',
           flexFlow: 'column wrap',
-          height: '620px'
+          height: window.innerWidth > 600 ? '680px' : null
         }}>
           {courseData.lectures.map(lecture => (
             <SlideDeck
@@ -95,9 +99,10 @@ const CourseInfo = () => {
     }}>
       <div style={{
         display: 'flex',
-        flexFlow: 'column wrap',
-        justifyContent: 'stretch',
-        height: 'auto',
+        flexFlow: 'column nowrap',
+        justifyContent: 'center',
+        height: '100%',
+        alignContent: 'center',
         fontFamily: 'Futura',
         fontWeight: 'bold',
         fontSize: '20px'
@@ -299,7 +304,7 @@ const Welcome = () => {
   return (
     <div className="welcome" style={{
       fontSize: "40px",
-      width: "200px"
+      width: "200px",
     }}>
       <div style={{
         display: 'flex',
@@ -334,7 +339,7 @@ function App() {
     <div style={{
       display: 'flex',
       flexFlow: 'row wrap',
-      justifyContent: 'stretch',
+      justifyContent: 'center',
       gap: '20px',
       height: 'auto',
     }}>
