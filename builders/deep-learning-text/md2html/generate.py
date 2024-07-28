@@ -3,7 +3,7 @@ import re
 import marko
 from marko import Markdown
 from marko.helpers import MarkoExtension
-   
+ 
    
 def preprocess(text):
     pattern = r'(?s)@proof\[(.+?)@proof\]'
@@ -61,6 +61,18 @@ class Example(marko.inline.InlineElement):
         latex_input = match.group(1)        
         self.target = latex_input
 
+class Prologue(marko.inline.InlineElement):
+
+    pattern = r'(?s)@prologue\[(.+?)\].*\[(.+?)\].*\[(.+?)\].*\[(.+?)\].*\[(.+?)\]'
+    parse_children = True
+
+    def __init__(self, match):
+        self.title = match.group(1).strip()        
+        self.image = match.group(2).strip()
+        self.msg1 = match.group(3).strip().replace('"', '&quot;')
+        self.msg2 = match.group(4).strip().replace('"', '&quot;')
+        self.msg3 = match.group(5).strip().replace('"', '&quot;')
+        
 class Proof(marko.inline.InlineElement):
 
     pattern = r'(?s)@proof\[(.+?)@proof\](\[(.+?)\])?'
@@ -69,7 +81,7 @@ class Proof(marko.inline.InlineElement):
     def __init__(self, match):
         self.target = match.group(1)
         self.marker = match.group(3) if match.group(3) is not None else "="
-        
+
 class ProofStep(marko.inline.InlineElement):
 
     pattern = r'(?s)@step\[(.+?)@step\]'
@@ -201,6 +213,10 @@ class MyRendererMixin(object):
         child_rendering = self.render_children(element)
         return f'<div className="definition"><span className="definitionheader">Definition</span><br/><br/>{child_rendering}</div>\n'
 
+    def render_prologue(self, element):
+        return f'<Prologue title="{element.title}" image="{element.image}" intro1="{element.msg1}" intro2="{element.msg2}" intro3="{element.msg3}" />\n'
+
+
     def render_component(self, element):
         if element.component_name == "GradientDescentDemo":
             return '<GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3}/>\n'
@@ -256,7 +272,7 @@ def markdown_to_html(markdown_file):
     text = ' '.join(lines)
     extension = MarkoExtension(
         elements=[Latex, Equation, Math, Definition, Example, Focus, Proof, ProofStep, Component,
-                  ProofJustification, PopQuiz, PopQuizItem, PopQuizQuestion, PopQuizAnswer],
+                  ProofJustification, Prologue, PopQuiz, PopQuizItem, PopQuizQuestion, PopQuizAnswer],
         renderer_mixins=[MyRendererMixin]
     )
     markdown = Markdown(extensions=[extension])
@@ -271,6 +287,7 @@ def markdown_to_html(markdown_file):
                  import GradientDescentDemo from './GradientDescentDemo.jsx';
                  import FollowTheFold from './FollowTheFold.jsx';
                  import ContourExplorer from './ContourExplorer.jsx';
+                 import Prologue from './Prologue.jsx';
                  
                 const {component_name} = ({{bullet, color1, color2, color3}}) => {{
                     return (
