@@ -1,22 +1,16 @@
 import { useState, useEffect, useRef, React } from 'react'
-import Milestones from './components/Milestones'
 import Chapter2 from './components/Chapter2'
-import Switch from "react-switch";
 import Sidebar from './components/Sidebar'
 
 const computeEquationFontSize = () => {
   const [newCss, setNewCss] = useState(null);
   useEffect(() => {
     function handleResize() {
-      let logoMultiplier = window.innerWidth > 1000 ? 1.0 : (window.innerWidth / 1000);
+      let textMultiplier = Math.max(0.8, window.innerWidth > 1000 ? 1.0 : (window.innerWidth / 1000));
+      let eqMultiplier = Math.max(0.4, window.innerWidth > 1000 ? 1.0 : (window.innerWidth / 1000));
       setNewCss(`
-        .deep {font-size: ${logoMultiplier * 3.7}em;}
-        .learning {font-size: ${logoMultiplier * 2.2}em;}
-        .logo-image {width: ${logoMultiplier * 160}px;}
-        .logo-subtitle1 {font-size: ${logoMultiplier * 1.1}em;}
-        .logo-subtitle2 {font-size: ${logoMultiplier * 2.5}em;}
-        .proof-equals {font-size: ${logoMultiplier * 50}px;}
-        .menu {font-size: ${logoMultiplier * 1.2}em;}
+        .proof-equals {font-size: ${eqMultiplier * 50}px;}
+        .menu {font-size: ${textMultiplier * 1.2}em;}
       `);
     }
     window.addEventListener("resize", handleResize);

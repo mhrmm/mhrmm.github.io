@@ -13,6 +13,8 @@ const Sidebar = ({ onChange, activeColor, inactiveColor }) => {
     onChange(!checked);
   }
 
+  const logoImage = checked ? "images/lightlogo.png" : "images/darklogo.png"
+
   const getFontMultiplier = () => {
     if (!containerRef.current) {
       return 1.0
@@ -21,6 +23,8 @@ const Sidebar = ({ onChange, activeColor, inactiveColor }) => {
       return Math.min(1.0, multiplier)
     }
   }
+
+  const logoWidth = `${getFontMultiplier() * 180}px`
 
   const getFontSize = (base) => {
     return `${getFontMultiplier() * base}px`
@@ -34,11 +38,9 @@ const Sidebar = ({ onChange, activeColor, inactiveColor }) => {
       alignContent: "center",
       alignItems: "center",
     }}>
-      <div className="logo-title deep" style={{ textAlign: 'center' }}>deep</div>
-      <div className="logo-title learning" style={{ textAlign: 'center' }}>learning</div>
-      <img className="logo-image" src="images/deep_learning_logo.png" />
-      <div className="logo-subtitle1" style={{ textAlign: 'center' }}>a mathematical</div>
-      <div className="logo-subtitle2" style={{ textAlign: 'center' }}>primer</div>
+      <img src={logoImage} alt="Deep Learning: A Mathematical Primer" style={{
+        width: logoWidth
+      }} />
       <div style={{ textAlign: 'center' }}>
         <Switch
           onChange={handleChange}

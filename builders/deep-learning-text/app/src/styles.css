@@ -178,7 +178,7 @@ a.menu {
 
 
 .logo-title {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trattatello';
   margin-block-start: 0.1em;
   margin-block-end: 0.1em;
 }
@@ -192,16 +192,18 @@ a.menu {
 
 .learning {
   padding-top: 0px;
-  margin-top: 0px;
+  margin-top: -10px;
   font-weight: bold;}
 
 .logo-subtitle1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 15px;
+  font-family: 'Trattatello';
   font-weight: bold;
 }
 
 .logo-subtitle2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trattatello';
+  margin-top: -10px;
   font-weight: bold;
   padding-bottom: 10px;
 }

@@ -30,7 +30,7 @@ const useIntersectionObserver = (setActiveIndex) => {
       }
     }
     const observer = new IntersectionObserver(callback, {
-      rootMargin: "-110px 0px -40% 0px"
+      rootMargin: "0px 0px -40% 0px"
     });
 
     const headingElements = Array.from(document.querySelectorAll("h4, h5"));
@@ -39,8 +39,6 @@ const useIntersectionObserver = (setActiveIndex) => {
     return () => observer.disconnect();
   }, []);
 };
-
-const bgColor = "white";
 
 const Heading = ({ id, title }) => (
   <a
@@ -51,14 +49,15 @@ const Heading = ({ id, title }) => (
         behavior: "smooth"
       });
     }}>
-    <div className="text textcolor">{title}
+    <div className="text textcolor menu">{title}
     </div>
 
   </a>
 );
 
-const Headings = ({ headings, inactiveColor, activeColor }) => {
+const Milestones = ({ inactiveColor, activeColor }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { headings } = useHeadingsData();
 
   const [activeUpArrow, setActiveUpArrow] = useState(false);
   const [activeDownArrow, setActiveDownArrow] = useState(false);
@@ -105,12 +104,13 @@ const Headings = ({ headings, inactiveColor, activeColor }) => {
         onMouseLeave={() => setActiveUpArrow(false)}
         onClick={handleUpArrowClick}
         style={{
-          fontSize: "20px",
+          fontSize: activeUpArrow ? "30px" : "20px",
+          transition: "font-size 0.5s",
           alignSelf: "stretch",
           textAlign: "center",
-          color: activeUpArrow ? activeColor : inactiveColor /*"aqua" : "#aaddff"*/
+          color: activeUpArrow ? activeColor : inactiveColor
         }}>
-        ▲
+        {activeIndex > 0 ? '🎈' : null}
       </div>
       <div style={{ flexGrow: 1, flexShrink: 1 }} />
       <div
@@ -126,62 +126,40 @@ const Headings = ({ headings, inactiveColor, activeColor }) => {
         onMouseLeave={() => setActiveDownArrow(false)}
         onClick={handleDownArrowClick}
         style={{
-          fontSize: "20px",
+          fontSize: activeDownArrow ? "30px" : "20px",
+          transition: "font-size 0.5s",
           alignSelf: "stretch",
           textAlign: "center",
           color: activeDownArrow ? activeColor : inactiveColor
         }}>
-        ▼
+        {activeIndex+1 < headings.length ? '⚓' : null}
       </div>
 
     </nav>
   );
 }
 
-const Milestones = ({ inactiveColor, activeColor }) => {
-  const { nestedHeadings } = useHeadingsData();
 
-  return (
-    <Headings
-      headings={nestedHeadings}
-      inactiveColor={inactiveColor}
-      activeColor={activeColor}
-    />
-  );
-};
-
-const getNestedHeadings = (headingElements) => {
-  const nestedHeadings = [];
-
-  headingElements.forEach((heading, index) => {
-    const { innerText: title, id } = heading;
-
-    if (heading.nodeName === "H4") {
-      nestedHeadings.push({ id, title, items: [] });
-    } else if (heading.nodeName === "H5" && nestedHeadings.length > 0) {
-      nestedHeadings[nestedHeadings.length - 1].items.push({
-        id,
-        title,
-      });
-    }
-  });
-
-  return nestedHeadings;
-};
 
 const useHeadingsData = () => {
-  const [nestedHeadings, setNestedHeadings] = useState([]);
+  const [headings, setHeadings] = useState([]);
 
   useEffect(() => {
     const headingElements = Array.from(
-      document.querySelectorAll("h4, h5")
+      document.querySelectorAll("h4")
     );
-
-    const newNestedHeadings = getNestedHeadings(headingElements);
-    setNestedHeadings(newNestedHeadings);
+    const newHeadings = [];
+    headingElements.forEach((heading, index) => {
+      const { innerText: title, id } = heading;
+      console.log('title', title, id)
+      if (heading.nodeName === "H4") {
+        newHeadings.push({ id, title, items: [] });
+      }
+    });
+    setHeadings(newHeadings);
   }, []);
 
-  return { nestedHeadings };
+  return { headings };
 };
 
 export default Milestones;

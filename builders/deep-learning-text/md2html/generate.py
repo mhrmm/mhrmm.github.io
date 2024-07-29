@@ -178,6 +178,7 @@ class MyRendererMixin(object):
         
         child_rendering = self.render_children(element)
         header_id = '-'.join(child_rendering.split())
+        header_id = ''.join([ch for ch in header_id if ch.isalnum()])
         if element.level == 1:
             return f'<div className="header-padding" /><hr></hr><h4 className="header1" id="{header_id}">{child_rendering}</h4>\n'
         else:
