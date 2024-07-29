@@ -1,0 +1,234 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#tree {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hpdev__select-tree {
+  background: #27292a;
+  padding: 20px;
+  font-size: 1rem;
+  flex-grow: 0;
+}
+
+.equation {
+  text-align: center;
+  font-family: 'Noto Sans Math';
+  font-size: 1.7em;
+}
+
+li.toc {
+  text-align: center;
+  list-style-type: none;
+}
+
+ol {
+  font-family: Courier, "Courier New", monospace;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 2.9em;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.rowC{display:block; block-size:50%;}
+.rowElement{padding-left:10px; padding-right:10px;padding-top:0px;padding-bottom:0px;}
+
+
+
+/* Control the left side */
+.left {
+  left: 0;
+  width: 30%;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 70%;
+}
+
+.logotitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+}
+
+.logosubtitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-block-start: 0.0em;
+  margin-block-end: 0.0em;
+}
+
+.titleline1 {
+  font-size: 2.2em;
+}
+
+.titleline2 {
+  font-size: 3.0em;
+}
+
+.text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 2.3em;
+}
+
+h4,
+h5 {
+  font-family: 'Futura', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  scroll-margin-top: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+}
+
+.leftaligned {
+  position: absolute;
+  top: 4%;
+  left: 20%;
+  transform: translate(-12.5%, 0%);
+  text-align: left;
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  /* For Safari */
+  top: 24px;
+  /* How far down the page you want your ToC to live */
+
+  /* Give table of contents a scrollbar */
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+
+  &-checkbox {
+    display: none;
+  }
+
+  &-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  &-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+
+    &:before,
+    &:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 34px;
+      padding: 0;
+      line-height: 34px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      content: "Yes";
+      text-transform: uppercase;
+      padding-left: 10px;
+      background-color: #f90;
+      color: #fff;
+    }
+  }
+
+  &-disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+
+    &:before {
+      background-color: #ddd;
+      cursor: not-allowed;
+    }
+  }
+
+  &-inner:after {
+    content: "No";
+    text-transform: uppercase;
+    padding-right: 10px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: right;
+  }
+
+  &-switch {
+    display: block;
+    width: 24px;
+    margin: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  &-checkbox:checked+&-label {
+    .toggle-switch-inner {
+      margin-left: 0;
+    }
+
+    .toggle-switch-switch {
+      right: 0px;
+    }
+  }
+}

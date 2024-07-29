@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="src/static/hierplane.min.css" />
+      <style>
+        html, body {
+          height: 100%;
+          width: 100%;
+        }
+  
+        body {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+        }
+  
+        #tree {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+        }
+  
+        .hpdev__select-tree {
+          background: #27292a;
+          padding: 20px;
+          font-size: 1rem;
+          flex-grow: 0;
+        }
+
+        /* Split the screen in half */
+        .split {
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          overflow-x: hidden;
+          padding-top: 20px;
+        }
+
+        /* Control the left side */
+        .left {
+          left: 0;
+          width: 30%;
+          background-color: #393c42;
+        }
+
+        /* Control the right side */
+        .right {
+          right: 0;
+          width: 70%;
+          background-color: #3C4046;
+        }
+
+        /* If you want the content centered horizontally and vertically */
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: white;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+      </style>
+  </head>
+  <body>
+    
+    <div class="split right" id="root">      
+    </div>
+  
+    
+    <div class="split left">
+      <div class="centered">
+
+        <h2>express yourself</h2>
+        <p>Some text here too.</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>  
+  </body>
+</html>
+

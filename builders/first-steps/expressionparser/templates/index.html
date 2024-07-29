@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>QT-calculator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="calc-container">
+      <h1>QTc calculator</h1>
+      <p>Please enter details to calculate the QTc:</p>
+ 
+      <form action="http://localhost:5000" method="POST">
+        <label>Enter sex:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="sex" value="m" id="male-option">
+          <label class="form-check-label" for="male-option">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="sex" value="f" id="female-option" checked>
+          <label class="form-check-label" for="female-option">
+            Female
+          </label>
+        </div>
+        <br>
+        <label>Enter HR (BPM):</label>
+        <input type="string" name="hr">
+        <br><br>
+        <label>Enter QT interval (msec):</label>
+        <input type="number" name="qt">
+        </br><br>
+        <input type="submit" name="next" value="Next">
+     </form>
+     <br><br>
+     {% if parse_result %}
+       <h2>Results</h2>
+       <p>{{parse_result[0]}}</p>
+     {% endif %}
+   </div>
+ </body>
+</html>

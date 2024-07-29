@@ -1,0 +1,112 @@
+{
+    "text": "max(len(\"seven\"), len(\"seventy\"))",
+    "root": {
+        "nodeType": "event",
+        "word": "max",
+        "spans": [
+            {
+                "start": 0,
+                "end": 4
+            },
+            {
+                "start": 16,
+                "end": 18
+            },
+            {
+                "start": 32,
+                "end": 33
+            }
+        ],
+        "children": [
+            {
+                "nodeType": "event",
+                "word": "len",
+                "spans": [
+                    {
+                        "start": 4,
+                        "end": 8
+                    },
+                    {
+                        "start": 15,
+                        "end": 16
+                    }
+                ],
+                "children": [
+                    {
+                        "nodeType": "entity",
+                        "word": "seven",
+                        "spans": [
+                            {
+                                "start": 8,
+                                "end": 15
+                            }
+                        ],
+                        "link": "arg",
+                        "attributes": [
+                            "seven"
+                        ]
+                    }
+                ],
+                "link": "arg",
+                "attributes": [
+                    5
+                ]
+            },
+            {
+                "nodeType": "event",
+                "word": "len",
+                "spans": [
+                    {
+                        "start": 18,
+                        "end": 22
+                    },
+                    {
+                        "start": 31,
+                        "end": 32
+                    }
+                ],
+                "children": [
+                    {
+                        "nodeType": "entity",
+                        "word": "seventy",
+                        "spans": [
+                            {
+                                "start": 22,
+                                "end": 31
+                            }
+                        ],
+                        "link": "arg",
+                        "attributes": [
+                            "seventy"
+                        ]
+                    }
+                ],
+                "link": "arg",
+                "attributes": [
+                    7
+                ]
+            }
+        ],
+        "attributes": [
+            7
+        ]
+    },
+    "nodeTypeToStyle": {
+        "event": [
+            "color6",
+            "strong"
+        ],
+        "entity": [
+            "color4"
+        ],
+        "detail": [
+            "placeholder"
+        ],
+        "sequence": [
+            "seq"
+        ],
+        "reference": [
+            "placeholder"
+        ]
+    }
+}
