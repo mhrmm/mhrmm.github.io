@@ -176,6 +176,11 @@ a.menu {
   font-family: 'Optima', 'Helvetica', sans-serif;
 }
 
+.menu {
+  text-align: center;
+  padding: 5px;
+}
+
 
 .logo-title {
   font-family: 'Trattatello';

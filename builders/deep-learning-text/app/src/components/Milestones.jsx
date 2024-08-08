@@ -49,7 +49,7 @@ const Heading = ({ id, title }) => (
         behavior: "smooth"
       });
     }}>
-    <div className="text textcolor menu">{title}
+    <div className="text menu">{title}
     </div>
 
   </a>
@@ -88,18 +88,8 @@ const Milestones = ({ inactiveColor, activeColor }) => {
   const headingId = headings.length > 0 ? headings[activeIndex].id : 0
   const headingTitle = headings.length > 0 ? headings[activeIndex].title : "?"
 
-  return (
-    <nav aria-label="Table of contents" style={{
-      display: "flex",
-      flexFlow: "column nowrap",
-      justifyContent: "flex-start",
-      alignContent: "stretch",
-      alignItems: "center",
-      width: "80%",
-      padding: "10%",
-      height: (panelHeight) / 3,
-    }}>
-      <div
+  const renderUpArrow = () => {
+    <div
         onMouseEnter={() => setActiveUpArrow(true)}
         onMouseLeave={() => setActiveUpArrow(false)}
         onClick={handleUpArrowClick}
@@ -112,16 +102,10 @@ const Milestones = ({ inactiveColor, activeColor }) => {
         }}>
         {activeIndex > 0 ? '🎈' : null}
       </div>
-      <div style={{ flexGrow: 1, flexShrink: 1 }} />
-      <div
-        style={{
-          textAlign: 'center'
-        }}
-      >
-        <Heading id={headingId} title={headingTitle} />
-      </div>
-      <div style={{ flexGrow: 1, flexShrink: 1 }} />
-      <div
+  }
+
+  const renderDownArrow = () => (
+    <div
         onMouseEnter={() => setActiveDownArrow(true)}
         onMouseLeave={() => setActiveDownArrow(false)}
         onClick={handleDownArrowClick}
@@ -132,8 +116,27 @@ const Milestones = ({ inactiveColor, activeColor }) => {
           textAlign: "center",
           color: activeDownArrow ? activeColor : inactiveColor
         }}>
-        {activeIndex+1 < headings.length ? '⚓' : null}
+        {activeIndex + 1 < headings.length ? '⚓' : null}
       </div>
+  )
+
+  return (
+    <nav aria-label="Table of contents" style={{
+      display: "flex",
+      flexFlow: "column nowrap",
+      justifyContent: "flex-start",
+      alignContent: "stretch",
+      alignItems: "center",
+      width: "80%",
+      padding: "10%",
+      height: (panelHeight) / 3,
+    }}><div style={{ flexGrow: 1, flexShrink: 1 }} />
+
+      
+      <div className="menu">
+        <Heading id={headingId} title={headingTitle} />
+      </div>
+      
 
     </nav>
   );

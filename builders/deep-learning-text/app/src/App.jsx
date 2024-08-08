@@ -62,6 +62,7 @@ const App = () => {
     .logo-title {color: ${dayLogoTitleColor};}
     .logo-subtitle1 {color: ${dayLogoSubtitleColor};}
     .logo-subtitle2 {color: ${dayLogoSubtitleColor};}
+    .menu {border: dotted aqua; color: white; background-color: ${dayMilestonesBgColor}; }
     .milestones {backgroundColor: ${dayMilestonesBgColor}}
     .pop-question {color: ${dayTextColor};}
     .pop-answer {color: ${dayTextColor}; font-weight: normal; background-color: ${dayLeftBgColor}; border-color: ${dayTermColor};}
@@ -101,6 +102,7 @@ const App = () => {
     .logo-title {color: ${nightLogoTitleColor};}
     .logo-subtitle1 {color: ${nightLogoSubtitleColor};}
     .logo-subtitle2 {color: ${nightLogoSubtitleColor};}
+    .menu {border: dotted white; color: ${nightHeaderColor}; background-color: ${nightDefinitionColor}; }
     .milestones {backgroundColor: ${nightMilestonesBgColor};}
     .pop-question {color: ${nightTextColor};}
     .pop-answer {color: ${nightTextColor}; background-color: ${nightDefinitionColor}; border-color: lightgray;}
