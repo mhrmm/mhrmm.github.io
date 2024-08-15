@@ -246,6 +246,9 @@ const CourseInfo = () => {
         <div>
           <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>office?</span> tcl 307
         </div>
+        <div>
+          <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>syllabus?</span> <a href="https://drive.google.com/file/d/1fH8O449CQaVsnAvYG4BWw-FzCfdoaYzG/view?usp=sharing" target="_blank">here</a>
+        </div>
       </div>
 
     </div>
