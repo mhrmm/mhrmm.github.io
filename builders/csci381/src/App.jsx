@@ -101,26 +101,26 @@ const Welcome = () => {
           an introduction to deep learning, presented to you without interruption<sup>†</sup> by <span class="textlink" style={{ fontWeight: 'bold', color: '#6667AB' }}><a class="textlink" href="http://markandrewhopkins.com/" target="_blank">mark hopkins</a></span> and <span class="textlink" style={{ fontWeight: 'bold', color: '#6667AB' }}><a class="textlink" href="http://www.williams.edu" target="_blank">williams college</a></span>
         </div>
         <a href="https://mhrmm.github.io/pages/dl2/" target="_blank">
-        <div className="dltextpromo">
-          <div style={{
-            display: 'flex',
-            fontSize: '20pt',
-            flexFlow: 'row nowrap',
-            justifyContent: "space-around",
-          }}>
-            <img src="images/deep_learning_logo.png" width="100" />
+          <div className="dltextpromo">
             <div style={{
               display: 'flex',
-              fontSize: '18pt',
-              flexFlow: 'column nowrap',
+              fontSize: '20pt',
+              flexFlow: 'row nowrap',
               justifyContent: "space-around",
             }}>
-              <div style={{ fontFamily: 'Gill Sans', fontWeight: 'bold', fontSize: '12pt', color: 'blue' }}>deep learning:</div>
-              <div style={{ fontFamily: 'Gill Sans', fontWeight: 'light', fontSize: '9pt', color: 'blue' }}>a mathematical primer</div>
+              <img src="images/deep_learning_logo.png" width="100" />
+              <div style={{
+                display: 'flex',
+                fontSize: '18pt',
+                flexFlow: 'column nowrap',
+                justifyContent: "space-around",
+              }}>
+                <div style={{ fontFamily: 'Gill Sans', fontWeight: 'bold', fontSize: '12pt', color: 'blue' }}>deep learning:</div>
+                <div style={{ fontFamily: 'Gill Sans', fontWeight: 'light', fontSize: '9pt', color: 'blue' }}>a mathematical primer</div>
+              </div>
             </div>
+            <div style={{ paddingTop: '10px', fontFamily: 'Futura', fontWeight: 'bold', fontSize: '20pt', color: 'navy' }}>textbook</div>
           </div>
-          <div style={{ paddingTop: '10px', fontFamily: 'Futura', fontWeight: 'bold', fontSize: '20pt', color: 'navy' }}>textbook</div>
-        </div>
         </a>
         <Upcoming />
         <div style={{ fontSize: "10px" }}><sup>†</sup> except for holidays and thanksgiving break and mountain day and any unforeseen emergencies</div>
@@ -247,7 +247,15 @@ const CourseInfo = () => {
           <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>office?</span> tcl 307
         </div>
         <div>
-          <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>syllabus?</span> <a href="https://drive.google.com/file/d/1fH8O449CQaVsnAvYG4BWw-FzCfdoaYzG/view?usp=sharing" target="_blank">here</a>
+          <span style={{
+            fontFamily: "Marker Felt", color: "crimson"
+          }}>
+            syllabus?
+          </span> 
+          <span> </span>
+          <a style={{
+            fontWeight: "bold"
+          }}href="https://drive.google.com/file/d/1fH8O449CQaVsnAvYG4BWw-FzCfdoaYzG/view?usp=sharing" target="_blank">here</a>
         </div>
       </div>
 
@@ -291,17 +299,17 @@ const TeachingAssistants = () => {
         justifyContent: 'stretch',
         height: '100%'
       }}>
-      <div style={{ flexGrow: 1, flexShrink: 1 }}></div>              
-      <div style={{
-        display: 'flex',
-        flexFlow: 'row nowrap',
-        justifyContent: 'space-evenly'
-      }}>
-        <TeachingAssistant image="images/faulkner.jpeg" name="Michael" />
-        <TeachingAssistant image="images/laws.jpeg" name="Matt" />
-      </div>
-      <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
-      <BoxTitle title="tas" color="black" />
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+        <div style={{
+          display: 'flex',
+          flexFlow: 'row nowrap',
+          justifyContent: 'space-evenly'
+        }}>
+          <TeachingAssistant image="images/faulkner.jpeg" name="Michael" />
+          <TeachingAssistant image="images/laws.jpeg" name="Matt" />
+        </div>
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+        <BoxTitle title="tas" color="black" />
       </div>
     </div>
   )
