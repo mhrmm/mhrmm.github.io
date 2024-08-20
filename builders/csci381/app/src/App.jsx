@@ -235,7 +235,7 @@ const App = () => {
       element: <Csci381 />       
     },
     {
-      path: "dlamp1/",
+      path: "/dlamp1/",
       element: autoLayout(
         <Chapter1 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
@@ -245,7 +245,7 @@ const App = () => {
       )
     },
     {
-      path: "dlamp2/",
+      path: "/dlamp2/",
       element: autoLayout(
         <Chapter2 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
@@ -255,7 +255,7 @@ const App = () => {
       )
     },
     {
-      path: "dlamp3/",
+      path: "/dlamp3/",
       element: autoLayout(
         <Chapter3 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
