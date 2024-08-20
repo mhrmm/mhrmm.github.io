@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-
+import { Link } from "react-router-dom";
 import courseData from './csci381.json';
 
 
@@ -101,7 +101,7 @@ const Welcome = () => {
             hopkins</a></span> and <span className="csci381-textlink"><a className="csci381-textlink" href="http://www.williams.edu" target="_blank">williams
               college</a></span>
         </div>
-        <Link to={{ pathname: `/dlamp1` }}></Link>
+        <Link to={{ pathname: `/dlamp1` }}>
           <div className="dltextpromo">
             <div style={{
               display: 'flex',
@@ -124,7 +124,7 @@ const Welcome = () => {
             </div>
             <div style={{ paddingTop: '10px', fontFamily: 'Futura', fontWeight: 'bold', fontSize: '20pt', color: 'navy' }}>textbook</div>
           </div>
-        </a>
+          </Link>
         <Upcoming />
         <div style={{ fontSize: "10px" }}><sup>†</sup> except for holidays and thanksgiving break and mountain day and any unforeseen emergencies</div>
       </div>
