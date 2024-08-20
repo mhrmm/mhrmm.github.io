@@ -1,4 +1,5 @@
 import { React } from 'react'
+import { Link } from "react-router-dom";
 
 const Menubar = () => (
   <div style={{
@@ -10,11 +11,11 @@ const Menubar = () => (
     width: "100%",
     textAlign: "center"
   }}>
-    <a href="/dlamp1" className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>1</a> 
+    <Link to={{ pathname: `/dlamp1` }} className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>1</Link> 
     <div className="textcolor">|</div>
-    <a href="/dlamp2" className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>2</a>
+    <Link to={{ pathname: `/dlamp2` }} className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>2</Link>
     <div className="textcolor">|</div>
-    <a href="/dlamp3" className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>3</a>
+    <Link to={{ pathname: `/dlamp3` }} className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>3</Link>
   </div>
 )
 
