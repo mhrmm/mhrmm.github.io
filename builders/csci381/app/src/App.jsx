@@ -231,11 +231,11 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "cs381/",
       element: <Csci381 />       
     },
     {
-      path: "/dlamp1/",
+      path: "/",
       element: autoLayout(
         <Chapter1 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
@@ -245,7 +245,17 @@ const App = () => {
       )
     },
     {
-      path: "/dlamp2/",
+      path: "dlamp1/",
+      element: autoLayout(
+        <Chapter1 bullet={checked ? dayBullet : nightBullet}
+          color1={checked ? dayTextColor : nightTextColor}
+          color2={checked ? dayHeaderColor : nightHeaderColor}
+          color3={checked ? dayTermColor : nightTermColor}
+        />
+      )
+    },
+    {
+      path: "dlamp2/",
       element: autoLayout(
         <Chapter2 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
@@ -255,7 +265,7 @@ const App = () => {
       )
     },
     {
-      path: "/dlamp3/",
+      path: "dlamp3/",
       element: autoLayout(
         <Chapter3 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
