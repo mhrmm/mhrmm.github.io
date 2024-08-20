@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "vite build; cp dist/index.html ../../../pages/dlamp/index.html; cp dist/assets/*.* ../../../assets/; cp -R images/*.* ../../../pages/dlamp/images/",
+    "deploy": "vite build; cp dist/index.html ../../../pages/dlamp/index.html; cp dist/assets/*.* ../../../assets/; cp -R images/*.* ../../../pages/dlamp/images/; cp -R boards/*.* ../../../pages/dlamp/boards/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server -p3001 --watch db.json"
