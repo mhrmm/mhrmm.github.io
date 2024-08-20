@@ -231,18 +231,8 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
-      path: "cs381/",
-      element: <Csci381 />       
-    },
-    {
       path: "/",
-      element: autoLayout(
-        <Chapter1 bullet={checked ? dayBullet : nightBullet}
-          color1={checked ? dayTextColor : nightTextColor}
-          color2={checked ? dayHeaderColor : nightHeaderColor}
-          color3={checked ? dayTermColor : nightTermColor}
-        />
-      )
+      element: <Csci381 />       
     },
     {
       path: "dlamp1/",

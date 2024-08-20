@@ -101,7 +101,7 @@ const Welcome = () => {
             hopkins</a></span> and <span className="csci381-textlink"><a className="csci381-textlink" href="http://www.williams.edu" target="_blank">williams
               college</a></span>
         </div>
-        <a href="/dlamp1/">
+        <Link to={{ pathname: `/dlamp1` }}></Link>
           <div className="dltextpromo">
             <div style={{
               display: 'flex',
