@@ -11,11 +11,11 @@ const Menubar = () => (
     width: "100%",
     textAlign: "center"
   }}>
-    <Link to={{ pathname: `/dlamp1` }} className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>1</Link> 
+    <Link to={{ pathname: '/dlamp1' }}><div className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>1</div></Link> 
     <div className="textcolor">|</div>
-    <Link to={{ pathname: `/dlamp2` }} className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>2</Link>
+    <Link to={{ pathname: '/dlamp2' }}><div className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>2</div></Link>
     <div className="textcolor">|</div>
-    <Link to={{ pathname: `/dlamp3` }} className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>3</Link>
+    <Link to={{ pathname: '/dlamp3' }}><div className="menubar-link" style={{flexGrow: 1, flexShrink: 1}}>3</div></Link>
   </div>
 )
 
