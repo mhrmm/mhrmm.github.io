@@ -35,7 +35,7 @@ const App = () => {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => {    
     const handleResize = () => {
       setWindowSize({
         width: window.innerWidth,
@@ -181,7 +181,7 @@ const App = () => {
 
     <div className="main-container">
       <style>{css + computeEquationFontSize()}</style>
-      <div id={loading ? "cover" : null}/>
+      <div id={loading ? "cover" : ""}/>
       <div className="top-container">
         <Topbar
           checked={checked}
