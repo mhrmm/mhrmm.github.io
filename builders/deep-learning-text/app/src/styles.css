@@ -2,12 +2,49 @@ html,
 body {
   height: 100%;
   width: 100%;
+  max-width: 1280px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; z-index:9999;}
+
+.vcenter {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container {
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-container {
+  position: absolute;
+  padding-top: 20px;
+  top: 70px;
+  left: 0px;       
+  width: 100%;
+}
+
+.top-container {
+  position: absolute;
+  z-index: 1000; 
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+}
+
+.menubar-link:hover {
+  background-color: coral;
+  color: white
+}
+
+.menubar-link {
+  font-weight: regular;
 }
 
 #tree {
@@ -29,12 +66,12 @@ math {
 
 .equation {
   font-family: "Latin Modern Math";
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: stretch;
-  align-content: center; 
+  align-content: center;
 }
 
 .equation-contents {
@@ -52,9 +89,38 @@ math {
 .footer {
   padding-bottom: 50px;
   padding-top: 30px;
-  text-align: right; 
+  text-align: right;
   font-family: 'Optima', 'Helvetica', sans-serif;
 }
+
+.mm-basic {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.mm-weight-0,
+.mm-value-0 {
+  background-color: #EA64BE;
+  color: white;
+}
+
+.mm-weight-1,
+.mm-value-1 {
+  background-color: #5CC0A0;
+  color: white;
+}
+
+.mm-weight-2,
+.mm-value-2 {
+  background-color: #65D5FA;
+  color: black
+}
+
+.mm-dot-product {
+  background-color: gold;
+  color: black
+}
+
 
 
 li {
@@ -71,8 +137,8 @@ li {
 
 
 .pop-bullet {
-  width: 40px; 
-  height: auto; 
+  width: 40px;
+  height: auto;
   flex-grow: 0;
   flex-shrink: 0;
   font-family: "Courier", "Herculanum", sans-serif;
@@ -82,7 +148,7 @@ li {
 
 .pop-question {
   width: 200px;
-  height: inherit; 
+  height: inherit;
   flex-grow: 1;
   flex-shrink: 1;
   font-family: Helvetica, Arial, sans-serif;
@@ -93,7 +159,7 @@ li {
 }
 
 .pop-answer {
-  width: 200px; 
+  width: 200px;
   height: auto;
   flex-grow: 1;
   flex-shrink: 1;
@@ -104,8 +170,8 @@ li {
 }
 
 .image {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   flex-grow: 1;
   flex-shrink: 1;
   box-sizing: border-box;
@@ -129,7 +195,7 @@ li {
 
   /* Then we define how is distributed the remaining space */
   justify-content: space-around;
-  align-content: center; 
+  align-content: center;
 }
 
 .header1 {
@@ -163,13 +229,13 @@ h1 {
 /* Control the left side */
 .left {
   left: 0;
-  width: 20%;
+  width: 15%;
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  width: 80%;
+  width: 85%;
 }
 
 a.menu {
@@ -179,6 +245,17 @@ a.menu {
 .menu {
   text-align: center;
   padding: 5px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.content {
+  top: 30%;
+  width: 100%;
 }
 
 
@@ -198,7 +275,8 @@ a.menu {
 .learning {
   padding-top: 0px;
   margin-top: -10px;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 .logo-subtitle1 {
   padding-top: 15px;
@@ -258,7 +336,7 @@ h5 {
 
   /* Then we define how is distributed the remaining space */
   justify-content: space-around;
-  align-content: center; 
+  align-content: center;
 }
 
 
@@ -267,7 +345,7 @@ h5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-content: center; 
+  align-content: center;
   align-items: center;
   padding-bottom: 20px;
 }
@@ -276,7 +354,7 @@ h5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-content: center; 
+  align-content: center;
   align-items: center;
 }
 
@@ -293,7 +371,7 @@ h5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-content: center; 
+  align-content: center;
   align-items: center;
   border-style: solid;
   border-width: 1px;
@@ -319,7 +397,7 @@ h5 {
   width: 10%;
   flex-grow: 0;
   flex-shrink: 0;
-  font-family:'Courier New';
+  font-family: 'Courier New';
   font-weight: lighter;
   text-align: center;
 }
@@ -365,7 +443,7 @@ h5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-content: center; 
+  align-content: center;
   align-items: center;
 }
 
@@ -377,8 +455,10 @@ h5 {
 
 nav {
   position: sticky;
-  position: -webkit-sticky; /* For Safari */
-  max-height: calc(100vh - 40px); /* Give table of contents a scrollbar */
+  position: -webkit-sticky;
+  /* For Safari */
+  max-height: calc(100vh - 40px);
+  /* Give table of contents a scrollbar */
   overflow: auto;
 }
 

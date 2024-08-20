@@ -55,7 +55,7 @@ const Heading = ({ id, title }) => (
   </a>
 );
 
-const Milestones = ({ inactiveColor, activeColor }) => {
+const Milestones = ({ inactiveColor, activeColor, layout }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const { headings } = useHeadingsData();
 
@@ -90,37 +90,37 @@ const Milestones = ({ inactiveColor, activeColor }) => {
 
   const renderUpArrow = () => {
     <div
-        onMouseEnter={() => setActiveUpArrow(true)}
-        onMouseLeave={() => setActiveUpArrow(false)}
-        onClick={handleUpArrowClick}
-        style={{
-          fontSize: activeUpArrow ? "30px" : "20px",
-          transition: "font-size 0.5s",
-          alignSelf: "stretch",
-          textAlign: "center",
-          color: activeUpArrow ? activeColor : inactiveColor
-        }}>
-        {activeIndex > 0 ? '🎈' : null}
-      </div>
+      onMouseEnter={() => setActiveUpArrow(true)}
+      onMouseLeave={() => setActiveUpArrow(false)}
+      onClick={handleUpArrowClick}
+      style={{
+        fontSize: activeUpArrow ? "30px" : "20px",
+        transition: "font-size 0.5s",
+        alignSelf: "stretch",
+        textAlign: "center",
+        color: activeUpArrow ? activeColor : inactiveColor
+      }}>
+      {activeIndex > 0 ? '🎈' : null}
+    </div>
   }
 
   const renderDownArrow = () => (
     <div
-        onMouseEnter={() => setActiveDownArrow(true)}
-        onMouseLeave={() => setActiveDownArrow(false)}
-        onClick={handleDownArrowClick}
-        style={{
-          fontSize: activeDownArrow ? "30px" : "20px",
-          transition: "font-size 0.5s",
-          alignSelf: "stretch",
-          textAlign: "center",
-          color: activeDownArrow ? activeColor : inactiveColor
-        }}>
-        {activeIndex + 1 < headings.length ? '⚓' : null}
-      </div>
+      onMouseEnter={() => setActiveDownArrow(true)}
+      onMouseLeave={() => setActiveDownArrow(false)}
+      onClick={handleDownArrowClick}
+      style={{
+        fontSize: activeDownArrow ? "30px" : "20px",
+        transition: "font-size 0.5s",
+        alignSelf: "stretch",
+        textAlign: "center",
+        color: activeDownArrow ? activeColor : inactiveColor
+      }}>
+      {activeIndex + 1 < headings.length ? '⚓' : null}
+    </div>
   )
 
-  return (
+  const wideLayout = (
     <nav aria-label="Table of contents" style={{
       display: "flex",
       flexFlow: "column nowrap",
@@ -131,15 +131,19 @@ const Milestones = ({ inactiveColor, activeColor }) => {
       padding: "10%",
       height: (panelHeight) / 3,
     }}><div style={{ flexGrow: 1, flexShrink: 1 }} />
-
-      
       <div className="menu">
         <Heading id={headingId} title={headingTitle} />
       </div>
-      
-
     </nav>
-  );
+  )
+
+  const narrowLayout = (
+    <div className="menu">
+      <Heading id={headingId} title={headingTitle} />
+    </div>
+  )
+
+  return layout === "wide" ? wideLayout : narrowLayout;
 }
 
 

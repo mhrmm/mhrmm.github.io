@@ -126,7 +126,7 @@ class Component(marko.inline.InlineElement):
 
 class Focus(marko.inline.InlineElement):
 
-    pattern = r'(?s)@focus\[(.+?)@focus\]\[([a-zA-Z0-9_]+)\]'
+    pattern = r'(?s)@focus\[(.+?)@focus\]\[([a-zA-Z0-9_ ]+)\]'
     parse_children = True
 
     def __init__(self, match):
@@ -289,6 +289,7 @@ def markdown_to_html(markdown_file):
                  import FollowTheFold from './FollowTheFold.jsx';
                  import ContourExplorer from './ContourExplorer.jsx';
                  import Prologue from './Prologue.jsx';
+                 import MatrixMultiplication from './MatrixMultiplication.jsx';
                  
                 const {component_name} = ({{bullet, color1, color2, color3}}) => {{
                     return (

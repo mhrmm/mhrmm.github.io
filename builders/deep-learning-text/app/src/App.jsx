@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef, React } from 'react'
+import Chapter1 from './components/Chapter1'
 import Chapter2 from './components/Chapter2'
+import Chapter3 from './components/Chapter3'
 import Sidebar from './components/Sidebar'
+import Topbar from './components/Topbar'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const computeEquationFontSize = () => {
   const [newCss, setNewCss] = useState(null);
@@ -22,10 +26,31 @@ const computeEquationFontSize = () => {
 
 const App = () => {
 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
+    setLoading(false);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   // "light mode" color palette
   const dayHeaderColor = "#da5820";
-  const dayLogoTitleColor = "#201b71";
-  const dayLogoSubtitleColor = "#201b71";
+  const dayLogoTitleColor = "black";
+  const dayLogoSubtitleColor = "#da5820";
   const dayLeftBgColor = "#d1def7";
   const dayMilestonesBgColor = "black";
   const dayRightBgColor = "#fffff5";
@@ -46,22 +71,26 @@ const App = () => {
   const nightBullet = "🐠";
 
   const cssDay = `
+    body { background-color: ${dayRightBgColor} }
     .border-glow { border-color: ${dayTermColor} }
     .border-dull { border-color: darkgray; } 
     .bubble1 { background-color: #ffddcc }
     .bubble2 { background-color: #ffccbb }
     .bubble3 { background-color: #ffc2af }
+    #cover { background-color: ${dayRightBgColor} }
     .definition { border-style: dashed; border-color: ${dayTermColor}; padding: 10px; color: black; background-color: ${dayLeftBgColor}; font-weight: normal;}
     .definitionheader {color:${dayLogoTitleColor}; font-weight: bold}    
     .footer {color:${dayLogoTitleColor};}
     .footer-hr {height: 1.0px; border: 1px solid ${dayLogoTitleColor}; color: ${dayLogoTitleColor}; background: ${nightLogoTitleColor};}
     .header1 {color: black;}
     .header2 {color:${dayHeaderColor};}
-    .leftbg {background-color: ${dayLeftBgColor};}
+    .leftbg {background-color: ${dayRightBgColor};}
     .rightbg {background-color: ${dayRightBgColor};} 
     .logo-title {color: ${dayLogoTitleColor};}
     .logo-subtitle1 {color: ${dayLogoSubtitleColor};}
     .logo-subtitle2 {color: ${dayLogoSubtitleColor};}
+    .matrix-cell-highlight {background-color: ${dayHeaderColor}; color: white;}
+    .matrix-cell-nohighlight {background-color: whitesmoke; color: black;}
     .menu {border: dotted aqua; color: white; background-color: ${dayMilestonesBgColor}; }
     .milestones {backgroundColor: ${dayMilestonesBgColor}}
     .pop-question {color: ${dayTextColor};}
@@ -87,11 +116,13 @@ const App = () => {
 
 
   const cssNight = `
+    body { background-color: ${nightRightBgColor} }
     .border-glow { border-color: ${nightTermColor} }   
     .border-dull { border-color: darkgray; } 
     .bubble1 { background-color: ${nightDefinitionColor} }
     .bubble2 { background-color: ${nightDefinitionColor} }
     .bubble3 { background-color: ${nightDefinitionColor} }
+    #cover { background-color: ${nightRightBgColor} }
     .definition { border-style: dashed; padding: 10px; color: ${nightTextColor}; background-color: ${nightDefinitionColor}; font-weight: normal;}
     .definitionheader {color:${nightHeaderColor}; font-weight: bold;}
     .header1 {color:${nightHeaderColor};}
@@ -140,33 +171,108 @@ const App = () => {
     }
   }
 
-  return <div>
-    <style>{css + computeEquationFontSize()}</style>
-    <div className="split left leftbg">
-      <Sidebar
-        activeColor={checked ? dayHeaderColor : "white"}
-        inactiveColor={checked ? dayLogoTitleColor : nightLogoTitleColor}
-        onChange={handleChange}
-      />
+
+
+
+  const narrowLayout = (content) => (
+
+    <div className="main-container">
+      <style>{css + computeEquationFontSize()}</style>
+      <div id={loading ? "cover" : null}/>
+      <div className="top-container">
+        <Topbar
+          checked={checked}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className="rightbg bottom-container">
+        <div className="leftaligned">
+          {content}
+          <div className="footer">
+            <hr className="footer-hr" />
+            © mark hopkins, williams college
+          </div>
+        </div>
+      </div>
     </div>
-    <div className="split right rightbg">
-      <div className="leftaligned">
+  )
+
+
+  const standardLayout = (content) => (
+    <div>
+      <style>{css + computeEquationFontSize()}</style>
+      <div id={loading ? "cover" : null} />
+      <div className="split left">
+        <Sidebar
+          checked={checked}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="split right rightbg">
+        <div className="leftaligned">
+          {content}
+
+          <div className="footer">
+            <hr className="footer-hr" />
+            © mark hopkins, williams college
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+
+  const autoLayout = (content) => (
+    windowSize.width > 1100 ? standardLayout(content) : narrowLayout(content)
+  )
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: autoLayout(
+        <Chapter1 bullet={checked ? dayBullet : nightBullet}
+          color1={checked ? dayTextColor : nightTextColor}
+          color2={checked ? dayHeaderColor : nightHeaderColor}
+          color3={checked ? dayTermColor : nightTermColor}
+        />
+      )
+    },
+    {
+      path: "dlamp1/",
+      element: autoLayout(
+        <Chapter1 bullet={checked ? dayBullet : nightBullet}
+          color1={checked ? dayTextColor : nightTextColor}
+          color2={checked ? dayHeaderColor : nightHeaderColor}
+          color3={checked ? dayTermColor : nightTermColor}
+        />
+      )
+    },
+    {
+      path: "dlamp2/",
+      element: autoLayout(
         <Chapter2 bullet={checked ? dayBullet : nightBullet}
           color1={checked ? dayTextColor : nightTextColor}
           color2={checked ? dayHeaderColor : nightHeaderColor}
           color3={checked ? dayTermColor : nightTermColor}
         />
-        <div className="footer">
-          <hr className="footer-hr" />
-          © mark hopkins, williams college
-        </div>
-      </div>
+      )
+    },
+    {
+      path: "dlamp3/",
+      element: autoLayout(
+        <Chapter3 bullet={checked ? dayBullet : nightBullet}
+          color1={checked ? dayTextColor : nightTextColor}
+          color2={checked ? dayHeaderColor : nightHeaderColor}
+          color3={checked ? dayTermColor : nightTermColor}
+        />
+      )
+    },
+  ]);
 
-    </div>
+
+  return <RouterProvider router={router} />
 
 
-
-  </div>;
 };
 
 export default App;
