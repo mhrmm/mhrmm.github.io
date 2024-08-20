@@ -38,7 +38,7 @@ import React from "react";
 <div className="header-padding" /><hr></hr><h4 className="header1" id="matrices">matrices</h4>
 <div className="text textcolor">Sometimes we need to compute lots of similar weighted sums. Imagine that we didn't just want to compute the final grade of one student, but rather the final grades of several students.</div>
 <div className="text textcolor">Here's how each student performed in the course:</div>
-<div className="text textcolor"><img className="image" src="boards/board-matrices1.jpg" alt="Course grades" /></div>
+<div className="text textcolor"><img className="image" src="/boards/board-matrices1.jpg" alt="Course grades" /></div>
 <div className="text textcolor">As before, the course has the following grade breakdown:</div>
 <ul>
 <li><div className="text textcolor">20% homework</div>
@@ -58,12 +58,12 @@ import React from "react";
 </li>
 </ul>
 <div className="text textcolor">Each student's final grade according to each grade breakdown can be calculated by computing six similar dot products:</div>
-<div className="text textcolor"><img className="image" src="boards/board-matrices2.jpg" alt="Final grade computation" /></div>
+<div className="text textcolor"><img className="image" src="/boards/board-matrices2.jpg" alt="Final grade computation" /></div>
 <div className="text textcolor">For instance, the top-left box computes the final grade of the first student according to the first grade breakdown:</div>
 <div className="text textcolor"><Equation><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x00028;</mo><mtable><mtr><mtd><mi>.2</mi></mtd></mtr><mtr><mtd><mi>.3</mi></mtd></mtr><mtr><mtd><mi>.5</mi></mtd></mtr></mtable><mo>&#x00029;</mo><mi>&#x000B7;</mi><mo>&#x00028;</mo><mtable><mtr><mtd><mn>80</mn></mtd></mtr><mtr><mtd><mn>95</mn></mtd></mtr><mtr><mtd><mn>90</mn></mtd></mtr></mtable><mo>&#x00029;</mo><mo>&#x0003D;</mo><mi>.2</mi><mi>&#x000D7;</mi><mn>80</mn><mo>&#x0002B;</mo><mi>.3</mi><mi>&#x000D7;</mi><mn>95</mn><mo>&#x0002B;</mo><mi>.5</mi><mi>&#x000D7;</mi><mn>90</mn><mo>&#x0003D;</mo><mn>89.5</mn></mrow></math></Equation>
 </div>
 <div className="text textcolor">We can express the above grid of computations more compactly by flipping the grade breakdown vectors on their side and performing a <span className="term">matrix multiplication</span>:</div>
-<div className="text textcolor"><img className="image" src="boards/board-matrices3.jpg" alt="Final grade computation as matrix multiplication" /></div>
+<div className="text textcolor"><img className="image" src="/boards/board-matrices3.jpg" alt="Final grade computation as matrix multiplication" /></div>
 <div className="text textcolor">This is a general technique that will be central to our study of deep learning, so let's formalize these ideas.</div>
 <div className="text textcolor"><div className="definition"><span className="definitionheader">Definition</span><br/><br/> A <span className="term">matrix</span> is a two-dimensional array of numbers. </div>
 </div>

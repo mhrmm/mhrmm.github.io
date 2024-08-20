@@ -1,0 +1,538 @@
+
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; z-index:9999;}
+
+.vcenter {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container {
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-container {
+  position: absolute;
+  padding-top: 20px;
+  top: 70px;
+  left: 0px;       
+  width: 100%;
+}
+
+.top-container {
+  position: absolute;
+  z-index: 1000; 
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+}
+
+.menubar-link:hover {
+  background-color: coral;
+  color: white
+}
+
+.menubar-link {
+  font-weight: regular;
+}
+
+
+math {
+  font-family: "Latin Modern Math";
+}
+
+.equation {
+  font-family: "Latin Modern Math";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  align-content: center;
+}
+
+.equation-contents {
+  font-family: "Latin Modern Math";
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.equation-rest {
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.footer {
+  padding-bottom: 50px;
+  padding-top: 30px;
+  text-align: right;
+  font-family: 'Optima', 'Helvetica', sans-serif;
+}
+
+.mm-basic {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.mm-weight-0,
+.mm-value-0 {
+  background-color: #EA64BE;
+  color: white;
+}
+
+.mm-weight-1,
+.mm-value-1 {
+  background-color: #5CC0A0;
+  color: white;
+}
+
+.mm-weight-2,
+.mm-value-2 {
+  background-color: #65D5FA;
+  color: black
+}
+
+.mm-dot-product {
+  background-color: gold;
+  color: black
+}
+
+
+
+li {
+  text-align: left;
+  position: relative;
+  /* Needed for setting position to absolute in the next rule. */
+}
+
+.header-padding {
+  padding-top: 30px;
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+
+.pop-bullet {
+  width: 40px;
+  height: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: "Courier", "Herculanum", sans-serif;
+  font-size: 2.2em;
+  padding-right: 20px;
+}
+
+.pop-question {
+  width: 200px;
+  height: inherit;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: lighter;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.pop-answer {
+  width: 200px;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: 'Courier New', Courier, monospace;
+  border-style: dashed;
+  padding: 10px;
+  padding-right: 0px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  align-content: center;
+}
+
+.header1 {
+  padding-top: 0px;
+}
+
+.header2 {
+  padding-top: 0px;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+
+.button {
+  width: 500;
+  height: 300;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  width: 15%;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width: 85%;
+}
+
+a.menu {
+  font-family: 'Optima', 'Helvetica', sans-serif;
+}
+
+.menu {
+  text-align: center;
+  padding: 5px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.content {
+  top: 30%;
+  width: 100%;
+}
+
+
+.logo-title {
+  font-family: 'Trattatello';
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+}
+
+.deep {
+  margin-block-start: 0px;
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.learning {
+  padding-top: 0px;
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.logo-subtitle1 {
+  padding-top: 15px;
+  font-family: 'Trattatello';
+  font-weight: bold;
+}
+
+.logo-subtitle2 {
+  font-family: 'Trattatello';
+  margin-top: -10px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.text {
+  font-family: 'Optima', 'Helvetica', sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 2.3em;
+  font-weight: normal;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.5em;
+}
+
+h4,
+h5 {
+  font-family: 'Optima', 'Helvetica', sans-serif;
+  scroll-margin-top: 40px;
+}
+
+.centered {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+}
+
+.leftaligned {
+  padding-left: 50px;
+  padding-right: 50px;
+  /* We first create a flex layout context */
+  display: flex;
+  padding-top: 0px;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: column nowrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  align-content: center;
+}
+
+
+
+.proof-walkthru-topbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.proof-walkthru {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.proof-header {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 0.8em;
+}
+
+.proof-walkthru-bar {
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.proof-justification {
+  width: 96%;
+  flex-grow: 1;
+  height: auto;
+  font-size: 0.8em;
+  text-align: center;
+  border-style: none;
+}
+
+.proof-spacer {
+  width: 0%;
+  height: 50px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.proof-equals {
+  width: 10%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: 'Courier New';
+  font-weight: lighter;
+  text-align: center;
+}
+
+.proof-step-first {
+  flex-grow: 1;
+  width: 80%;
+  height: auto;
+  text-align: left;
+  padding-top: 20px;
+}
+
+
+.proof-navigation-arrow {
+  width: auto;
+  font-size: 1em;
+  text-align: center;
+  border-style: none;
+  padding-right: 5px;
+}
+
+.proof-step {
+  width: 89%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.proof-step-prev {
+  width: 89%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.proof-step-next {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.proof-step-next-contents {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: content;
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  /* For Safari */
+  max-height: calc(100vh - 40px);
+  /* Give table of contents a scrollbar */
+  overflow: auto;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+
+  &-checkbox {
+    display: none;
+  }
+
+  &-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  &-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+
+    &:before,
+    &:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 34px;
+      padding: 0;
+      line-height: 34px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      content: "Yes";
+      text-transform: uppercase;
+      padding-left: 10px;
+      background-color: #f90;
+      color: #fff;
+    }
+  }
+
+  &-disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+
+    &:before {
+      background-color: #ddd;
+      cursor: not-allowed;
+    }
+  }
+
+  &-inner:after {
+    content: "No";
+    text-transform: uppercase;
+    padding-right: 10px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: right;
+  }
+
+  &-switch {
+    display: block;
+    width: 24px;
+    margin: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  &-checkbox:checked+&-label {
+    .toggle-switch-inner {
+      margin-left: 0;
+    }
+
+    .toggle-switch-switch {
+      right: 0px;
+    }
+  }
+}

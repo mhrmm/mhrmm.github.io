@@ -1,7 +1,7 @@
 @prologue[
   gradient descent-driven machine learning
 ][
-  images/guessyourage.png
+  /images/guessyourage.png
 ][
   Many people study deep learning in the hopes of making some money from it. Nothing terribly wrong with that, but deep learning can sometimes be a stressful pursuit. In the spirit of due diligence, let's explore an alternative but equally viable career path. Let's become carnies.
 ][
@@ -413,7 +413,7 @@ For multivariable gradient descent, we execute single-variable gradient descent 
 
 With the partial derivatives computed, here's how to execute gradient descent in parallel for parameters $\theta_1$ and $\theta_2$. Suppose our initial position is $\begin{bmatrix}4 \\ -5\end{bmatrix}$. Let's use basic gradient descent with learning rate $\alpha=0.1$:
 
-![](boards/board2n.png)
+![](/boards/board2n.png)
 
 - Initially, $\theta_1=4$. Our updated $\theta_1$ is:
 
@@ -427,7 +427,7 @@ With the partial derivatives computed, here's how to execute gradient descent in
 		\theta_2 - 0.1 D_{\theta_2}(l)(\theta)   \approx \theta_2 + 6.5 = 1.5
 	@eq]
 
-![](boards/board2p.png)
+![](/boards/board2p.png)
 
 Notationally, it helps to introduce a function called the **gradient** that simultaneously computes all the partial derivatives of a function, i.e. the gradient maps a multivariable function to a vector of all its partial derivatives. In general, the **gradient** of a multivariable function $f(x_1, \dots, x_n)$ is defined:
 
@@ -486,7 +486,7 @@ For our example loss function $l$, which is a two-variable function, the gradien
 
 Conveniently, we don't have to change our gradient descent template (and perhaps now it's clearer why we called it gradient descent). We just have to recognize, when implementing the subroutines, that the positions $\theta^{(t)}$ are now **vectors**, not **scalars**. 
 
-![](boards/board2o.png)
+![](/boards/board2o.png)
 
 Thus the basic implementation initializes the position to a random real vector, and uses the gradient to update the position (rather than using a single derivative).
 

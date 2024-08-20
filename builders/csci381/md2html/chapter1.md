@@ -78,7 +78,7 @@ Sometimes we need to compute lots of similar weighted sums. Imagine that we didn
 
 Here's how each student performed in the course:
 
-![Course grades](boards/board-matrices1.jpg)
+![Course grades](/boards/board-matrices1.jpg)
 
 As before, the course has the following grade breakdown:
 
@@ -94,7 +94,7 @@ But there's also an alternative grade breakdown for students who perform better 
 
 Each student's final grade according to each grade breakdown can be calculated by computing six similar dot products:
 
-![Final grade computation](boards/board-matrices2.jpg)
+![Final grade computation](/boards/board-matrices2.jpg)
 
 For instance, the top-left box computes the final grade of the first student according to the first grade breakdown:
 
@@ -109,7 +109,7 @@ For instance, the top-left box computes the final grade of the first student acc
 
 We can express the above grid of computations more compactly by flipping the grade breakdown vectors on their side and performing a **matrix multiplication**:
 
-![Final grade computation as matrix multiplication](boards/board-matrices3.jpg)
+![Final grade computation as matrix multiplication](/boards/board-matrices3.jpg)
 
 This is a general technique that will be central to our study of deep learning, so let's formalize these ideas.
 
