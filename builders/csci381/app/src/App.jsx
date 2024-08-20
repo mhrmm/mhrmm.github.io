@@ -5,7 +5,7 @@ import Chapter2 from './components/Chapter2'
 import Chapter3 from './components/Chapter3'
 import Sidebar from './components/Sidebar'
 import Topbar from './components/Topbar'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import './styles.css'
 
 const computeEquationFontSize = () => {
@@ -229,7 +229,7 @@ const App = () => {
     windowSize.width > 1100 ? standardLayout(content) : narrowLayout(content)
   )
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Csci381 />       
