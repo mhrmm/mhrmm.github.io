@@ -12,7 +12,7 @@ const Sidebar = ({ onChange, checked }) => {
     onChange(!checked);
   }
 
-  const logoImage = checked ? "/images/lightlogo.png" : "/images/darklogo.png"
+  const logoImage = "/images/deep_learning_logo.png" 
 
   const getFontMultiplier = () => {
     if (!containerRef.current) {
@@ -39,6 +39,8 @@ const Sidebar = ({ onChange, checked }) => {
       <img src={logoImage} alt="Deep Learning: A Mathematical Primer" style={{
         width: logoWidth
       }} />
+      <div className="textbook-logo-title">deep learning</div>
+      <div className="textbook-logo-subtitle">a mathematical primer</div>
       <div style={{ width: '100%', padding: '10px'}}>
         <Menubar />
       </div>

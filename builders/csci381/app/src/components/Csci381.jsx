@@ -12,11 +12,7 @@ const UpcomingItem = ({ description, deadline }) => {
       padding: "3px",
     }}>
 
-      <div style={{
-
-        fontFamily: "Futura",
-        fontWeight: "bold"
-      }}>
+      <div className="csci381-upcoming">
         {description.toUpperCase()}
       </div>
       {deadline}
@@ -64,10 +60,8 @@ const Emphasis = (props) => {
   }, []);
 
   return (
-    <div style={{
-      color: fontColor,
-      fontFamily: 'Futura',
-      fontWeight: 'bold',
+    <div className="csci381-course-number" style={{
+      color: fontColor,      
       fontSize: `${fontSize}px`,
       transition: 'color 2s linear'
     }}>
@@ -79,7 +73,7 @@ const Emphasis = (props) => {
 const Welcome = () => {
 
   return (
-    <div className="cs381-welcome" style={{
+    <div className="csci381-welcome" style={{
       fontSize: "40px",
       width: "200px",
     }}>
@@ -95,7 +89,7 @@ const Welcome = () => {
           <div style={{ fontSize: "16px" }}>welcome to</div>
           <Emphasis>381</Emphasis>
         </div>
-        <div style={{ fontSize: "20px" }}>
+        <div style={{ fontSize: "16px" }}>
           an introduction to deep learning, presented to you without
           interruption<sup>†</sup> by <span className="csci381-textlink"><a className="csci381-textlink" href="http://markandrewhopkins.com/" target="_blank">mark
             hopkins</a></span> and <span className="csci381-textlink"><a className="csci381-textlink" href="http://www.williams.edu" target="_blank">williams
@@ -118,11 +112,11 @@ const Welcome = () => {
                 flexFlow: 'column nowrap',
                 justifyContent: "space-around",
               }}>
-                <div style={{ fontSize: '18pt', color: 'black' }}>deep learning:</div>
-                <div style={{ transform: 'translateY(-5px)', fontSize: '10pt', color: 'blue' }}>a mathematical primer</div>
+                <div className="textbook-logo-title" style={{ fontSize: '12pt', color: 'black' }}>deep learning:</div>
+                <div className="textbook-logo-subtitle" style={{ fontSize: '10pt' }}>a mathematical primer</div>
               </div>
             </div>
-            <div style={{ paddingTop: '10px', fontFamily: 'Futura', fontWeight: 'bold', fontSize: '20pt', color: 'navy' }}>textbook</div>
+            <div className="csci381-subtitle" style={{ color: 'navy' }}>textbook</div>
           </div>
           </Link>
         <Upcoming />
@@ -152,12 +146,9 @@ const SlideDeck = ({ title, link }) => {
 
 const BoxTitle = ({ title, color }) => {
   return (
-    <div style={{
-      fontFamily: "Futura",
+    <div className="csci381-subtitle" style={{
       fontSize: "35px",
-      color: color,
-      paddingTop: "10px",
-      fontWeight: "bold"
+      color: color
     }}>
       {title}
     </div>
@@ -223,36 +214,33 @@ const CourseInfo = () => {
   return (
     <div style={{
       backgroundColor: 'pink',
-      padding: '5px',
       flexGrow: 1,
       flexShrink: 1,
+      padding: '10px'
     }}>
-      <div style={{
+      <div className="csci381-subtitle vcenter" style={{
         display: 'flex',
         flexFlow: 'column nowrap',
         justifyContent: 'center',
         height: '100%',
-        alignContent: 'center',
-        fontFamily: 'Futura',
-        fontWeight: 'bold',
-        fontSize: '20px'
+        alignContent: 'center',  
+        alignItems: 'center',      
+        fontSize: '18px',
       }}>
         <div style={{ color: fontColor }}>
-          <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>where?</span> schow 30b
+          <span className="csci381-question">where?</span> schow 30b
         </div>
         <div style={{ color: fontColor }}>
-          <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>when?</span> mwf 9-950am
+          <span className="csci381-question">when?</span> mwf 9-950am
         </div>
-        <div>
-          <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>office hours?</span> w 10-noon
+        <div style={{ color: fontColor }}>
+          <span className="csci381-question">office hours?</span> w 10-noon
         </div>
-        <div>
-          <span style={{ fontFamily: "Marker Felt", color: "crimson" }}>office?</span> tcl 307
+        <div style={{ color: fontColor }}>
+          <span className="csci381-question">office?</span> tcl 307
         </div>
-        <div>
-          <span style={{
-            fontFamily: "Marker Felt", color: "crimson"
-          }}>
+        <div style={{ color: fontColor }}>
+          <span className="csci381-question">
             syllabus?
           </span>
           <span> </span>

@@ -89,9 +89,8 @@ const App = () => {
     .header2 {color:${dayHeaderColor};}
     .leftbg {background-color: ${dayRightBgColor};}
     .rightbg {background-color: ${dayRightBgColor};} 
-    .logo-title {color: ${dayLogoTitleColor};}
-    .logo-subtitle1 {color: ${dayLogoSubtitleColor};}
-    .logo-subtitle2 {color: ${dayLogoSubtitleColor};}
+    .textbook-logo-title {color: ${dayLogoTitleColor};}
+    .textbook-logo-subtitle {color: ${dayLogoSubtitleColor};}
     .matrix-cell-highlight {background-color: ${dayHeaderColor}; color: white;}
     .matrix-cell-nohighlight {background-color: whitesmoke; color: black;}
     .menu {border: dotted aqua; color: white; background-color: ${dayMilestonesBgColor}; }
@@ -109,7 +108,7 @@ const App = () => {
     .proof-step-prev .proof-highlight  {color: ${dayTextColor};}
     .textcolor { color: ${dayTextColor}; }
     .term {color:${dayTermColor};}
-    a {color: #0062a8; text-decoration: none; font-family: 'Trebuchet MS', sans-serif;}
+    a {color: #0062a8;}
     li > a:hover { font-weight: bold; color: ${dayHeaderColor}; }
     .image {border: 4px solid ${dayHeaderColor};}
     hr {height: 1.0px; border: 1px solid ${dayHeaderColor}; color: ${dayHeaderColor}; background: ${dayHeaderColor};}
@@ -133,9 +132,8 @@ const App = () => {
     .footer {color:${nightTermColor};}
     .leftbg {background-color: ${nightLeftBgColor};}
     .rightbg {background-color: ${nightRightBgColor};}
-    .logo-title {color: ${nightLogoTitleColor};}
-    .logo-subtitle1 {color: ${nightLogoSubtitleColor};}
-    .logo-subtitle2 {color: ${nightLogoSubtitleColor};}
+    .textbook-logo-title {color: ${nightLogoTitleColor};}
+    .textbook-logo-subtitle {color: ${nightLogoSubtitleColor};}
     .menu {border: dotted white; color: ${nightHeaderColor}; background-color: ${nightDefinitionColor}; }
     .milestones {backgroundColor: ${nightMilestonesBgColor};}
     .pop-question {color: ${nightTextColor};}
@@ -152,7 +150,7 @@ const App = () => {
     .proof-navigation-forward { color: ${nightTextColor} }
     .textcolor { color: ${nightTextColor}; }
     .term {color:${nightTermColor}}
-    a {color: #f88379; text-decoration: none; font-family: 'Trebuchet MS', sans-serif;}
+    a {color: #f88379}
     li::marker {color: ${nightHeaderColor}}
     li > a:hover { font-weight: bold; color: ${nightHeaderColor}; }
     .image {padding: 3px; border: 1px solid ${nightLogoTitleColor};}

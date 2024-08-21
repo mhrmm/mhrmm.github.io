@@ -9,7 +9,6 @@ a {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  font-family: Optima;
   max-width: 1200px;
 }
 
@@ -36,17 +35,66 @@ a {
 }
 
 .csci381-welcome {
-  font-family: Optima;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.csci381-subtitle {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.csci381-question {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: crimson
+}
+
+.csci381-upcoming {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+}
+
+.csci381-course-number {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
 }
 
 .csci381-text {
-  font-family: Optima;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.textbook-logo-title {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.textbook-logo-subtitle {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  text-align: center;
 }
 
 .dltextpromo {
+  background-color: #d1def7;
   padding: 5px;
-  background-color: #ddeeff;
-  font-family: Trattatello;
+  color: #da5820;
 }
 
 .dltextpromo:hover {
@@ -93,13 +141,23 @@ a {
   font-weight: regular;
 }
 
+.prologue-bubble {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 math {
-  font-family: "Latin Modern Math";
+  font-family: "STIX Two Math", "Latin Modern Math", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .equation {
-  font-family: "Latin Modern Math";
+  font-family: "STIX Two Math", "Latin Modern Math", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -109,7 +167,9 @@ math {
 }
 
 .equation-contents {
-  font-family: "Latin Modern Math";
+  font-family: "STIX Two Math", "Latin Modern Math", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -124,7 +184,10 @@ math {
   padding-bottom: 50px;
   padding-top: 30px;
   text-align: right;
-  font-family: 'Optima', 'Helvetica', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .mm-basic {
@@ -175,7 +238,7 @@ li {
   height: auto;
   flex-grow: 0;
   flex-shrink: 0;
-  font-family: "Courier", "Herculanum", sans-serif;
+  font-family: "Herculanum", sans-serif;
   font-size: 2.2em;
   padding-right: 20px;
 }
@@ -185,9 +248,11 @@ li {
   height: inherit;
   flex-grow: 1;
   flex-shrink: 1;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.4em;
-  font-weight: lighter;
   padding: 10px;
   padding-right: 20px;
 }
@@ -197,7 +262,10 @@ li {
   height: auto;
   flex-grow: 1;
   flex-shrink: 1;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   border-style: dashed;
   padding: 10px;
   padding-right: 0px;
@@ -293,11 +361,6 @@ a.menu {
 }
 
 
-.logo-title {
-  font-family: 'Trattatello';
-  margin-block-start: 0.1em;
-  margin-block-end: 0.1em;
-}
 
 .deep {
   margin-block-start: 0px;
@@ -312,25 +375,14 @@ a.menu {
   font-weight: bold;
 }
 
-.logo-subtitle1 {
-  padding-top: 15px;
-  font-family: 'Trattatello';
-  font-weight: bold;
-}
-
-.logo-subtitle2 {
-  font-family: 'Trattatello';
-  margin-top: -10px;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
 .text {
-  font-family: 'Optima', 'Helvetica', sans-serif;
-  font-size: 1.3em;
-  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 20px;
 }
 
 h4 {
@@ -342,7 +394,10 @@ h4 {
 
 h4,
 h5 {
-  font-family: 'Optima', 'Helvetica', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   scroll-margin-top: 40px;
 }
 

@@ -19,9 +19,7 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
   }
   const currentWidth = containerRef.current ? containerRef.current.offsetWidth : 800
 
-  const bubbleStyle = {
-    fontFamily: 'Optima',
-    fontWeight: 'light',
+  const bubbleStyle = {    
     fontSize: getFontSize(16),
     padding: '15px',
     flexGrow: '1',
@@ -96,13 +94,15 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
           padding: "5px",
           flexGrow: '1',
           flexShrink: '1',
-          alignSelf: 'center'
+          alignSelf: 'center',
+          width: '50%'
         }}>
           {title}
         </div>
         <div style={{
           flexGrow: '1',
-          flexShrink: '1'
+          flexShrink: '1',
+          width: '50%'
         }}>
           <img className="image" src={image} alt="title image" />
         </div>
@@ -110,13 +110,13 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
 
       <div style={currentWidth < 600 ? bubbleLayoutStyleNarrow : bubbleLayoutStyle}>
 
-        <div className="bubble1 text textcolor" style={currentWidth < 600 ? bubble1StyleNarrow : bubble1StyleWide}>
+        <div className="bubble1 prologue-bubble textcolor" style={currentWidth < 600 ? bubble1StyleNarrow : bubble1StyleWide}>
           {intro1}  
         </div>
-        <div className="bubble2 text textcolor" style={currentWidth < 600 ? bubble2StyleNarrow : bubble2StyleWide}>
+        <div className="bubble2 prologue-bubble textcolor" style={currentWidth < 600 ? bubble2StyleNarrow : bubble2StyleWide}>
           {intro2}
         </div>
-        <div className="bubble3 text textcolor" style={currentWidth < 600 ? bubble3StyleNarrow : bubble3StyleWide}>
+        <div className="bubble3 prologue-bubble textcolor" style={currentWidth < 600 ? bubble3StyleNarrow : bubble3StyleWide}>
           {intro3}
         </div>
 

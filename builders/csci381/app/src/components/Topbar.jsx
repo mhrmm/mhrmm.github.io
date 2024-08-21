@@ -37,13 +37,12 @@ const Topbar = ({ onChange, checked }) => {
         paddingLeft: '20px',
         paddingRight: '10px'
       }} />
-      <div className="logo-title" style={{
+      <div className="textbook-logo-title" style={{
         fontSize: `${getFontMultiplier()*30}px`,
       }}>deep learning</div>
-      <div className="logo-subtitle1" style={{
+      <div className="textbook-logo-subtitle" style={{
         fontSize: `${getFontMultiplier()*20}px`,
-        paddingLeft: '10px',
-        paddingRight: '10px'
+        paddingLeft: '10px'
       }}>a mathematical primer</div>
       <div style={{ flexGrow: 1 }}></div>
       <div style={{ width: '100px'}}><Menubar /></div>
