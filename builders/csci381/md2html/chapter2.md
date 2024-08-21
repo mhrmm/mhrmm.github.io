@@ -22,20 +22,19 @@ Looks pretty bulletproof! It seems like we can safely assume that a person's age
 
 What is this mystery multiplier $\theta$? We don't know, so we have to **estimate** it. One reasonable estimate is the value that best explains our observations about our friends. In other words, we'd like:
 
-- $5\theta \approx 20$, or alternatively: $\lvert 20-5\theta \rvert \approx 0$.
-- $8\theta \approx 28$, or alternatively: $\lvert 28-8\theta \rvert \approx 0$.
-- $12\theta \approx 41$, or alternatively: $\lvert 41-12\theta \rvert \approx 0$.
+- $5\theta \approx 20$, or alternatively: $ \left\lvert 20-5\theta \right\rvert \approx 0$.
+- $8\theta \approx 28$, or alternatively: $ \left\lvert 28-8\theta \right\rvert \approx 0$.
+- $12\theta \approx 41$, or alternatively: $ \left\lvert 41-12\theta \right\rvert \approx 0$.
 
 We can capture all three conditions with a single statement: 
 
-@eq[
-	\lvert 20-5\theta \rvert + \lvert 28-8\theta \rvert + \lvert 41-12\theta \rvert \approx 0
+@eq[\left\lvert 20-5\theta \right\rvert + \left\lvert 28-8\theta \right\rvert + \left\lvert 41-12\theta \right\rvert \approx 0
 @eq]
 
 Conveniently, the left-hand side of this statement is always non-negative, and it equals zero if and only if $5\theta=20$, $8\theta=28$, and $12\theta=41$, i.e. $\theta$ perfectly predicts our observations. This suggests a computational method for choosing a value for $\theta$ - find the value that minimizes the following function:
 
 @eq[
-	l_1(\theta)= \lvert 20-5\theta \rvert + \lvert 28-8\theta \rvert + \lvert 41-12\theta \rvert 
+	l_1(\theta)= \left\lvert 20-5\theta \right\rvert + \left\lvert 28-8\theta \right\rvert + \left\lvert 41-12\theta \right\rvert 
 @eq]
 
 But this isn't the only way to express our desire that $5\theta \approx 20$, $8\theta \approx 28$, and $12\theta \approx 41$. These conditions are also captured by the statement:
@@ -53,13 +52,13 @@ Again the left-hand side of this statement is always non-negative, and equals ze
 Functions like $l_1(\theta)$ and $l_2(\theta)$ go by many names. Often they are called **objective functions**, because our training objective is to find its minimal value. Another common name is **loss functions**, because they quantitatively capture the loss of face we experience when we use a particular value for $\theta$. For instance, suppose we decide that $\theta=10$. If so, then we predict that Alice's age is 50, Bob's age is 80, and Chandra's age is 120. This incurs a loss (according to function $l_1$) of
 
 @eq[
-	\lvert 20 - 5 \cdot 10 \rvert + \lvert 28 - 8 \cdot 10 \rvert + \lvert 41 - 12 \cdot 10 \rvert = 161
+	\left\lvert 20 - 5 \cdot 10 \right\rvert + \left\lvert 28 - 8 \cdot 10 \right\rvert + \left\lvert 41 - 12 \cdot 10 \right\rvert = 161
 @eq]
 
 which corresponds to 161 units of acute embarrassment. Contrast this with the choice of $\theta=3$, which incurs only 14 units of loss:
 
 @eq[
-	\lvert 20 - 5 \cdot 3 \rvert + \lvert 28 - 8 \cdot 3 \rvert + \lvert 41 - 12 \cdot 3 \rvert = 14	
+	\left\lvert 20 - 5 \cdot 3 \right\rvert + \left\lvert 28 - 8 \cdot 3 \right\rvert + \left\lvert 41 - 12 \cdot 3 \right\rvert = 14	
 @eq]
 
 Our goal is to find a value of $\theta$ that minimizes our loss. As an exercise, let's do so for loss function $l_2$. We can use standard calculus techniques. First, take the first derivative of $l_2$:
