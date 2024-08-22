@@ -24,6 +24,7 @@ def preprocess(text):
         text = text.replace(before, after)       
     return text
 
+
 def postprocess(text):
     replacements = [('mathvariant="bold"', 'className="proof-highlight" mathvariant="bold"')]
     for (before, after) in replacements:
@@ -107,6 +108,15 @@ class Equation(marko.inline.InlineElement):
         latex_input = match.group(1)
         self.target = latex2mathml.converter.convert(latex_input)
 
+class EquationParagraph(marko.inline.InlineElement):
+
+    pattern = r'(?s)@eqp\[(.+?)@eqp\]'
+    parse_children = True
+
+    def __init__(self, match):
+        latex_input = match.group(1)
+        self.target = latex2mathml.converter.convert(latex_input)
+
 class Math(marko.inline.InlineElement):
 
     pattern = r'(?s)@math\[(.+?)@math\]'
@@ -180,14 +190,14 @@ class MyRendererMixin(object):
         header_id = '-'.join(child_rendering.split())
         header_id = ''.join([ch for ch in header_id if ch.isalnum()])
         if element.level == 1:
-            return f'<div className="header-padding" /><hr></hr><h4 className="header1" id="{header_id}">{child_rendering}</h4>\n'
+            return f'<div className="dlamp-section-spacer" /><hr></hr><h4 className="dlamp-header1" id="{header_id}">{child_rendering}</h4>\n'
         else:
-            return f'<div className="header-padding" /><h4 className="header2" id="{header_id}">{child_rendering}</h4>\n'
+            return f'<div className="dlamp-section-spacer" /><h4 className="dlamp-header2" id="{header_id}">{child_rendering}</h4>\n'
 
 
     def render_image(self, element):
         child_rendering = self.render_children(element)
-        return f'<img className="image" src="{element.dest}" alt="{child_rendering}" />'
+        return f'<img className="dlamp-image" src="{element.dest}" alt="{child_rendering}" />'
 
     def render_line_break(self, element):
         return " "
@@ -198,21 +208,24 @@ class MyRendererMixin(object):
     
     def render_paragraph(self, element):
         child_rendering = self.render_children(element)
-        return f'<div className="text textcolor">{child_rendering}</div>\n'
+        return f'<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">{child_rendering}</div>\n'
 
     def render_equation(self, element):
         return f'<Equation>{element.target}</Equation>\n'
+    
+    def render_equation_paragraph(self, element):
+        return f'<div className="dlamp-paragraph-spacer" /><Equation>{element.target}</Equation><div className="dlamp-paragraph-spacer" />\n'
 
     def render_math(self, element):
         return f'<div className="math">{element.target}</div>\n'
 
     def render_focus(self, element):
         child_rendering = self.render_children(element)
-        return f'<div className="definition"><span className="definitionheader">{element.focus_type}</span><br/><br/>{child_rendering}</div>\n'
+        return f'<div className="dlamp-focus-container"><span className="dlamp-focus-title">{element.focus_type.lower()}</span><br/><br/>{child_rendering}</div>\n'
 
     def render_definition(self, element):
         child_rendering = self.render_children(element)
-        return f'<div className="definition"><span className="definitionheader">Definition</span><br/><br/>{child_rendering}</div>\n'
+        return f'<div className="dlamp-focus-container"><span className="dlamp-focus-title">definition</span><br/><br/>{child_rendering}</div>\n'
 
     def render_prologue(self, element):
         return f'<Prologue title="{element.title}" image="{element.image}" intro1="{element.msg1}" intro2="{element.msg2}" intro3="{element.msg3}" />\n'
@@ -232,7 +245,7 @@ class MyRendererMixin(object):
 
     def render_example(self, element):
         child_rendering = self.render_children(element)
-        return f'<div className="definition"><span className="definitionheader">Example</span><br/><br/>{child_rendering}</div>\n'
+        return f'<div className="dlamp-focus-container"><span className="dlamp-focus-title">example</span><br/><br/>{child_rendering}</div>\n'
 
     def render_pop_quiz(self, element):
         child_rendering = self.render_children(element)
@@ -272,7 +285,7 @@ def markdown_to_html(markdown_file):
             lines.append(line)
     text = ' '.join(lines)
     extension = MarkoExtension(
-        elements=[Latex, Equation, Math, Definition, Example, Focus, Proof, ProofStep, Component,
+        elements=[Latex, Equation, EquationParagraph, Math, Definition, Example, Focus, Proof, ProofStep, Component,
                   ProofJustification, Prologue, PopQuiz, PopQuizItem, PopQuizQuestion, PopQuizAnswer],
         renderer_mixins=[MyRendererMixin]
     )

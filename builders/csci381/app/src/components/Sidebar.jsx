@@ -27,20 +27,18 @@ const Sidebar = ({ onChange, checked }) => {
 
 
   return (
-    <div ref={containerRef} style={{
+    <div ref={containerRef} className="dlamp-sidebar" style={{
       display: "flex",
       flexFlow: "column nowrap",
       justifyContent: "flex-start",
       alignContent: "center",
-      alignItems: "center",
-      marginLeft: "40px",
-      padding: "20px"
+      alignItems: "center"      
     }}>
       <img src={logoImage} alt="Deep Learning: A Mathematical Primer" style={{
         width: logoWidth
       }} />
-      <div className="textbook-logo-title">deep learning</div>
-      <div className="textbook-logo-subtitle">a mathematical primer</div>
+      <div className="dlamp-logo-title">deep learning</div>
+      <div className="dlamp-logo-subtitle">a mathematical primer</div>
       <div style={{ width: '100%', padding: '10px'}}>
         <Menubar />
       </div>

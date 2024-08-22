@@ -96,7 +96,7 @@ const Welcome = () => {
               college</a></span>
         </div>
         <Link to={{ pathname: `/dlamp1` }}>
-          <div className="dltextpromo">
+          <div className="csci381-dlamp-promo">
             <div style={{
               display: 'flex',
               fontSize: '20pt',
@@ -112,8 +112,8 @@ const Welcome = () => {
                 flexFlow: 'column nowrap',
                 justifyContent: "space-around",
               }}>
-                <div className="textbook-logo-title" style={{ fontSize: '12pt', color: 'black' }}>deep learning:</div>
-                <div className="textbook-logo-subtitle" style={{ fontSize: '10pt' }}>a mathematical primer</div>
+                <div className="dlamp-logo-title" style={{ fontSize: '12pt', color: 'black' }}>deep learning:</div>
+                <div className="dlamp-logo-subtitle" style={{ fontSize: '10pt' }}>a mathematical primer</div>
               </div>
             </div>
             <div className="csci381-subtitle" style={{ color: 'navy' }}>textbook</div>

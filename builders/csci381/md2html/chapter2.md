@@ -451,7 +451,7 @@ For our example loss function $l$, which is a two-variable function, the gradien
 
 @focus[
     Consider the following loss function:
-	@eq[
+	@eqp[
 		l\left(
 		\begin{bmatrix}
 			\theta_1\\
@@ -460,9 +460,9 @@ For our example loss function $l$, which is a two-variable function, the gradien
 		\end{bmatrix}	
 		\right)
 		= 5\theta_1 + \theta_1\theta_2 + \theta_3^3
-	@eq]
+	@eqp]
 	The gradient is:
-    @eq[
+    @eqp[
 	\begin{matrix}
 		\nabla l
 		&=& 
@@ -478,7 +478,7 @@ For our example loss function $l$, which is a two-variable function, the gradien
 			3\theta_3^2
 		\end{bmatrix}	
 	\end{matrix}
-    @eq]
+    @eqp]
 @focus][example]
 	
 

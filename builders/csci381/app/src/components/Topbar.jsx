@@ -24,7 +24,7 @@ const Topbar = ({ onChange, checked }) => {
   const logoWidth = 60
 
   return (
-    <div ref={containerRef} className="topbar leftbg" style={{
+    <div ref={containerRef} className="dlamp-topbar leftbg" style={{
       display: "flex",
       flexFlow: "row nowrap",
       height: '70px',
@@ -37,10 +37,10 @@ const Topbar = ({ onChange, checked }) => {
         paddingLeft: '20px',
         paddingRight: '10px'
       }} />
-      <div className="textbook-logo-title" style={{
+      <div className="dlamp-logo-title" style={{
         fontSize: `${getFontMultiplier()*30}px`,
       }}>deep learning</div>
-      <div className="textbook-logo-subtitle" style={{
+      <div className="dlamp-logo-subtitle" style={{
         fontSize: `${getFontMultiplier()*20}px`,
         paddingLeft: '10px'
       }}>a mathematical primer</div>

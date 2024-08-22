@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 
-const ProofWalkthru = ({marker, title, children}) => {
+const ProofWalkthru = ({ marker, title, children }) => {
 
   const [countdown, setCountdown] = useState(0);
   const [step, setStep] = useState(0)
@@ -19,7 +19,7 @@ const ProofWalkthru = ({marker, title, children}) => {
   const justifications = children.map(child => child.props.children[1])
 
   const spacerHeight = 115; // TODO: should depend on content
-    
+
 
   const startTimer = () => setCountdown(spacerHeight);
 
@@ -109,7 +109,7 @@ const ProofWalkthru = ({marker, title, children}) => {
   const computeFontSize = (step) => {
     let size = 20;
     if (!bootup && containerRef.current) {
-      let ratio = (containerRef.current.offsetWidth / stepFontSizes[step])   
+      let ratio = (containerRef.current.offsetWidth / stepFontSizes[step])
       size = Math.min(30, 0.9 * ratio * size)
     }
     return `${size}px`
@@ -118,7 +118,13 @@ const ProofWalkthru = ({marker, title, children}) => {
   const renderTopBar = () => {
     let upperLeft = title ? <div className="proof-header">{title}</div> : renderFirstStep();
     return (
-      <div className="proof-walkthru-topbar">
+      <div className="proof-walkthru-topbar" style={{
+        display: 'flex',
+        flexFlow: 'row wrap',
+        justifyContent: 'flex-start',
+        alignContent: 'center',
+        alignItems: 'center'
+      }}>
         {upperLeft}
         <div className={getResetButtonStatus()}
           onClick={resetAll}
@@ -160,7 +166,7 @@ const ProofWalkthru = ({marker, title, children}) => {
 
   }
 
-  
+
   const renderFirstSpacer = () => {
     if (countdown == 0) {
       return (
@@ -225,7 +231,7 @@ const ProofWalkthru = ({marker, title, children}) => {
       </div>
     )
   }
-  
+
   const renderPreviousStep = () => {
     let prevStep = (step === 1 ? 1 : step - 1)
     if (countdown == 0) {
@@ -234,8 +240,8 @@ const ProofWalkthru = ({marker, title, children}) => {
           style={{
             fontSize: computeFontSize(prevStep)
           }}
-        > 
-          {step > 0 ? (step === 1 ? steps[1] : steps[step - 1]) : ""}          
+        >
+          {step > 0 ? (step === 1 ? steps[1] : steps[step - 1]) : ""}
         </div>
       )
     } else {
@@ -317,9 +323,15 @@ const ProofWalkthru = ({marker, title, children}) => {
   } else {
 
     return (
-      <div className={"text textcolor" + (atProofEnd() ? " border-glow" : " border-dull") + " definition"}>
+      <div className={"proof-walkthru-text textcolor" + (atProofEnd() ? " border-glow" : " border-dull") + " proof-walkthru-container"}>
         {renderTopBar()}
-        <div className="proof-walkthru" ref={containerRef}>
+        <div ref={containerRef} style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          justifyContent: 'flex-start',
+          alignContent: 'center',
+          alignItems: 'center'
+        }}>
           {title ? renderFirstStep() : <div />}
           {renderFirstEquals()}
           {renderFirstSpacer()}
@@ -332,18 +344,18 @@ const ProofWalkthru = ({marker, title, children}) => {
           {renderThirdSpacer()}
         </div>
         {!title && step == steps.length ? <div /> : (
-        <div className={getWalkthruBarStatus()}
-          onClick={handleClick}
-          onMouseEnter={() => setHighlightForwardButton(true)}
-          onMouseLeave={() => setHighlightForwardButton(false)}
-        >
-          <div className="proof-justification">
-            {step == steps.length ? "💥 quod erat demonstrandum 💥" : (step > 1 && !prelude ? justifications[step] : (step == 1 ? justifications[1] : "..."))}
-          </div>                   
-          <div className="proof-spacer" style={{
-            height: "50px"
-          }}></div>
-        </div>)}
+          <div className={getWalkthruBarStatus()}
+            onClick={handleClick}
+            onMouseEnter={() => setHighlightForwardButton(true)}
+            onMouseLeave={() => setHighlightForwardButton(false)}
+          >
+            <div className="proof-justification">
+              {step == steps.length ? "💥 quod erat demonstrandum 💥" : (step > 1 && !prelude ? justifications[step] : (step == 1 ? justifications[1] : "..."))}
+            </div>
+            <div className="proof-spacer" style={{
+              height: "50px"
+            }}></div>
+          </div>)}
       </div>
     );
   }

@@ -49,7 +49,7 @@ const Heading = ({ id, title }) => (
         behavior: "smooth"
       });
     }}>
-    <div className="text menu">{title}
+    <div className="dlamp-text dlamp-milestone">{title}
     </div>
 
   </a>
@@ -131,14 +131,14 @@ const Milestones = ({ inactiveColor, activeColor, layout }) => {
       padding: "10%",
       height: (panelHeight) / 3,
     }}><div style={{ flexGrow: 1, flexShrink: 1 }} />
-      <div className="menu">
+      <div className="dlamp-milestone">
         <Heading id={headingId} title={headingTitle} />
       </div>
     </nav>
   )
 
   const narrowLayout = (
-    <div className="menu">
+    <div className="dlamp-milestone">
       <Heading id={headingId} title={headingTitle} />
     </div>
   )

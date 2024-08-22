@@ -53,7 +53,7 @@ export const PopQuizItem = (props) => {
 
   return (
     <div>
-      <div className="flex-container">
+      <div className="pop-container">
         <div className="pop-bullet">
           {props.bullet}
         </div>

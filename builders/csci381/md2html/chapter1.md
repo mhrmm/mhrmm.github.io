@@ -40,27 +40,28 @@ In deep learning, vectors are used extensively to organize related quantities. W
 
 @focus[
     Let $A =  \begin{pmatrix} A_1\\ \vdots \\ A_n \end{pmatrix}$ and 
-    $B =  \begin{pmatrix} B_1\\ \vdots \\ B_n \end{pmatrix}$ be vectors of length $n$. The **dot product** operator is defined:
-    @eq[
+    $B =  \begin{pmatrix} B_1\\ \vdots \\ B_n \end{pmatrix}$ be vectors of length $n$. 
+    The **dot product** operator is defined:
+    @eqp[
     A \cdot B
     =
     A_1 B_1 + \dots + A_n B_n
-    @eq]
+    @eqp]
 @focus][Definition]
 
 @focus[
     For instance, suppose you taking a course whose grade breakdown was 20% homework, 30% midterm, and 50% final exam. If your homework score was 90/100, your midterm score was 80/100, and your final exam score was 70/100, then your overall score would be the following weighted sum:
-    @eq[
+    @eqp[
         .20 \times 90 + .30 \times 80 + .50 \times 70 = 77
-    @eq]
+    @eqp]
     Another way to express this weighted sum is to collect the percentages and the scores into two separate vectors:
-    @eq[
+    @eqp[
         A =  \begin{pmatrix} .20\\ .30\\ .50 \end{pmatrix} 
         \mbox{ and }
         B =  \begin{pmatrix} 90\\ 80\\ 70 \end{pmatrix} 
-    @eq]
+    @eqp]
     Then the weighted sum can be expressed using the **dot product** operator:
-    @eq[
+    @eqp[
         A \cdot B
         =
         \begin{pmatrix} .20\\ .30\\ .50 \end{pmatrix} 
@@ -69,7 +70,7 @@ In deep learning, vectors are used extensively to organize related quantities. W
         =
         .20 \times 90 + .30 \times 80 + .50 \times 70 
         = 77
-    @eq]
+    @eqp]
 @focus][Example]
 
 # matrices
@@ -119,12 +120,12 @@ This is a general technique that will be central to our study of deep learning, 
 
 @focus[
     The matrices from our grade breakdown example can be defined:
-    @eq[
+    @eqp[
         A = \begin{bmatrix} .2 & .3 & .5 \\ .2 & 0 & .8 \end{bmatrix} 
-    @eq]
-    @eq[
+    @eqp]
+    @eqp[
         B = \begin{bmatrix} 80 & 90 & 96 \\ 95 & 80 & 90 \\ 90 & 70 & 92 \end{bmatrix} 
-    @eq]
+    @eqp]
     Since matrix $A$ has 2 rows and 3 columns, it can be referred to as a $2\times 3$ matrix, or we can say that it has **shape** $(2,3)$. We will adopt the convention of using square brackets (as above) to denote matrices.
 @focus][Example]
 
@@ -147,17 +148,18 @@ We can refer to individual elements, row, and columns of a matrix using subscrip
 
 @focus[
     Define:
-    @eq[
+    @eqp[
         A = \begin{bmatrix} .2 & .3 & .5 \\ .2 & 0 & .8 \end{bmatrix} 
-    @eq]
+    @eqp]
     Then:
-    @eq[ A_{11} = .2, A_{12} = .3, A_{13} = .5 @eq]
-    @eq[ A_{21} = .2, A_{22} = 0, A_{23} = .8 @eq]
-    @eq[ A_{1\star} = \begin{pmatrix} .2 \\ .3 \\ .5  \end{pmatrix}, A_{2\star} = \begin{pmatrix} .2 \\ 0 \\ .8 \end{pmatrix}  @eq]
-    @eq[ A_{\star 1} = \begin{pmatrix} .2 \\ .2  \end{pmatrix}, A_{\star 2} = \begin{pmatrix} .3 \\ 0 \end{pmatrix} , A_{\star 3} = \begin{pmatrix} .5 \\ .8 \end{pmatrix}  @eq]
+    @eqp[ A_{11} = .2, A_{12} = .3, A_{13} = .5 @eqp]
+    @eqp[ A_{21} = .2, A_{22} = 0, A_{23} = .8 @eqp]
+    @eqp[ A_{1\star} = \begin{pmatrix} .2 \\ .3 \\ .5  \end{pmatrix}, A_{2\star} = \begin{pmatrix} .2 \\ 0 \\ .8 \end{pmatrix}  @eqp]
+    @eqp[ A_{\star 1} = \begin{pmatrix} .2 \\ .2  \end{pmatrix}, A_{\star 2} = \begin{pmatrix} .3 \\ 0 \end{pmatrix} , A_{\star 3} = \begin{pmatrix} .5 \\ .8 \end{pmatrix}  @eqp]
 @focus][Example]
 
 For the following questions, let:
+
 @eq[
     B = \begin{bmatrix} 80 & 90 & 96 \\ 95 & 80 & 90 \\ 90 & 70 & 92 \end{bmatrix} 
 @eq]
@@ -192,23 +194,23 @@ For the following questions, let:
 
 @focus[
     Let $A$ be a $m \times n$ matrix and let $B$ be a $n \times p$ matrix. Define $C = AB$ as the $m \times p$ matrix such that:
-    @eq[
+    @eqp[
         C_{ij} = A_{i \star} \cdot B_{\star j}
-    @eq]
+    @eqp]
 @focus][Definition]
 
 
 
 @focus[
     Let:
-    @eq[
+    @eqp[
         A = \begin{bmatrix} .2 & .3 & .5 \\ .2 & 0 & .8 \end{bmatrix} 
-    @eq]
-    @eq[
+    @eqp]
+    @eqp[
         B = \begin{bmatrix} 80 & 90 & 96 \\ 95 & 80 & 90 \\ 90 & 70 & 92 \end{bmatrix} 
-    @eq]
+    @eqp]
     Then:
-    @eq[
+    @eqp[
         AB 
         = \begin{bmatrix} 
             \begin{pmatrix} .2 \\ .3 \\ .5 \end{pmatrix} \cdot 
@@ -229,14 +231,14 @@ For the following questions, let:
             \begin{pmatrix} .2 \\ 0 \\ .8 \end{pmatrix} \cdot 
             \begin{pmatrix} 96 \\ 90  \\ 92 \end{pmatrix}  
           \end{bmatrix}        
-    @eq]
+    @eqp]
     Which means:
-    @eq[
+    @eqp[
     AB = \begin{bmatrix} 
             89.5 & 77 & 92.2 \\
             88 & 74 & 92.8
     \end{bmatrix}
-    @eq]
+    @eqp]
 @focus][Example]
 
 In the following interactive demo, hovering over an element of the $AB$ matrix will highlight the computation of that element.

@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from 'react';
 
-export default function Prologue({title, image, intro1, intro2, intro3}) {
+export default function Prologue({ title, image, intro1, intro2, intro3 }) {
 
   const containerRef = useRef();
 
@@ -19,38 +19,42 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
   }
   const currentWidth = containerRef.current ? containerRef.current.offsetWidth : 800
 
-  const bubbleStyle = {    
+  const bubbleStyle = {
     fontSize: getFontSize(16),
     padding: '15px',
     flexGrow: '1',
     flexShrink: '1',
     borderStyle: 'dotted'
   }
-  
-  const bubble1StyleNarrow = {...bubbleStyle,    
+
+  const bubble1StyleNarrow = {
+    ...bubbleStyle,
     marginTop: "10px", marginRight: "20px", alignSelf: 'flex-start',
   }
 
-  const bubble1StyleWide = {...bubbleStyle,    
+  const bubble1StyleWide = {
+    ...bubbleStyle,
     marginBottom: "20px", alignSelf: 'flex-start',
   }
 
-
-  const bubble2StyleNarrow = {...bubbleStyle,    
+  const bubble2StyleNarrow = {
+    ...bubbleStyle,
     marginLeft: "20px", alignSelf: 'flex-start',
   }
 
-  const bubble2StyleWide = {...bubbleStyle,    
+  const bubble2StyleWide = {
+    ...bubbleStyle,
     marginTop: "10px", marginBottom: "10px", alignSelf: 'center',
   }
 
-
-  const bubble3StyleNarrow = {...bubbleStyle,    
+  const bubble3StyleNarrow = {
+    ...bubbleStyle,
     marginLeft: "10px", marginRight: "10px", alignSelf: 'flex-start',
   }
 
-  const bubble3StyleWide = {...bubbleStyle,    
-    marginTop: "20px", alignSelf: 'flex-end', 
+  const bubble3StyleWide = {
+    ...bubbleStyle,
+    marginTop: "20px", alignSelf: 'flex-end',
   }
 
   const bubbleLayoutStyle = {
@@ -76,12 +80,8 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
       flexGrow: 0,
       flexShrink: 0,
       width: '100%',
-      padding: "5px",
       textAlign: "center"
     }}>
-
-
-
       <div style={{
         display: "flex",
         flexFlow: "row nowrap",
@@ -89,7 +89,7 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
         alignContent: "stretch",
         alignItems: "stretch",
       }}>
-        <div className="text textcolor" style={{
+        <div className="dlamp-header1 textcolor" style={{
           fontSize: getFontSize(45),
           padding: "5px",
           flexGrow: '1',
@@ -104,22 +104,30 @@ export default function Prologue({title, image, intro1, intro2, intro3}) {
           flexShrink: '1',
           width: '50%'
         }}>
-          <img className="image" src={image} alt="title image" />
+          <img className="dlamp-image" src={image} alt="title image" />
         </div>
       </div>
 
       <div style={currentWidth < 600 ? bubbleLayoutStyleNarrow : bubbleLayoutStyle}>
 
-        <div className="bubble1 prologue-bubble textcolor" style={currentWidth < 600 ? bubble1StyleNarrow : bubble1StyleWide}>
-          {intro1}  
+        <div
+          className="bubble1 dlamp-prologue-bubble textcolor"
+          style={currentWidth < 600 ? bubble1StyleNarrow : bubble1StyleWide}
+        >
+          {intro1}
         </div>
-        <div className="bubble2 prologue-bubble textcolor" style={currentWidth < 600 ? bubble2StyleNarrow : bubble2StyleWide}>
+        <div
+          className="bubble2 dlamp-prologue-bubble textcolor"
+          style={currentWidth < 600 ? bubble2StyleNarrow : bubble2StyleWide}
+        >
           {intro2}
         </div>
-        <div className="bubble3 prologue-bubble textcolor" style={currentWidth < 600 ? bubble3StyleNarrow : bubble3StyleWide}>
+        <div
+          className="bubble3 dlamp-prologue-bubble textcolor"
+          style={currentWidth < 600 ? bubble3StyleNarrow : bubble3StyleWide}
+        >
           {intro3}
         </div>
-
       </div>
     </div>
   )
