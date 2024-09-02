@@ -172,27 +172,27 @@
             "title": "rubik",
             "due": "Sep 12 2024",
             "locked": false,
-            "link": "https://classroom.github.com/a/X0Cljc2-"
+            "link": "https://classroom.github.com/a/PsttAnIU"
         },
         {
             "id": "lab1",
             "title": "descent",
             "due": "Sep 19 2024",
-            "locked": false,
+            "locked": true,
             "link": "https://classroom.github.com/a/OaWF5kWl"
         },
         {
             "id": "lab2",
             "title": "lines",
             "due": "Sep 26 2024",
-            "locked": false,
+            "locked": true,
             "link": "https://classroom.github.com/a/I5xbUlf8"
         },
         {
             "id": "lab3",
             "title": "logistics",
             "due": "Oct 3 2024",
-            "locked": false,
+            "locked": true,
             "link": "https://classroom.github.com/a/6bqQfEd6"
         },
         {
