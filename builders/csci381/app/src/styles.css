@@ -3,7 +3,7 @@ a {
 }
 
 body {
-  margin: 0px;
+  margin: 0px; 
 }
 
 ul {
@@ -172,11 +172,11 @@ math {
 
 
 .dlamp-text,
-.proof-walkthru-text,
+.dlamp-menubar-link,
 .pop-question {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Bitter", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.5em;
 }
@@ -191,8 +191,8 @@ math {
 }
 
 .dlamp-focus-title {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 400;
+  font-family: "Bebas Neue";
+  font-weight: 800;
   font-style: normal;
   font-size: 24px;
   text-align: center;
@@ -205,26 +205,25 @@ math {
 }
 
 
-
+.dlamp-prologue-header,
 .dlamp-logo-title {
-  font-family: "Rowdies", sans-serif;
+  font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   text-align: center;
 }
 
+
+
 .dlamp-logo-subtitle {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-size: 12px;
   text-align: center;
 }
 
-.dlamp-menubar-link {
-  font-weight: regular;
-}
 
 .dlamp-menubar-link:hover {
   background-color: coral;
@@ -238,8 +237,8 @@ math {
 }
 
 .dlamp-prologue-bubble {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -259,31 +258,30 @@ math {
 }
 
 .dlamp-section-spacer {
-  height: 30px;
+  height: 50px;
   width: 100%;
 }
 
 .dlamp-paragraph-spacer {
-  height: 15px;
+  height: 20px;
   width: 100%;
 }
 
 .dlamp-header1 {
-  font-family: "Rowdies", sans-serif;
+  font-family: "Bebas Neue";
   font-weight: 400;
-  font-style: normal;
   font-size: 2.7em;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .dlamp-header2 {
   font-family: "Rowdies", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-size: 2.3em;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .equation {
@@ -366,6 +364,11 @@ math {
   flex-shrink: 1;
   padding: 10px;
   padding-right: 20px;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
 }
 
 .pop-answer {
@@ -373,13 +376,13 @@ math {
   height: auto;
   flex-grow: 1;
   flex-shrink: 1;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Bitter", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 25px;
   font-style: normal;
   border-style: dashed;
   padding: 10px;
-  padding-right: 0px;
 }
 
 
@@ -390,7 +393,13 @@ math {
 
 
 
-
+.proof-walkthru-text {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
 
 
 .proof-header {
@@ -400,7 +409,20 @@ math {
   font-size: 0.8em;
 }
 
+.proof-walkthru-container {
+  cursor: default;
+}
+
+.proof-inactive {
+  cursor: default;
+}
+
+.proof-highlight {
+  cursor: pointer;
+}
+
 .proof-walkthru-bar {
+  cursor: pointer;
   padding: 10px;
   height: auto;
   display: flex;

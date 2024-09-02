@@ -50,7 +50,7 @@ In deep learning, vectors are used extensively to organize related quantities. W
 @focus][Definition]
 
 @focus[
-    For instance, suppose you taking a course whose grade breakdown was 20% homework, 30% midterm, and 50% final exam. If your homework score was 90/100, your midterm score was 80/100, and your final exam score was 70/100, then your overall score would be the following weighted sum:
+    For instance, suppose you were taking a course whose grade breakdown was 20% homework, 30% midterm, and 50% final exam. If your homework score was 90/100, your midterm score was 80/100, and your final exam score was 70/100, then your overall score would be the following weighted sum:
     @eqp[
         .20 \times 90 + .30 \times 80 + .50 \times 70 = 77
     @eqp]
@@ -253,15 +253,16 @@ For the following questions, let:
             3 & 4 \\
             5 & 6
     \end{bmatrix}
-    ,
+    \quad
     B = \begin{bmatrix} 
             6 & 5 & 4 \\
             3 & 2 & 1 
-    \end{bmatrix},
+    \end{bmatrix}
+    \quad
     C = \begin{bmatrix} 
             5 & 1 \\
             10 & 2
-    \end{bmatrix},
+    \end{bmatrix}
 @eq]
 
 @popquiz[

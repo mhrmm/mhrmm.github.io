@@ -25,6 +25,7 @@ const Sidebar = ({ onChange, checked }) => {
 
   const logoWidth = `${getFontMultiplier() * 180}px`
 
+  const subtitle = "a mathematical primer"
 
   return (
     <div ref={containerRef} className="dlamp-sidebar" style={{
@@ -38,7 +39,7 @@ const Sidebar = ({ onChange, checked }) => {
         width: logoWidth
       }} />
       <div className="dlamp-logo-title">deep learning</div>
-      <div className="dlamp-logo-subtitle">a mathematical primer</div>
+      <div className="dlamp-logo-subtitle">{subtitle}</div>
       <div style={{ width: '100%', padding: '10px'}}>
         <Menubar />
       </div>

@@ -16,7 +16,7 @@ const Topbar = ({ onChange, checked }) => {
     if (!containerRef.current) {
       return 1.0
     } else {
-      let multiplier = containerRef.current.offsetWidth / 600
+      let multiplier = containerRef.current.offsetWidth / 900
       return Math.max(0.6, Math.min(1.0, multiplier))
     }
   }

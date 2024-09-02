@@ -8,7 +8,7 @@ export default function Prologue({ title, image, intro1, intro2, intro3 }) {
     if (!containerRef.current) {
       return 1.0
     } else {
-      let multiplier = containerRef.current.offsetWidth / 600
+      let multiplier = containerRef.current.offsetWidth / 800
       return Math.min(1.0, multiplier)
     }
   }
@@ -20,7 +20,7 @@ export default function Prologue({ title, image, intro1, intro2, intro3 }) {
   const currentWidth = containerRef.current ? containerRef.current.offsetWidth : 800
 
   const bubbleStyle = {
-    fontSize: getFontSize(16),
+    fontSize: getFontSize(20),
     padding: '15px',
     flexGrow: '1',
     flexShrink: '1',
@@ -89,9 +89,9 @@ export default function Prologue({ title, image, intro1, intro2, intro3 }) {
         alignContent: "stretch",
         alignItems: "stretch",
       }}>
-        <div className="dlamp-header1 textcolor" style={{
+        <div className="dlamp-prologue-header textcolor" style={{
           fontSize: getFontSize(45),
-          padding: "5px",
+          padding: "15px",
           flexGrow: '1',
           flexShrink: '1',
           alignSelf: 'center',
@@ -111,19 +111,19 @@ export default function Prologue({ title, image, intro1, intro2, intro3 }) {
       <div style={currentWidth < 600 ? bubbleLayoutStyleNarrow : bubbleLayoutStyle}>
 
         <div
-          className="bubble1 dlamp-prologue-bubble textcolor"
+          className="bubble1 dlamp-prologue-bubble"
           style={currentWidth < 600 ? bubble1StyleNarrow : bubble1StyleWide}
         >
           {intro1}
         </div>
         <div
-          className="bubble2 dlamp-prologue-bubble textcolor"
+          className="bubble2 dlamp-prologue-bubble"
           style={currentWidth < 600 ? bubble2StyleNarrow : bubble2StyleWide}
         >
           {intro2}
         </div>
         <div
-          className="bubble3 dlamp-prologue-bubble textcolor"
+          className="bubble3 dlamp-prologue-bubble"
           style={currentWidth < 600 ? bubble3StyleNarrow : bubble3StyleWide}
         >
           {intro3}
