@@ -1,4 +1,11 @@
 {
+    "readings": [
+        {
+            "id": "read-0",
+            "title": "dlamp 1",
+            "due": "Sep 9 2024"
+        }
+    ],
     "lectures": [
         {
             "id": "lecture0",
@@ -168,63 +175,63 @@
     ],
     "labs": [
         {
-            "id": "lab0",
+            "id": "lab-0",
             "title": "rubik",
             "due": "Sep 12 2024",
             "locked": false,
             "link": "https://classroom.github.com/a/PsttAnIU"
         },
         {
-            "id": "lab1",
+            "id": "lab-1",
             "title": "descent",
             "due": "Sep 19 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/OaWF5kWl"
         },
         {
-            "id": "lab2",
+            "id": "lab-2",
             "title": "lines",
             "due": "Sep 26 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/I5xbUlf8"
         },
         {
-            "id": "lab3",
+            "id": "lab-3",
             "title": "logistics",
             "due": "Oct 3 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/6bqQfEd6"
         },
         {
-            "id": "lab4",
+            "id": "lab-4",
             "title": "colonels",
             "due": "Oct 10 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/__B2EN3R"
         },
         {
-            "id": "lab5",
+            "id": "lab-5",
             "title": "basic training",
             "due": "Oct 17 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/NLWIqEJb"
         },
         {
-            "id": "lab6",
+            "id": "lab-6",
             "title": "kernels",
             "due": "Oct 31 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/DtvhtJTj"
         },
         {
-            "id": "lab7",
+            "id": "lab-7",
             "title": "dispatches",
             "due": "Nov 14 2024",
             "locked": true,
             "link": "https://classroom.github.com/a/eG9vaeOj"
         },
         {
-            "id": "lab8",
+            "id": "lab-8",
             "title": "transference",
             "due": "Nov 21 2024",
             "locked": true,

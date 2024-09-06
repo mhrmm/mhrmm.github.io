@@ -28,9 +28,11 @@ const Upcoming = () => {
 
   const daysAhead = 0
   const now = new Date(Date.now() + daysAhead * 8.64e+7)
-  const labsDueSoon = courseData.labs.filter(lab =>
+  const assignments = courseData.labs.concat(courseData.readings).sort((lab1, lab2) => new Date(lab1.due) - new Date(lab2.due))
+
+  const labsDueSoon = assignments.filter(lab =>
     now < new Date(lab.due)
-  ).slice(0, 3)
+  ).slice(0, 3) 
 
   return (
     <div className="upcoming" style={{
@@ -38,7 +40,7 @@ const Upcoming = () => {
     }}>
       {labsDueSoon.length > 0 ? "coming up..." : null}
       {labsDueSoon.map(lab => {
-        return <UpcomingItem key={lab.id} description={`lab: ${lab.title}`} deadline={lab.due}></UpcomingItem>
+        return <UpcomingItem key={lab.id} description={`${lab.id.split('-')[0]}: ${lab.title}`} deadline={lab.due}></UpcomingItem>
       })}
     </div>
 
@@ -168,8 +170,6 @@ const LectureSlides = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log('width', window.innerWidth)
-
   return (
     <div style={{
       transition: 'background-color 2s linear',
@@ -258,7 +258,7 @@ const CourseInfo = () => {
   )
 }
 
-const TeachingAssistant = ({ image, name }) => {
+const TeachingAssistant = ({ image, name, hours, where }) => {
   return (
     <div className="csci381-text" style={{
       display: 'flex',
@@ -271,10 +271,18 @@ const TeachingAssistant = ({ image, name }) => {
         width: "100px"
       }} />
       <div style={{
-        width: "100px"
+        width: "100px",
+        fontWeight: "bold"
       }}>
-        {name.toLowerCase()}
+        {name.toLowerCase()}        
       </div>
+      <div>
+        {hours.toLowerCase()} 
+      </div>
+      <div>
+        {where.toLowerCase()} 
+      </div>
+      
     </div>
   )
 }
@@ -300,8 +308,18 @@ const TeachingAssistants = () => {
           flexFlow: 'row nowrap',
           justifyContent: 'space-evenly'
         }}>
-          <TeachingAssistant image="images/faulkner.jpeg" name="Michael" />
-          <TeachingAssistant image="images/laws.jpeg" name="Matt" />
+          <TeachingAssistant 
+            image="images/laws.jpeg" 
+            name="Matt" 
+            hours="mon, tue 8-10pm"
+            where="tcl 312 (back lab)"
+          />
+          <TeachingAssistant 
+            image="images/faulkner.jpeg" 
+            name="Michael" 
+            hours="wed, thu 7-9pm"
+            where="tcl 312 (back lab)"
+          />          
         </div>
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         <BoxTitle title="tas" color="black" />
