@@ -321,6 +321,10 @@ Assume $f$, $g$, and $h$ are all functions of variable $x$, and that $k$ is a co
 @focus][Power Rule]
 
 @focus[
+    Let $f(x) = e^x$. Then $D_x(e^x) = e^x$.
+@focus][Natural Exponential Rule]
+
+@focus[
     Let $f = g + h$. Then $D_x(f) = D_x(g) + D_x(h)$.
 @focus][Sum Rule]
 
