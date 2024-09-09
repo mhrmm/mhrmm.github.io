@@ -229,12 +229,9 @@ const LectureSlides = () => {
 
 const Quizzes = () => {
 
-  const colors = ["skyblue", '#EEEEFF']
-  const [bgColor, setBgColor] = useState(colors[0]);
-
   return (
     <div style={{
-      backgroundColor: bgColor,
+      backgroundColor: '#f2d2a9',
       padding: '10px',
       flexGrow: 1,
       flexShrink: 1,
@@ -264,7 +261,7 @@ const Quizzes = () => {
           ))}
         </div>
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <BoxTitle title="quizzes" color="navy" />
+        <BoxTitle title="quizzes" color="black" />
       </div>
     </div>
   )
