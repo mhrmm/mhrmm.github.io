@@ -32,7 +32,7 @@ const Upcoming = () => {
 
   const labsDueSoon = assignments.filter(lab =>
     now < new Date(lab.due)
-  ).slice(0, 3) 
+  ).slice(0, 3)
 
   return (
     <div className="upcoming" style={{
@@ -63,7 +63,7 @@ const Emphasis = (props) => {
 
   return (
     <div className="csci381-course-number" style={{
-      color: fontColor,      
+      color: fontColor,
       fontSize: `${fontSize}px`,
       transition: 'color 2s linear'
     }}>
@@ -120,7 +120,7 @@ const Welcome = () => {
             </div>
             <div className="csci381-subtitle" style={{ color: 'navy' }}>textbook</div>
           </div>
-          </Link>
+        </Link>
         <Upcoming />
         <div style={{ fontSize: "10px" }}><sup>†</sup> except for holidays and thanksgiving break and mountain day and any unforeseen emergencies</div>
       </div>
@@ -139,6 +139,25 @@ const SlideDeck = ({ title, link }) => {
         borderStyle: "solid",
         margin: '2px',
         padding: '2px'
+      }}>
+        {title}
+      </div>
+    </a>
+  )
+}
+
+const QuizItem = ({ title, link, locked }) => {
+  return (
+    <a href={link} target="_blank" style={{
+      flexGrow: 1,
+      flexShrink: 1,
+    }}>
+      <div className="csci381-text csci381-button" style={{
+        color: 'black',
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        width: '100%'
       }}>
         {title}
       </div>
@@ -207,6 +226,50 @@ const LectureSlides = () => {
   )
 }
 
+
+const Quizzes = () => {
+
+  const colors = ["skyblue", '#EEEEFF']
+  const [bgColor, setBgColor] = useState(colors[0]);
+
+  return (
+    <div style={{
+      backgroundColor: bgColor,
+      padding: '10px',
+      flexGrow: 1,
+      flexShrink: 1,
+      width: '500px'
+    }}>
+
+      <div style={{
+        display: 'flex',
+        flexFlow: 'column nowrap',
+        justifyContent: 'stretch',
+        alignItems: 'stretch',
+        height: '100%'
+      }}>
+
+        <div style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          justifyContent: 'space-between',
+          gap: '5px'
+        }}>
+          {courseData.quizzes.map(quiz => (
+            <QuizItem
+              key={quiz.id}
+              title={quiz.title.toLowerCase()}
+              link={quiz.link}
+              locked={quiz.locked} />
+          ))}
+        </div>
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+        <BoxTitle title="quizzes" color="navy" />
+      </div>
+    </div>
+  )
+}
+
 const CourseInfo = () => {
 
   const fontColor = "black"
@@ -223,8 +286,8 @@ const CourseInfo = () => {
         flexFlow: 'column nowrap',
         justifyContent: 'center',
         height: '100%',
-        alignContent: 'center',  
-        alignItems: 'center',      
+        alignContent: 'center',
+        alignItems: 'center',
         fontSize: '18px',
       }}>
         <div style={{ color: fontColor }}>
@@ -274,15 +337,15 @@ const TeachingAssistant = ({ image, name, hours, where }) => {
         width: "100px",
         fontWeight: "bold"
       }}>
-        {name.toLowerCase()}        
+        {name.toLowerCase()}
       </div>
       <div>
-        {hours.toLowerCase()} 
+        {hours.toLowerCase()}
       </div>
       <div>
-        {where.toLowerCase()} 
+        {where.toLowerCase()}
       </div>
-      
+
     </div>
   )
 }
@@ -308,18 +371,18 @@ const TeachingAssistants = () => {
           flexFlow: 'row nowrap',
           justifyContent: 'space-evenly'
         }}>
-          <TeachingAssistant 
-            image="images/laws.jpeg" 
-            name="Matt" 
+          <TeachingAssistant
+            image="images/laws.jpeg"
+            name="Matt"
             hours="mon, tue 8-10pm"
             where="tcl 312 (back lab)"
           />
-          <TeachingAssistant 
-            image="images/faulkner.jpeg" 
-            name="Michael" 
+          <TeachingAssistant
+            image="images/faulkner.jpeg"
+            name="Michael"
             hours="wed, thu 7-9pm"
             where="tcl 312 (back lab)"
-          />          
+          />
         </div>
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         <BoxTitle title="tas" color="black" />
@@ -422,7 +485,18 @@ function Csci381() {
         </div>
         <LabAssignments />
       </div>
-      <LectureSlides />
+      <div style={{
+        flexGrow: 1,
+        display: 'flex',
+        flexFlow: 'column nowrap',
+        justifyContent: 'stretch',
+        gap: '20px',
+        height: 'auto',
+        width: '320px',
+      }}>
+        <LectureSlides />
+        <Quizzes />
+      </div>
     </div>
   )
 }

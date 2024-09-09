@@ -1,4 +1,18 @@
 {
+    "quizzes": [
+        {
+            "id": "quiz-1-prep",
+            "title": "quiz 1 prep",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1-P-DfkRjXqQP1YA8Yrht3X8LSn8scbJE68O5ExB3QDM/edit?usp=sharing"
+        },
+        {
+            "id": "quiz-1-solution",
+            "title": "quiz 1 prep (solutions)",
+            "locked": true,
+            "link": "https://docs.google.com/document/d/1arP_4iSWn6PsYDZJErzqs1R7HayrkjwxjEN59I-mIAw/edit?usp=sharing"
+        }
+    ],
     "readings": [
         {
             "id": "read-0",
