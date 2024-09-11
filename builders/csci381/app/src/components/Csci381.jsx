@@ -77,7 +77,7 @@ const Welcome = () => {
   return (
     <div className="csci381-welcome" style={{
       fontSize: "40px",
-      width: "200px",
+      width: "200px"
     }}>
       <div style={{
         display: 'flex',
@@ -122,7 +122,7 @@ const Welcome = () => {
           </div>
         </Link>
         <Upcoming />
-        <div style={{ fontSize: "10px" }}><sup>†</sup> except for holidays and thanksgiving break and mountain day and any unforeseen emergencies</div>
+        <div style={{ fontSize: "10px" }}><sup>†</sup> except for holidays and thanksgiving break and mountain day and tapia and any unforeseen emergencies</div>
       </div>
     </div>
 
@@ -131,37 +131,94 @@ const Welcome = () => {
 
 
 
-const SlideDeck = ({ title, link }) => {
-  return (
-    <a href={link} target="_blank">
-      <div className="csci381-text csci381-button" style={{
-        color: 'black',
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px'
-      }}>
-        {title}
-      </div>
-    </a>
-  )
-}
-
-const QuizItem = ({ title, link, locked }) => {
-  return (
-    <a href={link} target="_blank" style={{
-      flexGrow: 1,
-      flexShrink: 1,
-    }}>
-      <div className="csci381-text csci381-button" style={{
-        color: 'black',
+const SlideDeck = ({ title, link, locked }) => {
+  const renderContent = () => {
+    return <div
+      className={locked ? "csci381-text csci381-locked" : "csci381-text csci381-button"}
+      style={{
         borderStyle: "solid",
         margin: '2px',
         padding: '2px',
-        width: '100%'
+        color: 'black',
       }}>
-        {title}
-      </div>
+      <span>{title}</span> {locked ? '🔒' : null}
+    </div>
+  }
+
+  return !locked ? (
+    <a href={link} target="_blank">
+      {renderContent()}
     </a>
+  ) : renderContent()
+}
+
+const QuizItem = ({ title, preplink, preplocked, solutionlink, solutionlocked }) => {
+
+  const renderQuizContent = () => {
+    return <div
+      className={preplocked ? "csci381-text csci381-locked" : "csci381-text csci381-button"}
+      style={{
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        color: 'black',
+        flexGrow: 1,
+        flexShrink: 1,
+      }}>
+      <span>{title}</span> {preplocked ? '🔒' : null}
+    </div>
+  }
+
+  const renderQuiz = () => (
+    !preplocked ? (
+      <a href={preplink} target="_blank" style={{
+        flexGrow: 1,
+        flexShrink: 1,
+      }}>
+        {renderQuizContent()}
+      </a>
+    ) : renderQuizContent()
+  )
+
+  const renderSolutionContent = () => {
+    return <div
+      className={solutionlocked ? "csci381-text csci381-locked" : "csci381-text csci381-button"}
+      style={{
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        color: 'black',
+        flexGrow: 1,
+        flexShrink: 1,
+      }}>
+      <span>solution</span> {solutionlocked ? '🔒' : null}
+    </div>
+  }
+
+  const renderSolution = () => (
+    !solutionlocked ? (
+      <a href={solutionlink} target="_blank" style={{
+        flexGrow: 1,
+        flexShrink: 1,
+      }}>
+        {renderSolutionContent()}
+      </a>
+    ) : renderSolutionContent()
+  )
+
+
+
+  return (
+    <div style={{
+      display: 'flex',
+      flexFlow: 'row nowrap',
+      justifyContent: 'stretch',
+      alignItems: 'stretch',
+      width: '100%'
+    }}>
+      {renderQuiz()}
+      {renderSolution()}
+    </div>
   )
 }
 
@@ -195,8 +252,7 @@ const LectureSlides = () => {
       backgroundColor: bgColor,
       padding: '10px',
       flexGrow: 1,
-      flexShrink: 1,
-      width: '500px'
+      flexShrink: 1
     }}>
 
       <div style={{
@@ -204,19 +260,20 @@ const LectureSlides = () => {
         flexFlow: 'column nowrap',
         justifyContent: 'stretch',
         alignItems: 'stretch',
-        height: '100%'
       }}>
 
         <div style={{
           display: 'flex',
           flexFlow: 'column wrap',
-          height: window.innerWidth > 600 ? '680px' : null
+          gap: '5px',
+          height: window.innerWidth > 800 ? '400px' : null
         }}>
           {courseData.lectures.map(lecture => (
             <SlideDeck
               key={lecture.id}
               title={lecture.title.toLowerCase()}
-              link={lecture.link} />
+              link={lecture.link}
+              locked={lecture.locked} />
           ))}
         </div>
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
@@ -235,7 +292,6 @@ const Quizzes = () => {
       padding: '10px',
       flexGrow: 1,
       flexShrink: 1,
-      width: '500px'
     }}>
 
       <div style={{
@@ -250,18 +306,21 @@ const Quizzes = () => {
           display: 'flex',
           flexFlow: 'row wrap',
           justifyContent: 'space-between',
-          gap: '5px'
+          gap: '8px'
         }}>
           {courseData.quizzes.map(quiz => (
             <QuizItem
               key={quiz.id}
               title={quiz.title.toLowerCase()}
-              link={quiz.link}
-              locked={quiz.locked} />
+              preplink={quiz.preplink}
+              preplocked={quiz.preplocked} 
+              solutionlink={quiz.solutionlink}
+              solutionlocked={quiz.solutionlocked}
+            />
           ))}
         </div>
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <BoxTitle title="quizzes" color="black" />
+        <BoxTitle title="quiz prep" color="black" />
       </div>
     </div>
   )
@@ -465,8 +524,7 @@ function Csci381() {
         flexFlow: 'column nowrap',
         justifyContent: 'stretch',
         gap: '20px',
-        height: 'auto',
-        width: '320px',
+        height: 'auto'
       }}>
         <div style={{
           display: 'flex',
@@ -474,25 +532,34 @@ function Csci381() {
           flexGrow: 1,
           flexShrink: 1,
           justifyContent: 'stretch',
-          gap: '20px',
-          height: 'auto',
+          gap: '20px'
         }}>
           <CourseInfo />
           <TeachingAssistants />
         </div>
-        <LabAssignments />
+        <div style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          flexGrow: 1,
+          flexShrink: 1,
+          justifyContent: 'stretch',
+          gap: '20px'
+        }}>
+          <LabAssignments />
+          <Quizzes />
+        </div>
+
       </div>
       <div style={{
         flexGrow: 1,
         display: 'flex',
         flexFlow: 'column nowrap',
         justifyContent: 'stretch',
-        gap: '20px',
-        height: 'auto',
-        width: '320px',
+        gap: '20px'
       }}>
+
         <LectureSlides />
-        <Quizzes />
+
       </div>
     </div>
   )

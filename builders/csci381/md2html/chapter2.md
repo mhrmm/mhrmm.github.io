@@ -319,7 +319,7 @@ This time we collect different information from our friends. Using their photos,
 
 @component[ColorPicker]
 
-We notice that our older friends' hair has lower saturation and higher lightness. Based on this, we formulate a new strategy for our booth. Rather than asking customers how many CS classes they've taken, we'll wear a special set of glasses that measures the saturation and lightness of their hair. Based on these numbers, we'll predict their age using the formula 
+We notice that our older friends' hair has lower saturation and higher lightness. Based on this, we formulate a new strategy for our booth. Rather than asking customers how many CS classes they've taken, we'll wear a special set of glasses that measures the saturation and lightness of their hair. Based on these numbers, we'll predict their age using the formula: 
 
 @eq[
 \theta_1 x_1 + \theta_2 x_2
@@ -356,9 +356,15 @@ to be as close to zero as possible. Observe that this expression is always non-n
   l(\theta_1, \theta_2) = (.72\theta_1+.06\theta_2-20)^2 + (.34\theta_1+.25\theta_2-28)^2 +(.17\theta_1+.57\theta_2-41)^2
 @eq]
 
-Previously, we used gradient descent to find a sufficiently small value of our loss function, but that was for a loss function of one variable. Now we have a loss function of two variables. How can gradient descent be adapted? Rather than using variable $\theta$ to refer to a single parameter, we will now use it to refer to a **vector** of parameters. Our loss function $l$ assigns a non-negative loss to each 2-dimensional vector $\theta = \begin{bmatrix} \theta_1\\ \theta_2 \end{bmatrix}$.
+Previously, we used gradient descent to find a sufficiently small value of our loss function, but that was for a loss function of one variable. Now we have a loss function of two variables. How can gradient descent be adapted? Rather than using variable $\theta$ to refer to a single parameter, we will now use it to refer to a **vector** of parameters. 
+
+Our loss function $l$ assigns a non-negative loss to each 2-dimensional vector $\theta = \begin{pmatrix} \theta_1\\ \theta_2 \end{pmatrix}$. We can use a **contour plot** to visualize the loss function:
 
 @component[ContourExplorer]
+
+Each curve of the plot connects values of $\theta$ for which loss $l(\theta)$ is equivalent. The plot also uses shading to indicate the magnitude of $l(\theta)$: darker shades of red indicate larger values of $l(\theta)$, which means that the pale oval at the center is a valley.
+
+The above contour plot is interactive. Try clicking on different points on the innermost curve. They should all have the same loss, but it's difficult to click exactly on the curve, so you'll probably see losses between 1900 and 2000 (unless you're bad at clicking). If you click close to the bottom of the valley, then you should get a loss that is reasonably close to zero (I can get a loss of less than 15 if I keep clicking). Note that there is no point that has a loss of zero, because technically there is no value of $\theta$ that perfectly predicts our data.
 
 For multivariable gradient descent, we execute single-variable gradient descent in parallel for each variable, while pretending the other variables don't exist. Or, more accurately, we pretend that the other variables have already been set to their ideal values, so the only thing left to do is optimize the remaining variable. In our example then, we need to compute two derivatives: one where we treat $\theta_2$ as a constant and differentiate with respect to $\theta_1$, and one where we treat $\theta_1$ as a constant and differentiate with respect to $\theta_2$. In other words, we need to compute the **partial derivatives** $D_{\theta_1}(l)$ and $D_{\theta_2}(l)$. 
 
@@ -368,19 +374,19 @@ For multivariable gradient descent, we execute single-variable gradient descent 
     @= D_{\theta_1} \left( (.72\theta_1+.06\theta_2-20)^2 + (.34\theta_1+.25\theta_2-28)^2 +(.17\theta_1+.57\theta_2-41)^2 \right)
 
     @= \begin{matrix}&\mathbf{D_{\theta_1}} \left( (.72\theta_1+.06\theta_2-20)^2 \right) \\ +& \mathbf{D_{\theta_1}} \left( (.34\theta_1+.25\theta_2-28)^2 \right) \\ +& \mathbf{D_{\theta_1}} \left( (.17\theta_1+.57\theta_2-41)^2 \right) \end{matrix}
-      % sum rule of derivatives
+      % sum rule
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20)  D_{\theta_1} \left( .72\theta_1+.06\theta_2-20 \right) \\ +& 2(.34\theta_1+.25\theta_2-28) D_{\theta_1} \left( .34\theta_1+.25\theta_2-28 \right) \\ +& 2(.17\theta_1+.57\theta_2-41) D_{\theta_1} \left( .17\theta_1+.57\theta_2-41 \right) \end{matrix}
       % because: $D_x \left( f(x)^a \right) = a f(x)^{a-1} D_x(f(x))$
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20) \left( \mathbf{D_{\theta_1}}(.72\theta_1) + \mathbf{D_{\theta_1}}(.06\theta_2 - 20) \right) \\ +& 2(.34\theta_1+.25\theta_2-28) \left( \mathbf{D_{\theta_1}}(.34\theta_1) + \mathbf{D_{\theta_1}}(.25\theta_2 - 28) \right) \\ +& 2(.17\theta_1+.57\theta_2-41) \left( \mathbf{D_{\theta_1}}(.17\theta_1) + \mathbf{D_{\theta_1}}(.57\theta_2 - 41) \right) \end{matrix}
-      % sum rule of derivatives
+      % sum rule
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20) \left( D_{\theta_1}(.72\theta_1) + \mathbf{0} \right) \\ +& 2(.34\theta_1+.25\theta_2-28) \left( D_{\theta_1}(.34\theta_1) + \mathbf{0} \right) \\ +& 2(.17\theta_1+.57\theta_2-41) \left( D_{\theta_1}(.17\theta_1) + \mathbf{0} \right) \end{matrix}
-      % because: $D_x(c) = 0$
+      % constant rule
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20)(\mathbf{.72}) \\ +& 2(.34\theta_1+.25\theta_2-28) (\mathbf{.34}) \\ +& 2(.17\theta_1+.57\theta_2-41)(\mathbf{.17}) \end{matrix}
-      % because: $D_x(ax) = a$ 
+      % power rule
 
     @= 1.33 \theta_1 + .45 \theta_2 + 61.8
       % approximating
@@ -392,19 +398,19 @@ For multivariable gradient descent, we execute single-variable gradient descent 
     @= D_{\theta_2} \left( (.72\theta_1+.06\theta_2-20)^2 + (.34\theta_1+.25\theta_2-28)^2 +(.17\theta_1+.57\theta_2-41)^2 \right)
 
     @= \begin{matrix}&\mathbf{D_{\theta_2}} \left( (.72\theta_1+.06\theta_2-20)^2 \right) \\ +& \mathbf{D_{\theta_2}} \left( (.34\theta_1+.25\theta_2-28)^2 \right) \\ +& \mathbf{D_{\theta_2}} \left( (.17\theta_1+.57\theta_2-41)^2 \right) \end{matrix}
-      % sum rule of derivatives
+      % sum rule
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20)  D_{\theta_2} \left( .72\theta_1+.06\theta_2-20 \right) \\ +& 2(.34\theta_1+.25\theta_2-28) D_{\theta_2} \left( .34\theta_1+.25\theta_2-28 \right) \\ +& 2(.17\theta_1+.57\theta_2-41) D_{\theta_2} \left( .17\theta_1+.57\theta_2-41 \right) \end{matrix}
       % because: $D_x \left( f(x)^a \right) = a f(x)^{a-1} D_x(f(x))$
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20) \left( \mathbf{D_{\theta_2}}(.06\theta_2 ) + \mathbf{D_{\theta_2}}(.72\theta_1- 20) \right) \\ +& 2(.34\theta_1+.25\theta_2-28) \left( \mathbf{D_{\theta_2}}(.25\theta_2) + \mathbf{D_{\theta_2}}(.34\theta_1 - 28) \right) \\ +& 2(.17\theta_1+.57\theta_2-41) \left( \mathbf{D_{\theta_2}}(.57\theta_2) + \mathbf{D_{\theta_2}}(.17\theta_1 - 41) \right) \end{matrix}
-      % sum rule of derivatives
+      % sum rule
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20) \left( D_{\theta_2}(.06\theta_1) + \mathbf{0} \right) \\ +& 2(.34\theta_1+.25\theta_2-28) \left( D_{\theta_2}(.25\theta_1) + \mathbf{0} \right) \\ +& 2(.17\theta_1+.57\theta_2-41) \left( D_{\theta_2}(.57\theta_1) + \mathbf{0} \right) \end{matrix}
-      % because: $D_x(c) = 0$
+      % constant rule
 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20)(\mathbf{.06}) \\ +& 2(.34\theta_1+.25\theta_2-28) (\mathbf{.25}) \\ +& 2(.17\theta_1+.57\theta_2-41)(\mathbf{.57}) \end{matrix}
-      % because: $D_x(ax) = a$ 
+      % power rule
 
     @= .45 \theta_1 + .78 \theta_2 + 63.1
       % approximating

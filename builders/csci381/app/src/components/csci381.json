@@ -1,16 +1,12 @@
 {
     "quizzes": [
         {
-            "id": "quiz-1-prep",
-            "title": "quiz 1 prep",
-            "locked": false,
-            "link": "https://docs.google.com/document/d/1-P-DfkRjXqQP1YA8Yrht3X8LSn8scbJE68O5ExB3QDM/edit?usp=sharing"
-        },
-        {
-            "id": "quiz-1-solution",
-            "title": "solution",
-            "locked": true,
-            "link": "https://docs.google.com/document/d/1arP_4iSWn6PsYDZJErzqs1R7HayrkjwxjEN59I-mIAw/edit?usp=sharing"
+            "id": "quiz-1",
+            "title": "quiz 1",
+            "preplink": "https://docs.google.com/document/d/1-P-DfkRjXqQP1YA8Yrht3X8LSn8scbJE68O5ExB3QDM/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1arP_4iSWn6PsYDZJErzqs1R7HayrkjwxjEN59I-mIAw/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false
         }
     ],
     "readings": [
@@ -24,166 +20,199 @@
         {
             "id": "lecture0",
             "title": "machine learning",
+            "locked": false,
             "link": "https://drive.google.com/file/d/13FDsbuttiwl1qEazSaGKZz96Y9dKL7q5/"            
         },
         {
             "id": "lecture1",
             "title": "gradient descent",
+            "locked": false,
             "link": "https://drive.google.com/file/d/1bcrSLzB7kW6SwDoP3HUnHbkGx6dotDAX/"
         },
         {
             "id": "lecture2",
             "title": "variants of gradient descent",
+            "locked": false,
             "link": "https://drive.google.com/file/d/1_6N3tJhuNT1J5hcunauKcAnsqcrr_jE2/"
         },
         {
             "id": "lecture3",
             "title": "multidimensional gradient descent",
+            "locked": false,
             "link": "https://drive.google.com/file/d/12Z1hvv-eNC3mOCwfNIadkdTbyj60YYic/"
         },
         {
             "id": "lecture4",
             "title": "argmin and monotonicity",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1artmr3bkuCSc0-Tz6AkIS3HLjq7ao7S4/"
         },
         {
             "id": "lecture5",
             "title": "linear regression",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1OjcYTo-_b6A209odrMtyc7ibU1wt-moX/"
         },
         {
             "id": "lecture6",
             "title": "regularization",
+            "locked": true,
             "link": "https://drive.google.com/file/d/15EXfXSpF-mIh61p5zAU6FYMAjOo97YII/"
         },
         {
             "id": "lecture7",
             "title": "logistic regression",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1SlLB2FkcNbrP62SzU0qTwXAMSXxka__C/"
         },
         {
             "id": "lecture8",
             "title": "function graphs",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1x-RfBEJolmdlsKrJ2hokxCsqYa274BtW/"
         },
         {
             "id": "lecture9",
             "title": "optimizing logistic regression",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1Arz3LDTAePwCYuMD6-2yksj1nln-iTgQ/"
         },
         {
             "id": "lecture10",
             "title": "limitations of linear models",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1_EfkC_F-TB9BFrdNo9njkIO_7vHGFj4H/"
         },
         {
             "id": "lecture11",
             "title": "neural networks",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1DqQiVuSuHvkPoYLlg2B--xcFOe1OVg89/"
         },
         {
             "id": "lecture12",
             "title": "activation functions",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1VqGBFDe7snAKAhBra1VnUVb3BbyuU7tp/"
         },
         {
             "id": "lecture13",
             "title": "backpropagation",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1XuYixMzsgp4u4qMSLYM8n_uF3HNwRpeB/"
         },
         {
             "id": "lecture14",
             "title": "minibatch gradient descent",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1yHAAuQunbk12YhXykVl4BprQKKj7Y1Nt/"
         },
         {
             "id": "lecture15",
             "title": "parameter initialization",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1cLXGZ1Awjw9XnRzegtjCud9TuMzdDCJz/"
         },
         {
             "id": "lecture16",
             "title": "dropout",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1M_mT7UV71emdI_Xdr-Te2BRrvRjjSiA4/"
         },
         {
             "id": "lecture17",
             "title": "convolutional neural networks",
+            "locked": true,
             "link": "https://drive.google.com/file/d/138aRZark3d3Sowpp-sdE9h0_QDfQxxVU/"
         },
         {
             "id": "lecture18",
             "title": "higher order kernels",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1JQLp5i9Z3Uoandd0okC2cIC9upwi5YXY/"
         },
         {
             "id": "lecture19",
             "title": "padding",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1hl49gU1P2SI9-cMxm5jyCxhkDHOkV5rD/"
         },
         {
             "id": "lecture20",
             "title": "pooling",
+            "locked": true,
             "link": "https://drive.google.com/file/d/17AKdygm9zUkU-FImg7OR48eBdBaQCedp/"
         },
         {
             "id": "lecture21",
             "title": "computing convolutions",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1pHrK9mkCQ20wyeGnwGOa04ozp8l-qb44/"
         },
         {
             "id": "lecture22",
             "title": "token embeddings",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1FuzJB1dLsMf1HrSPO9C4qvyudFNaRoW9/"
         },
         {
             "id": "lecture23",
             "title": "recurrent neural networks",
+            "locked": true,
             "link": "https://drive.google.com/file/d/12vys3quOX_-mYs1Xh49mWeMaCS9meMJF/"
         },
         {
             "id": "lecture24",
             "title": "encoder-decoder models",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1EMOp3gys_a_uWCr4YytSDMk0f76DGHbQ/"
         },
         {
             "id": "lecture25",
             "title": "attention",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1EmyKB-UXco2xNA2SnoKXz9Tuezjv_XZ0/"
         },
         {
             "id": "lecture26",
             "title": "parallel sequence encoding",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1Tsrt5Tq-gxNbuKYOuWZcUvvU00dakCAB/"
         },
         {
             "id": "lecture27",
             "title": "transformer decoders",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1EuCgnBlMbz3oXiOoSncdpaqFSPFV1w04/"
         },
         {
             "id": "lecture28",
             "title": "batch and layer normalization",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1AqfJXF581zvgohKhtjqkm_YXGRe0lZNb/"
         },
         {
             "id": "lecture29",
             "title": "residual connections",
+            "locked": true,
             "link": "https://drive.google.com/file/d/19zWne_gLs-3em51Uy0leJfkEItScPrAc/"
         },
         {
             "id": "lecture30",
             "title": "multihead attention",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1h6yxAzpSmj0gcQFM2ox46FmvzeNisP1U/"
         },
         {
             "id": "lecture31",
             "title": "foundation models",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1WWsQrZSyZFGPe0Uhe6gdXhi5KwFVwtp2/"
         },
         {
             "id": "lecture32",
             "title": "style transfer",
+            "locked": true,
             "link": "https://drive.google.com/file/d/1tAX5da49EVWiLpZ3NqQ17v_USHmkijPd/"
         }
     ],
