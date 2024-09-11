@@ -218,6 +218,13 @@
     ],
     "labs": [
         {
+            "id": "lab-99",
+            "title": "tensors",
+            "due": "Sep 12 2025",
+            "locked": false,
+            "link": "https://classroom.github.com/a/Iwq-op79"
+        },
+        {
             "id": "lab-0",
             "title": "rubik",
             "due": "Sep 12 2024",
