@@ -5,8 +5,8 @@ import PlayButton from './PlayButton'
 
 
 export default function FollowTheFold() {
-  const [point, setPoint] = useState([-2.5, 1.2])
-  const [learningRate, setLearningRate] = useState(0.2);
+  const [point, setPoint] = useState([-2.0, 0.4])
+  const [learningRate, setLearningRate] = useState(1.0);
   const [momentumRate, setMomentumRate] = useState(0.0);
   const [prevStepSize, setPrevStepSize] = useState([0.0, 0.0]);
 
@@ -15,11 +15,6 @@ export default function FollowTheFold() {
   const lossFunction = (x, y) => -((x / 5) ** 2 + y ** 2 - 1)
   const lossGradient = (x, y) => [2 * (x / 25), 2 * y]
   const [x1, x2, y1, y2] = [-3.2, 0, -1, 1.5];
-
-  const learningRateBounds = [0.0, 1.0];
-  const learningRateFlameSize = (
-    Math.min(30, 16 + 20 * ((learningRate - learningRateBounds[0]) / (learningRateBounds[1] - learningRateBounds[0])))
-  );
 
   const computeNextStep = (x, y) => {
     let [gradX, gradY] = lossGradient(x, y)
@@ -45,6 +40,10 @@ export default function FollowTheFold() {
     setPrevStepSize([0.0, 0.0])
   }
 
+  useEffect(() => {
+    setPoint([-1.6, 0.55])
+  }, []);
+
   const renderSidebar = () => {
       return (<div style={{
         width: '25%',
@@ -60,7 +59,7 @@ export default function FollowTheFold() {
           alignItems: 'center',
           alignContent: 'center'
         }}>
-          <Meter onChange={newValue => setLearningRate(newValue)} title="LEARNING RATE" initial={0.2} bounds={[0.0, 1.0]} step={0.01} aria-label="learning-rate" />
+          <Meter onChange={newValue => setLearningRate(newValue)} title="LEARNING RATE" initial={1.0} bounds={[0.0, 1.0]} step={0.01} aria-label="learning-rate" />
           <Meter onChange={newValue => setMomentumRate(newValue)} title="MOMENTUM RATE" initial={0.0} bounds={[0.0, 0.5]} step={0.01} aria-label="momentum-rate" />
           <div style={{
             height: 'auto',

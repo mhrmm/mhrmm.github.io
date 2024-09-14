@@ -388,7 +388,7 @@ For multivariable gradient descent, we execute single-variable gradient descent 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20)(\mathbf{.72}) \\ +& 2(.34\theta_1+.25\theta_2-28) (\mathbf{.34}) \\ +& 2(.17\theta_1+.57\theta_2-41)(\mathbf{.17}) \end{matrix}
       % power rule
 
-    @= 1.33 \theta_1 + .45 \theta_2 + 61.8
+    @= 1.33 \theta_1 + .45 \theta_2 - 61.8
       % approximating
 @proof]
 
@@ -412,89 +412,161 @@ For multivariable gradient descent, we execute single-variable gradient descent 
     @= \begin{matrix}&2(.72\theta_1+.06\theta_2-20)(\mathbf{.06}) \\ +& 2(.34\theta_1+.25\theta_2-28) (\mathbf{.25}) \\ +& 2(.17\theta_1+.57\theta_2-41)(\mathbf{.57}) \end{matrix}
       % power rule
 
-    @= .45 \theta_1 + .78 \theta_2 + 63.1
+    @= .45 \theta_1 + .78 \theta_2 - 63.1
       % approximating
 @proof]
 
-With the partial derivatives computed, here's how to execute gradient descent in parallel for parameters $\theta_1$ and $\theta_2$. Suppose our initial position is $\begin{bmatrix}4 \\ -5\end{bmatrix}$. Let's use basic gradient descent with learning rate $\alpha=0.1$:
+With the partial derivatives computed, we're ready to execute gradient descent in parallel for parameters $\theta_1$ and $\theta_2$. Suppose our initial position is $\begin{pmatrix}-4 \\ 2\end{pmatrix}$ and our learning rate is $\alpha=.05$.
 
-![](/boards/board2n.png)
+Initially, $\theta_1=-4$. Our updated $\theta_1$ is:
 
-- Initially, $\theta_1=4$. Our updated $\theta_1$ is:
+@proof[
+  \theta_1 - \alpha D_{\theta_1}(l)(\theta)
 
-	@eq[
-		\theta_1 - 0.1 D_{\theta_1}(l)(\theta) \approx \theta_1 + 5.9 = 9.9
-	@eq]
-    
-- Initially, $\theta_2=-5$. Our updated $\theta_2$ is: 
+  @= \theta_1 - \alpha(1.33 \theta_1 + .45 \theta_2 - 61.8)
 
-	@eq[
-		\theta_2 - 0.1 D_{\theta_2}(l)(\theta)   \approx \theta_2 + 6.5 = 1.5
-	@eq]
+  @= -4 - .05(1.33(-4) + .45(2) - 61.8)
+    % because $\theta_1=-4$, $\theta_2=2$, and $\alpha=.05$
 
-![](/boards/board2p.png)
+  @= -0.689
+    % simplifying
+@proof]
 
-Notationally, it helps to introduce a function called the **gradient** that simultaneously computes all the partial derivatives of a function, i.e. the gradient maps a multivariable function to a vector of all its partial derivatives. In general, the **gradient** of a multivariable function $f(x_1, \dots, x_n)$ is defined:
+Initially, $\theta_2=2$. Our updated $\theta_2$ is:
+
+@proof[
+  \theta_2 - \alpha D_{\theta_2}(l)(\theta)
+
+  @= \theta_2 - \alpha(.45 \theta_1 + .78 \theta_2 - 63.1)
+
+  @= 2 - .05(.45(-4) + .78(2) - 63.1)
+    % because $\theta_1=-4$, $\theta_2=2$, and $\alpha=.05$
+
+  @= 5.167
+    % simplifying
+@proof]
+
+Therefore, the next step of gradient descent moves from $\begin{pmatrix} -4\\2 \end{pmatrix}$ to $\begin{pmatrix} -0.689\\5.167 \end{pmatrix}$:
+
+![two dimensional gradient descent](/images/twodims.jpg)
+
+
+Notationally, it helps to introduce a function called the **gradient** that simultaneously computes all the partial derivatives of a vector function, i.e. the gradient maps a vector function to a vector of all its partial derivatives. 
+Let vector $x = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}$.
+The **gradient** of a vector function $f(x)$ is defined:
 
 @eq[
-	\nabla f =
-	\begin{bmatrix}
+	D_x(f) =
+	\begin{pmatrix}
 		D_{x_1}(f)\\
 		\vdots\\
 		D_{x_n}(f)
-	\end{bmatrix}	
+	\end{pmatrix}	
 @eq]
 
-For our example loss function $l$, which is a two-variable function, the gradient is:
+To evaluate every partial derivative at a particular value $\hat{x}$ of $x$, we define the following notation:
 
 @eq[
-	\nabla l =
-	\begin{bmatrix}
-		D_{\theta_1}(l)\\
-		D_{\theta_2}(l)
-	\end{bmatrix}	
+	D_x(f)(\hat{x}) =
+	\begin{pmatrix}
+		D_{x_1}(f)(\hat{x})\\
+    \vdots\\
+		D_{x_n}(f)(\hat{x})
+	\end{pmatrix}	
 @eq]
 
 @focus[
     Consider the following loss function:
 	@eqp[
-		l\left(
-		\begin{bmatrix}
+		l
+		\begin{pmatrix}
 			\theta_1\\
 			\theta_2\\
 			\theta_3
-		\end{bmatrix}	
-		\right)
+		\end{pmatrix}			
 		= 5\theta_1 + \theta_1\theta_2 + \theta_3^3
 	@eqp]
 	The gradient is:
     @eqp[
 	\begin{matrix}
-		\nabla l
+		D_\theta(l)
 		&=& 
-		\begin{bmatrix}
+		\begin{pmatrix}
 			D_{\theta_1} \left( 5\theta_1 + \theta_1\theta_2 + \theta_3^3 \right)\\
 			D_{\theta_2} \left( 5\theta_1 + \theta_1\theta_2 + \theta_3^3 \right)\\
 			D_{\theta_3} \left( 5\theta_1 + \theta_1\theta_2 + \theta_3^3 \right)
-		\end{bmatrix}
+		\end{pmatrix}
 		= 
-		\begin{bmatrix}
+		\begin{pmatrix}
 			5 + \theta_2\\
 			\theta_1\\
 			3\theta_3^2
-		\end{bmatrix}	
+		\end{pmatrix}	
+	\end{matrix}
+    @eqp]
+  The value of the gradient at $\hat{\theta} = \begin{pmatrix}1\\2\\3\end{pmatrix}$ is:
+  @eqp[
+	\begin{matrix}
+		D_\theta(l)(\hat{\theta})
+		&=& 
+		\begin{pmatrix}
+			5 + 2\\
+			1\\
+			3(3^2)
+		\end{pmatrix}
+		= 
+		\begin{pmatrix}
+			7\\
+			1\\
+			27
+		\end{pmatrix}	
 	\end{matrix}
     @eqp]
 @focus][example]
 	
 
 
-Conveniently, we don't have to change our gradient descent template (and perhaps now it's clearer why we called it gradient descent). We just have to recognize, when implementing the subroutines, that the positions $\theta^{(t)}$ are now **vectors**, not **scalars**. 
+Conveniently, we barely have to change our gradient descent code (and perhaps now it's clearer why we called it gradient descent). For basic gradient descent and gradient descent with momentum, we just have to recognize that some of the quantities are now **vectors**, not **scalars**. 
 
-![](/boards/board2o.png)
+![multidimensional gradient descent](/images/multidimensional_gd.jpg)
 
-Thus the basic implementation initializes the position to a random real vector, and uses the gradient to update the position (rather than using a single derivative).
+Experiment with multidimensional gradient descent using the following interactive demo:
 
 @component[FollowTheFold]
 
-With this generalization of gradient descent, we are now free to minimize loss functions with any (finite) number of parameters. In the future, we will be making the most of this freedom.
+By default, the demo starts the hovercraft at point $\begin{pmatrix}-1.6\\0.55\end{pmatrix}$, using a learning rate of 1.0 and no momentum. 
+
+Push the play button a few times to see what happens. Observe that the hovercraft keeps skipping over the valley in the $\theta_2$ direction, even as it makes progress along the $\theta_1$ axis. 
+
+However, momentum will act **independently** for the two axes $\theta_1$ and $\theta_2$. Whereas the steps along the $\theta_1$ axis are always in the same direction (and therefore can accumulate momentum), the steps along the $\theta_2$ axis keep reversing direction (and therefore cancel each other out). 
+
+Reset the hovercraft to its original position (click directly on the contour plot to reposition the hovercraft). Now try a momentum rate of 0.5. You should observe both an acceleration along the $\theta_1$ axis, and a dampening effect along the $\theta_2$ axis, as the fluctuating step direction gradually moderates the step size.
+
+For the multidimensional case, we need to slightly modify the code for adagrad:
+
+![multidimensional adagrad](/images/multidimensional_adagrad.jpg)
+
+Instead of a single learning rate, there is now a learning rate vector that captures independently learning rates for each axis. This is necessary, because the slopes encountered along each axis are different. Along one axis, the slopes could be gentle (and therefore the adagrad "odometer" would grow slowly), whereas along another axis, the slopes could be steep (and therefore the odometer would grow quickly). We separately track the odometer for each axis.
+
+There are two notations in the above code that may be unfamiliar. The first is **Hadamard product**, denoted using the symbol $\odot$:
+
+@focus[
+The **Hadamard product** of two length-$n$ vectors $v$ and $w$ is the elementwise multiplication of the vectors, i.e.
+  @eq[
+    v \odot w 
+    = \begin{pmatrix} v_1\\ \vdots \\ v_n \end{pmatrix} \odot \begin{pmatrix} w_1\\ \vdots \\ w_n \end{pmatrix}
+    = \begin{pmatrix} v_1 w_1\\ \vdots \\ v_n w_n\end{pmatrix}
+  @eq]
+@focus][definition]
+
+In the above adagrad code, Hadamard product is used to show the multiplication of each learning rate with its corresponding derivative in the loss gradient.
+
+The other notation in the adagrad code that might need explanation is when we do the following division:
+
+@eq[
+  \frac{1}{\delta + \sqrt{\sum_{i=0}^t D_\theta(l)(\theta^{(i)}) \odot D_\theta(l)(\theta^{(i)})}}
+@eq]
+
+In this case, the denominator is a vector, so it might be unclear what $\frac{1}{v}$ means when $v$ is a vector. We simply mean that we take the original vector, and replace all its elements with their reciprocals.
+
+With multidimensional gradient descent, we are now free to minimize loss functions with any (finite) number of parameters. In the future, we will be making the most of this freedom.

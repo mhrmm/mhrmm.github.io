@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 
 export default function ContourPlot({ handleClick, loss, axisBounds, point, nextStep }) {
 
-  const [plotId, setPlotId] = useState(null);
+  const [plotId, setPlotId] = useState(null); 
+  const [loaded, setLoaded] = useState(false);
+  const [image, setImage] = useState(null);
 
   const containerRef = useRef();
   const canvasRef = useRef();
@@ -58,7 +60,7 @@ export default function ContourPlot({ handleClick, loss, axisBounds, point, next
 
 
   const drawCurrentPosition = () => {
-    if (canvasRef.current) {
+    if (canvasRef.current && loaded) {
       let canvas = canvasRef.current
       const ctx = canvas.getContext("2d");
       let coords = componentCoords(point[0], point[1])
@@ -68,9 +70,8 @@ export default function ContourPlot({ handleClick, loss, axisBounds, point, next
       //ctx.fillRect(coords[0] - side / 2, coords[1] - side / 2, side, side)
       //othertimes an exciting hovercraft
       side = 40;
-      img.addEventListener("load", () => {
-        ctx.drawImage(img, coords[0] - side / 2, coords[1] - side / 2, side, side);
-      });
+      ctx.drawImage(image, coords[0] - side / 2, coords[1] - side / 2, side, side);
+      
       ctx.beginPath();
       if (nextStep) {
         ctx.moveTo(coords[0], coords[1]);
@@ -80,6 +81,8 @@ export default function ContourPlot({ handleClick, loss, axisBounds, point, next
       }
     }
   }
+
+
 
   useEffect(() => {
     const plot = Plot.plot({
@@ -102,10 +105,16 @@ export default function ContourPlot({ handleClick, loss, axisBounds, point, next
     containerRef.current.append(plot);
     drawCurrentPosition()
     return () => plot.remove();
-  }, []);
+  }, [loaded]);
 
-  const img = new Image();
-  img.src = "images/visiblecraft.png"
+  useEffect(() => {
+    const img = new Image();
+    img.src = "images/visiblecraft.png";
+    img.onload = () => {
+      setLoaded(true);
+      setImage(img);
+    };
+  }, []);
 
   useEffect(() => {
     drawCurrentPosition()

@@ -19,6 +19,7 @@
     "axios": "^1.7.2",
     "d3": "^7.9.0",
     "function-plot": "^1.25.0",
+    "image-preloader": "^1.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-function-plot": "^0.0.14",

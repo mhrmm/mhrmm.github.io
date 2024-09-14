@@ -11,6 +11,9 @@ export default function ContourExplorer() {
 
   const containerRef = useRef();
 
+  useEffect(() => {
+    setPoint([100, 100])
+  }, []);
 
   const lossFunction = (x, y) => {
     return -((.72 * x + .06 * y - 20) ** 2 + (.34 * x + .25 * y - 28) ** 2 + (.17 * x + .57 * y - 41) ** 2)
