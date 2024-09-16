@@ -306,7 +306,7 @@ const Quizzes = () => {
           display: 'flex',
           flexFlow: 'row wrap',
           justifyContent: 'space-between',
-          gap: '8px'
+          gap: '0px'
         }}>
           {courseData.quizzes.map(quiz => (
             <QuizItem
