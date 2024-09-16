@@ -8,7 +8,7 @@
   Carny is slang for carnival worker, a career path often associated with roving wagons of the late nineteenth and early twentieth centuries. Carnies would set up booths to test your strength, your dexterity, your prowess with a BB gun. While less common nowadays, there still exist great neoned spaces of funnel cakes and cotton candy machines and different ways you can pay to go in circles, where everything is totally easy until you try it, and where questions like "why would I want my name on a grain of rice" lose their relevance in the intoxicating vapor of nacho cheese.
 ]
 [
-  One enduring carnival game challenges the passerby: **I WILL GUESS YOUR AGE OR YOU WIN A PRIZE!** This is the booth we'll try to manage.
+  One enduring carnival game challenges the passerby: «I WILL GUESS YOUR AGE OR YOU WIN A PRIZE!» This is the booth we'll try to manage.
 ]
 
 

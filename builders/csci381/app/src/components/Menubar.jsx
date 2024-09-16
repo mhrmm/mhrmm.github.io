@@ -17,11 +17,7 @@ const Menubar = () => (
     <div className="textcolor">|</div>
     <Link style={{ flexGrow: 1, flexShrink: 1 }} to={{ pathname: '/dlamp2' }}>
       <div className="dlamp-menubar-link">2</div>
-    </Link>
-    <div className="textcolor">|</div>
-    <Link style={{ flexGrow: 1, flexShrink: 1 }} to={{ pathname: '/dlamp3' }}>
-      <div className="dlamp-menubar-link">3</div>
-    </Link>
+    </Link>    
   </div>
 )
 
