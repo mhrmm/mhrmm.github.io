@@ -213,6 +213,7 @@ To summarize:
 - if $D_\theta(l)(\theta)$ is **positive**, then **subtract** $\alpha \left\lvert D_\theta(l) \right\rvert$ **from** $\theta$
 
 
+
 Either way, it's actually the same thing: simply **subtract** $\alpha D_\theta(l)(\theta)$ **from** $\theta$.
 
 Our optimization algorithm is therefore:
@@ -222,6 +223,9 @@ Our optimization algorithm is therefore:
         \theta \leftarrow \theta - \alpha D_\theta(l)(\theta)
       @eq]
 
+This algorithm is called **gradient descent**.
+
+![gradient descent pseudocode](/images/gradient_descent_code.jpg)
 
 Algorithms like this, where we use the first derivative to guide our optimization, are known as **gradient descent** algorithms. Experiment with how gradient descent behaves using the following interactive demo:
 

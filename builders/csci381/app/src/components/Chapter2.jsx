@@ -161,6 +161,8 @@ import React from "react";
 </ul>
 </li>
 </ul>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">This algorithm is called <span className="term">gradient descent</span>.</div>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><img className="dlamp-image" src="/images/gradient_descent_code.jpg" alt="gradient descent pseudocode" /></div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Algorithms like this, where we use the first derivative to guide our optimization, are known as <span className="term">gradient descent</span> algorithms. Experiment with how gradient descent behaves using the following interactive demo:</div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={0.0} />
 </div>
