@@ -162,7 +162,7 @@ import React from "react";
 </li>
 </ul>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Algorithms like this, where we use the first derivative to guide our optimization, are known as <span className="term">gradient descent</span> algorithms. Experiment with how gradient descent behaves using the following interactive demo:</div>
-<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3}/>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={0.0} />
 </div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Try some different learning rates and starting positions! Here are some phenomena you might observe:</div>
 <ul>
@@ -188,7 +188,7 @@ import React from "react";
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">We divide the original learning rate by our &quot;exploration odometer&quot; to set an increasingly conservative learning rate for each subsequent time step, adding in a positive constant <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B4;</mi></mrow></math> to avoid division by zero. This optimization algorithm is called <span className="term">adagrad</span>.</div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><img className="dlamp-image" src="/images/adagradcode.png" alt="adagrad pseudocode" /></div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Experiment with <span className="term">adagrad</span> using the following interactive demo:</div>
-<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="adagrad" textColor={color1} areaColor={color2} highlightColor={color3}/>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="adagrad" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={0.0} />
 </div>
 <div className="dlamp-section-spacer" /><hr></hr><h4 className="dlamp-header1" id="goingwiththeflow">going with the flow</h4>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Gradient descent is not unlike the classic game of &quot;I'm thinking of a number between 1 and 100,&quot; except that this game is a more frustrating version: &quot;I'm thinking of a number.&quot; Imagine you were playing this game. You start by guessing 10. Your opponent says &quot;higher&quot;. Then you guess 20. Your opponent says &quot;higher&quot;. Then you guess 30. Your opponent says &quot;higher&quot;. </div>
@@ -204,7 +204,7 @@ import React from "react";
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Here is the pseudocode for gradient descent with momentum: </div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><img className="dlamp-image" src="/images/momentum_pseudocode.png" alt="momentum pseudocode" /></div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Experiment with <span className="term">momentum</span> using the following interactive demo:</div>
-<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="momentum" textColor={color1} areaColor={color2} highlightColor={color3}/>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="momentum" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={-0.5} />
 </div>
 <div className="dlamp-section-spacer" /><hr></hr><h4 className="dlamp-header1" id="othervariantsofgradientdescent">other variants of gradient descent</h4>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">There are many other variants of gradient descent that follow the general template. For instance, instead of using the sum of squared derivatives as our &quot;exploration odometer&quot; (i.e. <span className="term">adagrad</span>), a technique called <span className="term">rmsprop</span> uses a decaying average of the squared derivatives. A decaying average gives more weight to the recent derivatives, allowing the algorithm to gradually forget the past and become aggressive again if it enters a phase during which it makes little vertical progress.  </div>

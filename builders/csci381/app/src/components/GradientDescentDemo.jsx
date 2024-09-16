@@ -21,11 +21,11 @@ const generatePoints = (lossFn) => {
 
 
 
-export default function GradientDescentDemo({ variant, textColor, areaColor, highlightColor }) {
+export default function GradientDescentDemo({ variant, textColor, areaColor, highlightColor, startingPosition }) {
 
   const [step, setStep] = useState(0);
   const [nextSteps, setNextSteps] = useState([]);
-  const [currentPosition, setCurrentPosition] = useState(0.0);
+  const [currentPosition, setCurrentPosition] = useState(startingPosition);
   const [nextPosition, setNextPosition] = useState(null);
   const [learningRate, setLearningRate] = useState(0.2);
   const [originalLearningRate, setOriginalLearningRate] = useState(0.2);
@@ -362,7 +362,7 @@ export default function GradientDescentDemo({ variant, textColor, areaColor, hig
           alignItems: "center",
           width: '100%'
         }}>
-          {variant === "adagrad" ? 
+          {variant === "adagrad-disabled" ? 
             <div style={{
               flexGrow: 1,
               flexShrink: 1,

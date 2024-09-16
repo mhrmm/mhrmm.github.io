@@ -233,11 +233,11 @@ class MyRendererMixin(object):
 
     def render_component(self, element):
         if element.component_name == "GradientDescentDemo":
-            return '<GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3}/>\n'
+            return '<GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={0.0} />\n'
         elif element.component_name == "AdagradDemo":
-            return '<GradientDescentDemo variant="adagrad" textColor={color1} areaColor={color2} highlightColor={color3}/>\n'
+            return '<GradientDescentDemo variant="adagrad" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={0.0} />\n'
         elif element.component_name == "MomentumDemo":
-            return '<GradientDescentDemo variant="momentum" textColor={color1} areaColor={color2} highlightColor={color3}/>\n'
+            return '<GradientDescentDemo variant="momentum" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={-0.5} />\n'
         elif element.component_name == "Contour":
             return '<Contour variant="explorer" textColor={color1} areaColor={color2} highlightColor={color3}/>\n'
         else:
