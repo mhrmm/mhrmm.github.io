@@ -107,7 +107,10 @@ With our statistically justified estimate of $\theta \approx 3.5$, we take our s
 
 We quickly go out of business.
 
-(Take this as a cautionary tale. Often we **wrongly** assume that our "training data" — the observations that we use to estimate our parameters — follows the **same** distribution as our evaluation data.)
+![we go out of business](/images/out_of_business.jpg)
+
+
+Take this as a cautionary tale. Sometimes we **wrongly** assume that our "training data" — the observations that we use to estimate our parameters — follows the **same** distribution as our evaluation data.
 
 While we didn't make money from it, our short-lived carny career did highlight several important elements of machine learning:
 
@@ -223,11 +226,11 @@ Our optimization algorithm is therefore:
         \theta \leftarrow \theta - \alpha D_\theta(l)(\theta)
       @eq]
 
-This algorithm is called **gradient descent**.
+Algorithms like this, where we use the first derivative to guide our optimization, are known as **gradient descent** algorithms.
 
 ![gradient descent pseudocode](/images/gradient_descent_code.jpg)
 
-Algorithms like this, where we use the first derivative to guide our optimization, are known as **gradient descent** algorithms. Experiment with how gradient descent behaves using the following interactive demo:
+Experiment with how gradient descent behaves using the following interactive demo:
 
 @component[GradientDescentDemo]
 

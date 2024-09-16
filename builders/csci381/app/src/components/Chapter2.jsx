@@ -74,7 +74,8 @@ import React from "react";
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">With our statistically justified estimate of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B8;</mi><mo>&#x02248;</mo><mn>3.5</mn></mrow></math>, we take our show on the road. Unfortunately, most carnival attendees have never taken a computer science course before (i.e. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math>), and so we guess that almost everybody is zero years old (as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math>).</div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><img className="dlamp-image" src="/images/zero_years_old.png" alt="guessing that everyone is zero years old" /></div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">We quickly go out of business.</div>
-<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">(Take this as a cautionary tale. Often we <span className="term">wrongly</span> assume that our &quot;training data&quot; — the observations that we use to estimate our parameters — follows the <span className="term">same</span> distribution as our evaluation data.)</div>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><img className="dlamp-image" src="/images/out_of_business.jpg" alt="we go out of business" /></div>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Take this as a cautionary tale. Sometimes we <span className="term">wrongly</span> assume that our &quot;training data&quot; — the observations that we use to estimate our parameters — follows the <span className="term">same</span> distribution as our evaluation data.</div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">While we didn't make money from it, our short-lived carny career did highlight several important elements of machine learning:</div>
 <ol>
 <li><div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">We collected <span className="term">training data</span>: the observations about our friends Alice, Bob, and Chandra.</div>
@@ -161,9 +162,9 @@ import React from "react";
 </ul>
 </li>
 </ul>
-<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">This algorithm is called <span className="term">gradient descent</span>.</div>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Algorithms like this, where we use the first derivative to guide our optimization, are known as <span className="term">gradient descent</span> algorithms.</div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><img className="dlamp-image" src="/images/gradient_descent_code.jpg" alt="gradient descent pseudocode" /></div>
-<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Algorithms like this, where we use the first derivative to guide our optimization, are known as <span className="term">gradient descent</span> algorithms. Experiment with how gradient descent behaves using the following interactive demo:</div>
+<div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Experiment with how gradient descent behaves using the following interactive demo:</div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor"><GradientDescentDemo variant="vanilla" textColor={color1} areaColor={color2} highlightColor={color3} startingPosition={0.0} />
 </div>
 <div className="dlamp-paragraph-spacer" /><div className="dlamp-text textcolor">Try some different learning rates and starting positions! Here are some phenomena you might observe:</div>
