@@ -28,7 +28,7 @@ const Upcoming = () => {
 
   const daysAhead = 0
   const now = new Date(Date.now() + daysAhead * 8.64e+7)
-  const assignments = courseData.labs.concat(courseData.readings).sort((lab1, lab2) => new Date(lab1.due) - new Date(lab2.due))
+  const assignments = courseData.quizzes.concat(courseData.labs).concat(courseData.readings).sort((lab1, lab2) => new Date(lab1.due) - new Date(lab2.due))
 
   const labsDueSoon = assignments.filter(lab =>
     now < new Date(lab.due)

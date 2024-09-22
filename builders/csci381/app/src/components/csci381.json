@@ -6,7 +6,8 @@
             "preplink": "https://docs.google.com/document/d/1-P-DfkRjXqQP1YA8Yrht3X8LSn8scbJE68O5ExB3QDM/edit?usp=sharing",
             "solutionlink": "https://docs.google.com/document/d/1arP_4iSWn6PsYDZJErzqs1R7HayrkjwxjEN59I-mIAw/edit?usp=sharing",
             "preplocked": false,
-            "solutionlocked": false
+            "solutionlocked": false,
+            "due": "Sep 16 2024"
         },
         {
             "id": "quiz-2",
@@ -14,7 +15,17 @@
             "preplink": "https://docs.google.com/document/d/1YkA8y52qTo0gILfhAQyGXgClKA7htP9acpiHgLgP2e8/edit?usp=sharing",
             "solutionlink": "https://docs.google.com/document/d/1-dTNVUXFgMqZdN1EK10Jd-PCQHirr2pGfESZUCm1_B8/edit?usp=sharing",
             "preplocked": false,
-            "solutionlocked": false
+            "solutionlocked": false,
+            "due": "Sep 23 2024"
+        },
+        {
+            "id": "quiz-3",
+            "title": "quiz 3",
+            "preplink": "https://docs.google.com/document/d/1vi3ALDME9k_yMxCkmjGx1FWYZVZJYhBuomt7W3pX6ww/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1o0js_bIS3nE65rbvS4Do9xOvGSPt4rMrlvJsuynWRtQ/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Sep 30 2024"
         }
     ],
     "readings": [
@@ -57,7 +68,7 @@
         {
             "id": "lecture4",
             "title": "argmin and monotonicity",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1artmr3bkuCSc0-Tz6AkIS3HLjq7ao7S4/"
         },
         {
