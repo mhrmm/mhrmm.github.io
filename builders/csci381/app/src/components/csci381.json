@@ -74,13 +74,13 @@
         {
             "id": "lecture5",
             "title": "linear regression",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1OjcYTo-_b6A209odrMtyc7ibU1wt-moX/"
         },
         {
             "id": "lecture6",
             "title": "regularization",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/15EXfXSpF-mIh61p5zAU6FYMAjOo97YII/"
         },
         {
