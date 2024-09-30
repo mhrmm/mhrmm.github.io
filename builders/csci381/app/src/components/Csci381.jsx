@@ -31,7 +31,7 @@ const Upcoming = () => {
   const assignments = courseData.quizzes.concat(courseData.labs).concat(courseData.readings).sort((lab1, lab2) => new Date(lab1.due) - new Date(lab2.due))
 
   const labsDueSoon = assignments.filter(lab =>
-    now < new Date(lab.due)
+    now <= new Date(lab.due)
   ).slice(0, 3)
 
   return (
@@ -266,7 +266,7 @@ const LectureSlides = () => {
           display: 'flex',
           flexFlow: 'column wrap',
           gap: '5px',
-          height: window.innerWidth > 800 ? '400px' : null
+          height: window.innerWidth > 800 ? '600px' : null
         }}>
           {courseData.lectures.map(lecture => (
             <SlideDeck
@@ -510,12 +510,14 @@ const LabAssignments = () => {
 function Csci381() {
 
   return (
+    <div>
     <div className="csci381" style={{
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
       gap: '20px',
       height: 'auto',
+      paddingBottom: '20px'
     }}>
       <Welcome />
       <div style={{
@@ -550,18 +552,18 @@ function Csci381() {
         </div>
 
       </div>
-      <div style={{
-        flexGrow: 1,
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        justifyContent: 'stretch',
-        gap: '20px'
-      }}>
+      
+    </div>
+    <div className="csci381" style={{
+      marginTop: '0px',
+      paddingTop: '0px'
+    }}>
 
         <LectureSlides />
 
-      </div>
     </div>
+    </div>
+
   )
 }
 
