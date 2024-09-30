@@ -95,19 +95,19 @@
         {
             "id": "lecture7",
             "title": "logistic regression",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1SlLB2FkcNbrP62SzU0qTwXAMSXxka__C/"
         },
         {
             "id": "lecture8",
             "title": "function graphs",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1x-RfBEJolmdlsKrJ2hokxCsqYa274BtW/"
         },
         {
             "id": "lecture9",
             "title": "optimizing logistic regression",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1Arz3LDTAePwCYuMD6-2yksj1nln-iTgQ/"
         },
         {
