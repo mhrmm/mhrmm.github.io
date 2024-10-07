@@ -113,19 +113,19 @@
         {
             "id": "lecture10",
             "title": "limitations of linear models",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1_EfkC_F-TB9BFrdNo9njkIO_7vHGFj4H/"
         },
         {
             "id": "lecture11",
             "title": "neural networks",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1DqQiVuSuHvkPoYLlg2B--xcFOe1OVg89/"
         },
         {
             "id": "lecture12",
             "title": "activation functions",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1VqGBFDe7snAKAhBra1VnUVb3BbyuU7tp/"
         },
         {
