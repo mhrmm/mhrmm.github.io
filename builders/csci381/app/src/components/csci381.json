@@ -155,7 +155,7 @@
         {
             "id": "lecture14",
             "title": "minibatch gradient descent",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1yHAAuQunbk12YhXykVl4BprQKKj7Y1Nt/"
         },
         {
