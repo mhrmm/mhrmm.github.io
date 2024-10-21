@@ -269,13 +269,6 @@
     ],
     "labs": [       
         {
-            "id": "lab-0b",
-            "title": "autograd",
-            "due": "Sep 19 2024",
-            "locked": false,
-            "link": "https://classroom.github.com/a/kFUZm5Uz"
-        },
-        {
             "id": "lab-0",
             "title": "rubik",
             "due": "Sep 19 2024",
