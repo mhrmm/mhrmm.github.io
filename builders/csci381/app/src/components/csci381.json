@@ -170,13 +170,13 @@
         {
             "id": "lecture15",
             "title": "parameter initialization",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1cLXGZ1Awjw9XnRzegtjCud9TuMzdDCJz/"
         },
         {
             "id": "lecture16",
             "title": "dropout",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1M_mT7UV71emdI_Xdr-Te2BRrvRjjSiA4/"
         },
         {
