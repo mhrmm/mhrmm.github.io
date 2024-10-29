@@ -182,13 +182,13 @@
         {
             "id": "lecture17",
             "title": "convolutional neural networks",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/138aRZark3d3Sowpp-sdE9h0_QDfQxxVU/"
         },
         {
             "id": "lecture18",
             "title": "higher order kernels",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1JQLp5i9Z3Uoandd0okC2cIC9upwi5YXY/"
         },
         {
