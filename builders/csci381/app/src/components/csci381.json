@@ -62,6 +62,15 @@
             "preplocked": false,
             "solutionlocked": false,
             "due": "Oct 28 2024"
+        },
+        {
+            "id": "quiz-8",
+            "title": "quiz 8",
+            "preplink": "https://docs.google.com/document/d/1xseHneZm8u_tZfxZCJhct3orvkAe4wWr3ik_GnpUulc/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1QLH5e0KFlCurJXq1c0Rc2k06p-BPe3Mt3mEDcYFDe7I/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Nov 4 2024"
         }
     ],
     "readings": [
