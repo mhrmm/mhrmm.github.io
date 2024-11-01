@@ -203,13 +203,13 @@
         {
             "id": "lecture19",
             "title": "padding",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1hl49gU1P2SI9-cMxm5jyCxhkDHOkV5rD/"
         },
         {
             "id": "lecture20",
             "title": "pooling",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/17AKdygm9zUkU-FImg7OR48eBdBaQCedp/"
         },
         {
