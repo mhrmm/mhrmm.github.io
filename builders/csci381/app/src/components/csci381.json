@@ -71,6 +71,15 @@
             "preplocked": false,
             "solutionlocked": false,
             "due": "Nov 4 2024"
+        },
+        {
+            "id": "quiz-9",
+            "title": "quiz 9",
+            "preplink": "https://docs.google.com/document/d/1Z8WwKk9nH7kEu3CVy7rclCIEfTr-5TLkDb94QwaYSGA/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1DR1RiO7MUUFRvNSiF-9vdJynH10HNu04c81SRGtTDD0/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Nov 11 2024"
         }
     ],
     "readings": [
