@@ -513,7 +513,7 @@ function Csci381() {
     <div>
     <div className="csci381" style={{
       display: 'flex',
-      flexFlow: 'row wrap',
+      flexFlow: 'row nowrap',
       justifyContent: 'center',
       gap: '20px',
       height: 'auto',
@@ -534,14 +534,14 @@ function Csci381() {
           flexGrow: 1,
           flexShrink: 1,
           justifyContent: 'stretch',
-          gap: '20px'
+          gap: '10px'
         }}>
           <CourseInfo />
           <TeachingAssistants />
         </div>
         <div style={{
           display: 'flex',
-          flexFlow: 'row wrap',
+          flexFlow: 'row nowrap',
           flexGrow: 1,
           flexShrink: 1,
           justifyContent: 'stretch',
