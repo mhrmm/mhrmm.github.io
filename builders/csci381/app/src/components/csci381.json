@@ -230,13 +230,13 @@
         {
             "id": "lecture22",
             "title": "token embeddings",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1FuzJB1dLsMf1HrSPO9C4qvyudFNaRoW9/"
         },
         {
             "id": "lecture23",
             "title": "recurrent neural networks",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/12vys3quOX_-mYs1Xh49mWeMaCS9meMJF/"
         },
         {
