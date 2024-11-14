@@ -80,6 +80,15 @@
             "preplocked": false,
             "solutionlocked": false,
             "due": "Nov 11 2024"
+        },
+        {
+            "id": "quiz-10",
+            "title": "quiz 10",
+            "preplink": "https://docs.google.com/document/d/1zc7X03wXwP23kwOEwdpxyxTeXlp4vH2Grr65vmxesjc/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/18Uy6WlSYQmN6gr61OGm2aGfj0e8umaLnZFRePEdALQ8/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Nov 18 2024"
         }
     ],
     "readings": [
@@ -248,7 +257,7 @@
         {
             "id": "lecture25",
             "title": "attention",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1EmyKB-UXco2xNA2SnoKXz9Tuezjv_XZ0/"
         },
         {
