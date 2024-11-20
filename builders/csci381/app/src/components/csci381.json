@@ -275,13 +275,13 @@
         {
             "id": "lecture28",
             "title": "batch and layer normalization",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1AqfJXF581zvgohKhtjqkm_YXGRe0lZNb/"
         },
         {
             "id": "lecture29",
             "title": "residual connections",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/19zWne_gLs-3em51Uy0leJfkEItScPrAc/"
         },
         {
@@ -365,7 +365,7 @@
             "title": "transference",
             "due": "Nov 28 2024",
             "locked": true,
-            "link": "https://classroom.github.com/a/mkcyB4wt"
+            "link": "https://classroom.github.com/a/ZvrCeccz"
         }
     ]
 }
