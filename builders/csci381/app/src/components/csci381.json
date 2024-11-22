@@ -287,19 +287,19 @@
         {
             "id": "lecture30",
             "title": "multihead attention",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1h6yxAzpSmj0gcQFM2ox46FmvzeNisP1U/"
         },
         {
             "id": "lecture31",
             "title": "foundation models",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1WWsQrZSyZFGPe0Uhe6gdXhi5KwFVwtp2/"
         },
         {
             "id": "lecture32",
             "title": "style transfer",
-            "locked": true,
+            "locked": false,
             "link": "https://drive.google.com/file/d/1tAX5da49EVWiLpZ3NqQ17v_USHmkijPd/"
         }
     ],
