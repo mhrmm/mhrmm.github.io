@@ -363,8 +363,8 @@
         {
             "id": "lab-8",
             "title": "transference",
-            "due": "Nov 28 2024",
-            "locked": true,
+            "due": "Nov 26 2024",
+            "locked": false,
             "link": "https://classroom.github.com/a/ZvrCeccz"
         }
     ]
