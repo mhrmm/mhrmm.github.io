@@ -1,0 +1,697 @@
+{
+    "activities": [
+        {
+            "id": "activity0",
+            "title": "expression trees",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/13gAnAbLOL6fDmpBchJIBo-nOsFp89hcy9jR589apNIo/edit?usp=sharing"            
+        },
+        {
+            "id": "activity1",
+            "title": "expression telephone",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1mo7mOXF5FgIDSWgHfGxJz4ZgVr7P6DbX-E6U9zU7Brc/edit?usp=sharing"
+        },
+        {
+            "id": "activity2",
+            "title": "swaparoo",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/10iyywRNeHYInZrY16a0jc9mKioIXLDPUsj398H-AMLw/edit?usp=sharing"
+        },
+        {
+            "id": "activity3",
+            "title": "staffing",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1ZBFuhZ3oZ-UqsX21Yu9Q518j1Z8ulAUIME50dZVEvI4/edit?usp=sharing"
+        },
+        {
+            "id": "activity4",
+            "title": "lambda lambda lambda",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1BNllKf4Bfam_uXSKL8NSTUpdj1lSjF6CgkOWqwra3Ps/edit?usp=sharing"
+        },
+        {
+            "id": "activity5",
+            "title": "quality assurance",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1JXJim_nmxFDgehOilYLoW-OpCflOVjOh6x6Fyf9VG8Q/edit?usp=sharing"
+        },
+        {
+            "id": "activity6",
+            "title": "composing",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1MB2CwC1dIifU09wne-oWiyiQcL8bwYukC_R-4gD5pYQ/edit?usp=sharing"
+        },
+        {
+            "id": "activity7",
+            "title": "beaker",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1r99HguQ_JTT9da95lZbsMqa-pxD5NlBcru405rv-uXE/edit?usp=sharing"
+        },
+        {
+            "id": "activity8",
+            "title": "being green",
+            "locked": false,
+            "link": "https://docs.google.com/presentation/d/1ef2jH3WxK_MAp30Z4ZLF_SWg3a4Lta6cJd1anES6WIA/edit?usp=sharing"
+        },
+        {
+            "id": "activity9",
+            "title": "cookie swap",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1RUob2Y1h6qbrZz_y2kcXkWIuSBQQRmzs-NNPLIwhlIw/edit?usp=sharing"
+        },
+        {
+            "id": "activity10",
+            "title": "cookie salon",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1XIfyu6EZSN1NEH1GobixeowCQlPwZbDBAM7XfRJVoCY/edit?usp=sharing"
+        },
+        {
+            "id": "activity11",
+            "title": "lineup",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1uH_MWvGQBbrgXpQhKv_NKjPa3KVKX0670mXHWFrE1lM/edit?usp=sharing"
+        },
+        {
+            "id": "activity12",
+            "title": "oscarpreneur",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1IKbPtiwlwkDRxjTFEdLsl7TfXUSZ5RykkreoIafdzIw/edit?usp=sharing"
+        },
+        {
+            "id": "activity13",
+            "title": "market research",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1YY7iAaT5B4-_ldlVuH6vD0W2aXT9ERbioTZ75GorESI/edit?usp=sharing"
+        },
+        {
+            "id": "activity14",
+            "title": "economies of scale 1",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1LlCVZnotg6uwuNrXLF9Stb_YTS_2HHq21zJUC3oCCrE/edit?usp=sharing"
+        },
+        {
+            "id": "activity15",
+            "title": "economies of scale 2",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1JslJXQ53ln3vLjLjpzqbZdy0RXpMb3X5LchF_itEr7Y/edit?usp=sharing"
+        },
+        {
+            "id": "activity16",
+            "title": "economies of scale 3",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1FlJRXExJrRp21kAFc0jUryTCi7yPWNH_A45r6FwJUfo/edit?usp=sharing"
+        },
+        {
+            "id": "activity17",
+            "title": "numerology",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1Ws7JaWKztnPe8_ea3g5kH_4s0oEuLM_2CpJHbPQHxgU/edit?usp=sharing"
+        },
+        {
+            "id": "activity18",
+            "title": "the fix is in",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1QyIxJC7e5NLr-RxjDppQmfD8aG8mxXIvg3QOE1KWEB0/edit?usp=sharing"
+        },
+        {
+            "id": "activity19",
+            "title": "puzzling edicts",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1eACy7UNpGuonlPEtXBMydaH6ulzYWcjySZzlsVvE2I0/edit?usp=sharing"
+        },
+        {
+            "id": "activity20",
+            "title": "rationalism",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1-TnweFnIBmF7y8sf7BKgkZywe-WN6LuFoY75Wp1Utvw/edit?usp=sharing"
+        },
+        {
+            "id": "activity21",
+            "title": "cookipedia",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1_w3QvHymlw0Zl5E-j1M_v86eL0ACyQPBUw6UoryDZmM/edit?usp=sharing"
+        },
+        {
+            "id": "activity22",
+            "title": "icdb",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/17FOwnjQT7QOtxCedquvKu25T7Boknvj_3HJVApwjMMs/edit?usp=sharing"
+        },
+        {
+            "id": "activity23",
+            "title": "dice assistance",
+            "locked": false,
+            "link": "https://docs.google.com/presentation/d/1gos8Rpsas8GnHj-6bDC-ljXNFvGODiImWmz83q47T_o/edit?usp=sharing"
+        },
+        {
+            "id": "activity24",
+            "title": "selection",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1AIafJZPSVvnTNEGzrCYja7_Q6t0gO6czbJGnisYit_Y/edit?usp=sharing"
+        },
+        {
+            "id": "activity25",
+            "title": "selecting",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1sGZLAhnADT9hciNaCEaTh6Ht2rW5tBigJc68pQZ8lsw/edit?usp=sharing"
+        },
+        {
+            "id": "activity26",
+            "title": "success metrics",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1xp0BeUTmIqSAeMfe5hCNgfO2FUlHHkda7yZUtfF02kE/edit?usp=sharing"
+        },
+        {
+            "id": "activity27",
+            "title": "the devil of alphabet city",
+            "locked": false,
+            "link": "https://docs.google.com/presentation/d/1MzPebGYwINTMzKKY4EjdE4f9A1Ycd4EfTIopnIhwFPY/edit?usp=sharing"
+        },
+        {
+            "id": "activity28",
+            "title": "baseless claims",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1VYk2qGMhO7ruHGUhdueG2rcwmyzoS5lQWGmtsMeyees/edit?usp=sharing"
+        },
+        {
+            "id": "activity29",
+            "title": "r & d",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1wk2D9AMZsNv5rTIH0QZQfZq_eOgodbr0Rf6xyChtASQ/edit?usp=sharing"
+        },
+        {
+            "id": "activity30",
+            "title": "globalization",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/18zCJypnfpWAOVrfNSOPgRPHGXYT3ScYEwUd_f3wpiZ8/edit?usp=sharing"
+        },
+        {
+            "id": "activity31",
+            "title": "memoranda",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1INILeLL7_IPm05zXSFHpPkJVJ-Cp-0rHXZv7BI9dDxg/edit?usp=sharing"
+        },
+        {
+            "id": "activity32",
+            "title": "product demo",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1tmc2DKmeQrhJ0_ZTBPn69ZBDu2GhlFwyrGT7vC-atRw/edit?usp=sharing"
+        },
+        {
+            "id": "activity33",
+            "title": "key demo",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1pob7xTwQZi7VVpeZdvDT9CrSHjhTDeN5lTqHJRpQHS8/edit?usp=sharing"
+        },
+        {
+            "id": "activity34",
+            "title": "version 2.0",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1I4zPuw4DTt6M0Q33bh2ZnQzMvSXthi1K92NgqvzcT0s/edit?usp=sharing"
+        },
+        {
+            "id": "activity35",
+            "title": "relaunch",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/17-6n-UBttG7oN-8eo-Lxyd4M0q6jKBEddGTw1QSATyI/edit?usp=sharing"
+        }
+    ],
+    "quizzes": [
+        {
+            "id": "quiz-1",
+            "title": "quiz 1",
+            "preplink": "https://docs.google.com/document/d/1-P-DfkRjXqQP1YA8Yrht3X8LSn8scbJE68O5ExB3QDM/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1arP_4iSWn6PsYDZJErzqs1R7HayrkjwxjEN59I-mIAw/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Sep 16 2024"
+        },
+        {
+            "id": "quiz-2",
+            "title": "quiz 2",
+            "preplink": "https://docs.google.com/document/d/1YkA8y52qTo0gILfhAQyGXgClKA7htP9acpiHgLgP2e8/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1-dTNVUXFgMqZdN1EK10Jd-PCQHirr2pGfESZUCm1_B8/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Sep 23 2024"
+        },
+        {
+            "id": "quiz-3",
+            "title": "quiz 3",
+            "preplink": "https://docs.google.com/document/d/1vi3ALDME9k_yMxCkmjGx1FWYZVZJYhBuomt7W3pX6ww/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1o0js_bIS3nE65rbvS4Do9xOvGSPt4rMrlvJsuynWRtQ/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Sep 30 2024"
+        },
+        {
+            "id": "quiz-4",
+            "title": "quiz 4",
+            "preplink": "https://docs.google.com/document/d/1fc4gzERu3dhF7UoWMY2-cL0RC5ZKVLdpl8GrlINCsCM/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/14CWC5PocEsUSKRObfXqOgV09Ma0_4qBTW6HEbdpk7Xw/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Oct 7 2024"
+        },
+        {
+            "id": "quiz-5",
+            "title": "quiz 5",
+            "preplink": "https://docs.google.com/document/d/1LmjKtH6bZsMQ0LeSeIrmCZCxSQAUaBotA7pcRCqtT7s/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1qDole57aEIjDZgJGQUaFaJC4r2nZO3ohimxsAjrZtIs/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Oct 16 2024"
+        },
+        {
+            "id": "quiz-6",
+            "title": "quiz 6",
+            "preplink": "https://docs.google.com/document/d/1ihi40o_f7lWq6R_9xusihb0AN7wPhTeDt5vKBVZVs8I/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/14JbWZZjnegE_T_9bjkcFmJisMsFinexsl3IkGuMxvws/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Oct 21 2024"
+        },
+        {
+            "id": "quiz-7",
+            "title": "quiz 7",
+            "preplink": "https://docs.google.com/document/d/1WE6yAk5UhqAovbBM9BqEW8mcwsT0zgxb0IZl_CleFGI/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/12rLt3Xz38ombh5kGfaimONwQec86hhGMcpMPZs1egac/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Oct 28 2024"
+        },
+        {
+            "id": "quiz-8",
+            "title": "quiz 8",
+            "preplink": "https://docs.google.com/document/d/1xseHneZm8u_tZfxZCJhct3orvkAe4wWr3ik_GnpUulc/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1QLH5e0KFlCurJXq1c0Rc2k06p-BPe3Mt3mEDcYFDe7I/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Nov 4 2024"
+        },
+        {
+            "id": "quiz-9",
+            "title": "quiz 9",
+            "preplink": "https://docs.google.com/document/d/1Z8WwKk9nH7kEu3CVy7rclCIEfTr-5TLkDb94QwaYSGA/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/1DR1RiO7MUUFRvNSiF-9vdJynH10HNu04c81SRGtTDD0/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Nov 11 2024"
+        },
+        {
+            "id": "quiz-10",
+            "title": "quiz 10",
+            "preplink": "https://docs.google.com/document/d/1zc7X03wXwP23kwOEwdpxyxTeXlp4vH2Grr65vmxesjc/edit?usp=sharing",
+            "solutionlink": "https://docs.google.com/document/d/18Uy6WlSYQmN6gr61OGm2aGfj0e8umaLnZFRePEdALQ8/edit?usp=sharing",
+            "preplocked": false,
+            "solutionlocked": false,
+            "due": "Nov 18 2024"
+        }
+    ],
+    "readings": [
+        {
+            "id": "read-0",
+            "title": "dlamp 1",
+            "due": "Sep 9 2024"
+        },
+        {
+            "id": "read-1",
+            "title": "dlamp 2",
+            "due": "Sep 26 2024"
+        }
+    ],
+    "lectures": [
+        {
+            "id": "lecture0",
+            "title": "primitive expressions",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1Tq-4aTUBxIeSX7ESADGzUZvIz7930zhs/view?usp=sharing"            
+        },
+        {
+            "id": "lecture1",
+            "title": "functions and arguments",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1AdXC2uhaK-JuaDMoP2nLPiZQK-Ya8CW4/view?usp=sharing"
+        },
+        {
+            "id": "lecture2",
+            "title": "expression trees",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1rUhwrpSzKCyAtOAItPz2Mz94TY8asK4u/view?usp=sharing"
+        },
+        {
+            "id": "lecture3",
+            "title": "built-in functions",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1Oy6yVjoajby07zBKMTX-7gRirB4TAl1K/view?usp=sharing"
+        },
+        {
+            "id": "lecture4",
+            "title": "flattening expressions",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/16cQMhd70Y_XXSfuasYuLuMhE6zCqQ4jr/view?usp=sharing"
+        },
+        {
+            "id": "lecture5",
+            "title": "arithmetic",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/11QBONCTsRt71PXQ4a1HejPB7TJOK4qyb/view?usp=sharing"
+        },
+        {
+            "id": "lecture6",
+            "title": "variables",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/11QBONCTsRt71PXQ4a1HejPB7TJOK4qyb/view?usp=sharing"
+        },
+        {
+            "id": "lecture7",
+            "title": "boolean expressions",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1SS0LNa8D6FuPhuLjipDLoBydgQ8KC-xr/view?usp=sharing"
+        },
+        {
+            "id": "lecture8",
+            "title": "function expressions",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1T5f5qWcNNJkROv4CtBxv-uOrWpG-7aoU/view?usp=sharing"
+        },
+        {
+            "id": "lecture9",
+            "title": "def statements",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/15_EaDdK5syScUIkwTqNMIcRvFmlbky5y/view?usp=sharing"
+        },
+        {
+            "id": "lecture10",
+            "title": "functions as arguments",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1T5f5qWcNNJkROv4CtBxv-uOrWpG-7aoU/view?usp=sharing"
+        },
+        {
+            "id": "lecture11",
+            "title": "nonetype",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1m1Q1kliQ74mGZIJyFsDnwWgQ8lSjyFrg/view?usp=sharing"
+        },
+        {
+            "id": "lecture12",
+            "title": "variable scope",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1KjDRojoaicOCLUpgePrCQHFIPUkApjrX/view?usp=sharing"
+        },
+        {
+            "id": "lecture13",
+            "title": "environment diagrams",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lecture14",
+            "title": "inner functions",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lecture15",
+            "title": "for statements",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1FR0XCO63i4G4YiyBcuQ-AZvyle2d0usU/view?usp=sharing"
+        },
+        {
+            "id": "lecture16",
+            "title": "range expressions",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1L4sb-OKFgjzE9HjIUXmE0pfck0lw-zco/view?usp=sharing"
+        },
+        {
+            "id": "lecture17",
+            "title": "if statements",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1hYbN5-dCojt1fRyP3-VSL3I8hXPeHGq8/view?usp=sharing"
+        },
+        {
+            "id": "lecture18",
+            "title": "while statements",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
+        },
+        {
+            "id": "lecture19",
+            "title": "lists",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
+        },
+        {
+            "id": "lecture20",
+            "title": "dictionaries",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1MgzZxgxnMdnOgbIuBrQwUTlbNYhHhzZF/view?usp=sharing"
+        },
+        {
+            "id": "lecture21",
+            "title": "sets",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/13qSG3wCXgOebBn9z75UkAjvtVmgY90vJ/view?usp=sharing"
+        },
+        {
+            "id": "lecture22",
+            "title": "string slicing",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1bZ_92U6WF0EEsn5K_gK89oetzc-6R9_8/view?usp=sharing"
+        },
+        {
+            "id": "lecture23",
+            "title": "mutability and tuples",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1PltQBqJEZEfjQWTMM0v4H59orvQYMfHQ/view?usp=sharing"
+        },
+        {
+            "id": "lecture24",
+            "title": "trees",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1Eg2cqU9zTQCyd6urU0miCB9zpocw4uTm/view?usp=sharing"
+        },
+        {
+            "id": "lecture25",
+            "title": "recursion",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1TXPIQ2TEhwUktsmXT9vYZGne8A_bxT7N/view?usp=sharing"
+        },
+        {
+            "id": "lecture26",
+            "title": "methods",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1KFNhtc1n0OB0MwqcONFYdCAOXb5f-QRs/view?usp=sharing"
+        },
+        {
+            "id": "lecture27",
+            "title": "classes",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1ksGYH0CLX82uV8lrFtDSKi8DsdKSuQxk/view?usp=sharing"
+        },
+        {
+            "id": "lecture28",
+            "title": "special methods",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lecture29",
+            "title": "inheritance",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1RF89w_LGCButyd3QkPtzSQ_tkf-XwBZx/view?usp=drive_link"
+        },
+        {
+            "id": "lecture30",
+            "title": "sorting",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/18-_Jc_PnI5XpN8S21vorvxv9I4RhF5zN/view?usp=sharing"
+        },
+        {
+            "id": "lecture31",
+            "title": "worst-case analysis",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1zaSPQEnSLb9bvzqKMNyvNN8W68mA1Bxj/view?usp=sharing"
+        },
+        {
+            "id": "lecture32",
+            "title": "o-notation",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1mVDEH13-vj3mq5hXrBbAIaUrB8c2zNxx/view?usp=sharing"
+        },
+        {
+            "id": "lecture33",
+            "title": "mergesort",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1SnPfZa0PcrJ4BTe8Iauiw04vBz4xvwAD/view?usp=sharing"
+        },
+        {
+            "id": "lecture34",
+            "title": "logarithmic complexity",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1kFVljPnZypotymENZ3wn-gy7crd1TY6d/view?usp=sharing"
+        },
+        {
+            "id": "lecture35",
+            "title": "analyzing code",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lecture36",
+            "title": "binary numbers",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1HSQTKc7Gou2T4ul7ql_VtvoK84ZbWL1D/view?usp=sharing"
+        },
+        {
+            "id": "lecture37",
+            "title": "alternative bases",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1u5dt_4Fd6oY4azsItf-HfRMTdz2TEEHh/view?usp=sharing"
+        },
+        {
+            "id": "lecture38",
+            "title": "hexadecimal representation",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/1cQEAW1RoEXPT5kEVu62RaKFfyFOwrPvZ/view?usp=sharing"
+        },
+        {
+            "id": "lecture39",
+            "title": "files",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/18VmWVD7fQOhRfqypvjwggpK9IwIVEwtO/view?usp=sharing"
+        },
+        {
+            "id": "lecture40",
+            "title": "timer events",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lecture41",
+            "title": "user events",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lecture42",
+            "title": "simple graphics",
+            "locked": true,
+            "link": "broken"
+        }
+    ],
+    "labs": [       
+        {
+            "id": "lab-0",
+            "title": "prologue",
+            "due": "Feb 13 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1zUX2mVQ67jtGe64ulqAaN2qidU4shO-0xMLBc-t2uZ8/edit?usp=sharing"
+        },
+        {
+            "id": "lab-1",
+            "title": "bake sale",
+            "due": "Feb 20 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1U4kkrlBGCUUQTbWqGOw6cHGFpepBKBz8h8wBlN9McHo/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-2",
+            "title": "book tour",
+            "due": "Feb 27 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1FVYEnXD62kibkd-knOmahOC4saFuO62R77Eh4IEdE48/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-3",
+            "title": "between the lines",
+            "due": "Mar 6 2025",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "lab-4",
+            "title": "the count's account",
+            "due": "Mar 13 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/11uwAWWZzhpFcTB1Biwm3t9HrZI6SpET2k4exXA1qwiY/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-5",
+            "title": "to the carpathians!",
+            "due": "Mar 20 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1y899SowSHmZttiANRdZP2_pUZ95KpY4MFuy3FhaBeas/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-6",
+            "title": "the coffins of cluj",
+            "due": "Apr 10 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1Nw3CAfiqfraE4SB3SiV4rEuAHLEw3Twic94UmUO5Hys/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-7",
+            "title": "newcroak",
+            "due": "Apr 17 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1GBfZsAO0iYtuLy0FNMZgBJendUyDoT8utlu9h8mmWAQ/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-8",
+            "title": "dispatches",
+            "due": "Apr 24 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1R2xt7FS__5QmNrmCXLtV8U-ittURxGGxZUpuwm45Oh0/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-9",
+            "title": "order muppets",
+            "due": "May 1 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1v6yWTiriQWTtdWrXEaOKo_8wm1imsSzrGl3BfSNNB2k/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-10",
+            "title": "the great escape",
+            "due": "May 8 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1DgIcze-N3Qq71Z0Q6Aw8SorL-MPl9EXXav-WrasRE5c/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-11",
+            "title": "a little bit of knowledge",
+            "due": "May 15 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1q5M2G49DBuG0Rat-8zM1fEDdXDmRFZTX8ylfDRWGGOE/edit?usp=drive_link"
+        },
+        {
+            "id": "lab-12",
+            "title": "breakout",
+            "due": "May 22 2025",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1GCdsqGC-hD2w8_0F-Xu_C6J8-7qfnAawMlXEHOYqChY/edit?usp=drive_link"
+        }
+    ],
+    "videos": [       
+        {
+            "id": "video-0",
+            "title": "mac setup",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/17btKFtgr5q5qn0pwWHi2OAbGildmm7-k/view?usp=drive_link"
+        },
+        {
+            "id": "video-1",
+            "title": "windows setup",
+            "locked": true,
+            "link": "broken"
+        },
+        {
+            "id": "video-2",
+            "title": "github classroom",
+            "locked": true,
+            "link": "broken"
+        }
+    ]
+}

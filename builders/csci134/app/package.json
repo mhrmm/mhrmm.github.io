@@ -1,0 +1,40 @@
+{
+  "name": "csci-134",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "vite build; cp dist/index.html ../../../index.html; cp dist/assets/*.* ../../../assets/; cp images/*.* ../../../images/; cp boards/*.* ../../../boards/",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.16.0",
+    "@mui/x-charts": "^7.9.0",
+    "@observablehq/plot": "^0.6.15",
+    "axios": "^1.7.2",
+    "d3": "^7.9.0",
+    "function-plot": "^1.25.0",
+    "image-preloader": "^1.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-function-plot": "^0.0.14",
+    "react-router-dom": "^6.26.1",
+    "react-switch": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "json-server": "^1.0.0-beta.1",
+    "vite": "^4.5.3"
+  }
+}
