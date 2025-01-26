@@ -328,7 +328,8 @@ const LectureSlides = () => {
       flexGrow: 1,
       flexShrink: 1
     }}>
-
+      <BoxTitle title="lectures" color="#ccffcc" />
+      <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
       <div style={{
         display: 'flex',
         flexFlow: 'column nowrap',
@@ -350,8 +351,7 @@ const LectureSlides = () => {
               locked={lecture.locked} />
           ))}
         </div>
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <BoxTitle title="lectures" color="#ccffcc" />
+        
       </div>
     </div>
   )
@@ -388,8 +388,8 @@ const Activities = () => {
               locked={activity.locked} />
           ))}
         </div>
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         <BoxTitle title="activities" color="#ffccff" />
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
       </div>
     </div>
   )
@@ -530,9 +530,10 @@ const Videos = () => {
         justifyContent: 'stretch',
         height: '100%'
       }}>
+        <BoxTitle title="videos" color="#ff8888" />
         {courseData.videos.map(lab => <Lab key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <BoxTitle title="videos" color="#ff8888" />
+        
       </div>
 
     </div>
@@ -555,9 +556,9 @@ const LabAssignments = () => {
         justifyContent: 'stretch',
         height: '100%'
       }}>
-        {courseData.labs.map(lab => <Lab key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         <BoxTitle title="labs" color="#aaffff" />
+        {courseData.labs.map(lab => <Lab key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
       </div>
     </div>
   )
