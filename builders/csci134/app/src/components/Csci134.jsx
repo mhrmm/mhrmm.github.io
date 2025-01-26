@@ -164,11 +164,8 @@ const TeachingAssistant = ({ image, name, hours, where }) => {
 const TeachingAssistants = () => {
 
   return (
-    <div style={{
-      backgroundColor: '#CC5F30',
-      padding: '10px',
-      flexGrow: 1,
-      flexShrink: 1,
+    <div className="csci134-colorblock" style={{
+      backgroundColor: '#CC5F30'
     }}>
       <div style={{
         display: 'flex',
@@ -176,10 +173,11 @@ const TeachingAssistants = () => {
         justifyContent: 'stretch',
         height: '100%'
       }}>
+        <BoxTitle title="help hours" color="#FFC590" />
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         <div style={{
           display: 'flex',
-          flexFlow: 'row nowrap',
+          flexFlow: 'row wrap',
           justifyContent: 'space-evenly'
         }}>
           
@@ -208,8 +206,7 @@ const TeachingAssistants = () => {
             where="mac lab"
           />
         </div>
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <BoxTitle title="help hours" color="#FFC590" />
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
       </div>
     </div>
   )
@@ -238,75 +235,6 @@ const SlideDeck = ({ title, link, locked }) => {
   ) : renderContent()
 }
 
-const QuizItem = ({ title, preplink, preplocked, solutionlink, solutionlocked }) => {
-
-  const renderQuizContent = () => {
-    return <div
-      className={preplocked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-        flexGrow: 1,
-        flexShrink: 1,
-      }}>
-      <span>{title}</span> {preplocked ? '🔒' : null}
-    </div>
-  }
-
-  const renderQuiz = () => (
-    !preplocked ? (
-      <a href={preplink} target="_blank" style={{
-        flexGrow: 1,
-        flexShrink: 1,
-      }}>
-        {renderQuizContent()}
-      </a>
-    ) : renderQuizContent()
-  )
-
-  const renderSolutionContent = () => {
-    return <div
-      className={solutionlocked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-        flexGrow: 1,
-        flexShrink: 1,
-      }}>
-      <span>solution</span> {solutionlocked ? '🔒' : null}
-    </div>
-  }
-
-  const renderSolution = () => (
-    !solutionlocked ? (
-      <a href={solutionlink} target="_blank" style={{
-        flexGrow: 1,
-        flexShrink: 1,
-      }}>
-        {renderSolutionContent()}
-      </a>
-    ) : renderSolutionContent()
-  )
-
-
-
-  return (
-    <div style={{
-      display: 'flex',
-      flexFlow: 'row nowrap',
-      justifyContent: 'stretch',
-      alignItems: 'stretch',
-      width: '100%'
-    }}>
-      {renderQuiz()}
-      {renderSolution()}
-    </div>
-  )
-}
 
 const BoxTitle = ({ title, color }) => {
   return (
@@ -322,11 +250,8 @@ const BoxTitle = ({ title, color }) => {
 const LectureSlides = () => {
 
   return (
-    <div style={{
-      backgroundColor: "#226622",
-      padding: '10px',
-      flexGrow: 1,
-      flexShrink: 1
+    <div className="csci134-colorblock" style={{
+      backgroundColor: "#226622"
     }}>
       <BoxTitle title="lectures" color="#ccffcc" />
       <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
@@ -341,7 +266,7 @@ const LectureSlides = () => {
           display: 'flex',
           flexFlow: 'column wrap',
           gap: '5px',
-          height: window.innerWidth > 800 ? '640px' : null
+          height: window.innerWidth > 800 ? '700px' : null
         }}>
           {courseData.lectures.map(lecture => (
             <SlideDeck
@@ -360,11 +285,8 @@ const LectureSlides = () => {
 const Activities = () => {
 
   return (
-    <div style={{
-      backgroundColor: '#442244',
-      padding: '10px',
-      flexGrow: 1,
-      flexShrink: 1,
+    <div className="csci134-colorblock" style={{
+      backgroundColor: '#442244'
     }}>
 
       <div style={{
@@ -373,7 +295,8 @@ const Activities = () => {
         justifyContent: 'stretch',
         alignItems: 'stretch',
       }}>
-
+        <BoxTitle title="activities" color="#ffccff" />
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>          
         <div style={{
           display: 'flex',
           flexFlow: 'column wrap',
@@ -388,106 +311,8 @@ const Activities = () => {
               locked={activity.locked} />
           ))}
         </div>
-        <BoxTitle title="activities" color="#ffccff" />
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+        
       </div>
-    </div>
-  )
-}
-
-
-
-
-
-const Activities2 = () => {
-
-  return (
-    <div style={{
-      backgroundColor: '#f2d2a9',
-      padding: '10px',
-      flexGrow: 1,
-      flexShrink: 1,
-    }}>
-
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        justifyContent: 'stretch',
-        alignItems: 'stretch',
-        height: '100%'
-      }}>
-
-        <div style={{
-          display: 'flex',
-          flexFlow: 'row wrap',
-          justifyContent: 'space-between',
-          gap: '0px'
-        }}>
-          {courseData.activities.map(quiz => (
-            <QuizItem
-              key={quiz.id}
-              title={quiz.title.toLowerCase()}
-              preplink={quiz.preplink}
-              preplocked={quiz.preplocked} 
-              solutionlink={quiz.solutionlink}
-              solutionlocked={quiz.solutionlocked}
-            />
-          ))}
-        </div>
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <BoxTitle title="activities" color="black" />
-      </div>
-    </div>
-  )
-}
-
-const CourseInfo = () => {
-
-  const fontColor = "black"
-
-  return (
-    <div style={{
-      backgroundColor: 'pink',
-      flexGrow: 1,
-      flexShrink: 1,
-      padding: '10px'
-    }}>
-      <div className="csci134-subtitle vcenter" style={{
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        justifyContent: 'center',
-        height: '100%',
-        alignContent: 'center',
-        alignItems: 'center',
-        fontSize: '18px',
-      }}>
-        <div style={{ color: fontColor }}>
-          <span className="csci134-question">where?</span> schow 30b
-        </div>
-        <div style={{ color: fontColor }}>
-          <span className="csci134-question">when?</span> mwf 9-950am
-        </div>
-        <div style={{ color: fontColor }}>
-          <span className="csci134-question">office hours?</span> w 10-noon
-        </div>
-        <div style={{ color: fontColor }}>
-          <span className="csci134-question">office?</span> tcl 307
-        </div>
-        <div style={{ color: fontColor }}>
-          <span className="csci134-question">
-            syllabus?
-          </span>
-          <span> </span>
-          <a
-            className="csci134-textlink"
-            href="https://drive.google.com/file/d/1fH8O449CQaVsnAvYG4BWw-FzCfdoaYzG/view?usp=sharing"
-            target="_blank"
-          >
-            here
-          </a>
-        </div>
-      </div>
-
     </div>
   )
 }
@@ -518,11 +343,8 @@ const Lab = ({ title, link, due, locked }) => {
 const Videos = () => {
 
   return (
-    <div style={{
-      backgroundColor: "darkred",
-      padding: '10px',
-      flexGrow: 1,
-      flexShrink: 1
+    <div className="csci134-colorblock" style={{
+      backgroundColor: "darkred"
     }}>
       <div style={{
         display: 'flex',
@@ -543,11 +365,8 @@ const Videos = () => {
 const LabAssignments = () => {
 
   return (
-    <div style={{
-      backgroundColor: "navy",
-      padding: '10px',
-      flexGrow: 1,
-      flexShrink: 1
+    <div className="csci134-colorblock" style={{
+      backgroundColor: "navy"
     }}>
       <div style={{
         display: 'flex',

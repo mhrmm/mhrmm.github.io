@@ -72,6 +72,13 @@ ul {
   font-style: normal;
 }
 
+.csci134-colorblock {
+  padding: 10px;
+  padding-top: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
 .csci134-subtitle {
   font-family: "Permanent Marker", sans-serif;
   font-optical-sizing: auto;
