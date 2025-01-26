@@ -251,7 +251,8 @@ const LectureSlides = () => {
 
   return (
     <div className="csci134-colorblock" style={{
-      backgroundColor: "#226622"
+      backgroundColor: "#226622",
+      flexGrow: 6
     }}>
       <BoxTitle title="lectures" color="#ccffcc" />
       <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
@@ -373,6 +374,7 @@ const LabAssignments = () => {
         flexFlow: 'column wrap',
         gap: '5px',
         justifyContent: 'stretch',
+        alignContent: 'stretch',
         height: '100%'
       }}>
         <BoxTitle title="labs" color="#aaffff" />
@@ -386,7 +388,7 @@ const LabAssignments = () => {
 
 function Csci134() {
 
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth > 1300) {
     return (
       <div>
         <div className="csci134" style={{
