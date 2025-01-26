@@ -214,26 +214,7 @@ const TeachingAssistants = () => {
 
 
 
-const SlideDeck = ({ title, link, locked }) => {
-  const renderContent = () => {
-    return <div
-      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-      }}>
-      <span>{title}</span> {locked ? '🔒' : null}
-    </div>
-  }
 
-  return !locked ? (
-    <a href={link} target="_blank">
-      {renderContent()}
-    </a>
-  ) : renderContent()
-}
 
 
 const BoxTitle = ({ title, color }) => {
@@ -245,6 +226,27 @@ const BoxTitle = ({ title, color }) => {
       {title}
     </div>
   )
+}
+
+const SlideDeck = ({ title, index, link, locked }) => {
+  const renderContent = () => {
+    return <div
+      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
+      style={{
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        color: 'black',
+      }}>
+      <span>{index+1}. {title}</span> {locked ? '🔒' : null}
+    </div>
+  }
+
+  return !locked ? (
+    <a href={link} target="_blank">
+      {renderContent()}
+    </a>
+  ) : renderContent()
 }
 
 const LectureSlides = () => {
@@ -269,9 +271,10 @@ const LectureSlides = () => {
           gap: '5px',
           height: window.innerWidth > 800 ? '700px' : null
         }}>
-          {courseData.lectures.map(lecture => (
+          {courseData.lectures.map((lecture, index) => (
             <SlideDeck
               key={lecture.id}
+              index={index}
               title={lecture.title.toLowerCase()}
               link={lecture.link}
               locked={lecture.locked} />
@@ -302,11 +305,12 @@ const Activities = () => {
           display: 'flex',
           flexFlow: 'column wrap',
           gap: '5px',
-          height: window.innerWidth > 800 ? '510px' : null
+          height: window.innerWidth > 800 ? '600px' : null
         }}>
-          {courseData.activities.map(activity => (
+          {courseData.activities.map((activity, index) => (
             <SlideDeck
               key={activity.id}
+              index={index}
               title={activity.title.toLowerCase()}
               link={activity.link}
               locked={activity.locked} />
@@ -319,7 +323,51 @@ const Activities = () => {
 }
 
 
-const Lab = ({ title, link, due, locked }) => {
+const Lab = ({ title, index, link, due, locked }) => {
+
+  const renderContent = () => {
+    return <div
+      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
+      style={{
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        color: 'black',
+      }}>
+      <span>{index}. {title}</span> {locked ? '🔒' : null}
+    </div>
+  }
+
+  return !locked ? (
+    <a href={link} target="_blank">
+      {renderContent()}
+    </a>
+  ) : renderContent()
+}
+
+const LabAssignments = () => {
+
+  return (
+    <div className="csci134-colorblock" style={{
+      backgroundColor: "navy"
+    }}>
+      <div style={{
+        display: 'flex',
+        flexFlow: 'column wrap',
+        gap: '5px',
+        justifyContent: 'stretch',
+        alignContent: 'stretch',
+        height: '100%'
+      }}>
+        <BoxTitle title="labs" color="#aaffff" />
+        {courseData.labs.map((lab, index) => <Lab key={lab.id} index={index} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
+      </div>
+    </div>
+  )
+}
+
+const Video = ({ title, link, due, locked }) => {
 
   const renderContent = () => {
     return <div
@@ -354,7 +402,7 @@ const Videos = () => {
         height: '100%'
       }}>
         <BoxTitle title="videos" color="#ff8888" />
-        {courseData.videos.map(lab => <Lab key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
+        {courseData.videos.map(lab => <Video key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Video>)}
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         
       </div>
@@ -363,27 +411,6 @@ const Videos = () => {
   )
 }
 
-const LabAssignments = () => {
-
-  return (
-    <div className="csci134-colorblock" style={{
-      backgroundColor: "navy"
-    }}>
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column wrap',
-        gap: '5px',
-        justifyContent: 'stretch',
-        alignContent: 'stretch',
-        height: '100%'
-      }}>
-        <BoxTitle title="labs" color="#aaffff" />
-        {courseData.labs.map(lab => <Lab key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
-      </div>
-    </div>
-  )
-}
 
 
 function Csci134() {
