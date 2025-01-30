@@ -190,13 +190,13 @@ const TeachingAssistants = () => {
           <TeachingAssistant
             image="images/lida.jpg"
             name="Lida"
-            hours="wed, thu 1-3pm"
+            hours="wed 1-230pm"
             where="cs common room"
           />
           <TeachingAssistant
             image="images/mark.png"
             name="Mark"
-            hours="wed, thu 2-4pm"
+            hours="wed 2-4pm"
             where="cs common room"
           />
           <TeachingAssistant
@@ -228,7 +228,35 @@ const BoxTitle = ({ title, color }) => {
   )
 }
 
-const SlideDeck = ({ title, index, link, locked }) => {
+const SlideDeck = ({ title, index, link, release }) => {
+  const now = new Date(Date.now())
+  const locked = release ? now <= new Date(release) : true
+
+  const renderContent = () => {
+    return <div
+      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
+      style={{
+        borderStyle: "solid",
+        margin: '2px',
+        padding: '2px',
+        color: 'black',
+      }}>
+      <span>{index+1}. {title}</span> {locked ? '🔒' : null}
+    </div>
+  }
+
+  return !locked ? (
+    <a href={link} target="_blank">
+      {renderContent()}
+    </a>
+  ) : renderContent()
+}
+
+const Activity = ({ title, index, link, release }) => {
+
+  const now = new Date(Date.now())
+  const locked = release ? now <= new Date(release) : true
+ 
   const renderContent = () => {
     return <div
       className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
@@ -277,7 +305,7 @@ const LectureSlides = () => {
               index={index}
               title={lecture.title.toLowerCase()}
               link={lecture.link}
-              locked={lecture.locked} />
+              release={lecture.release} />
           ))}
         </div>
         
@@ -308,12 +336,12 @@ const Activities = () => {
           height: window.innerWidth > 800 ? '600px' : null
         }}>
           {courseData.activities.map((activity, index) => (
-            <SlideDeck
+            <Activity
               key={activity.id}
               index={index}
               title={activity.title.toLowerCase()}
               link={activity.link}
-              locked={activity.locked} />
+              release={activity.release} />
           ))}
         </div>
         
@@ -323,7 +351,10 @@ const Activities = () => {
 }
 
 
-const Lab = ({ title, index, link, due, locked }) => {
+const Lab = ({ title, index, link, due, release }) => {
+
+  const now = new Date(Date.now())
+  const locked = release ? now <= new Date(release) : true
 
   const renderContent = () => {
     return <div
@@ -360,7 +391,7 @@ const LabAssignments = () => {
         height: '100%'
       }}>
         <BoxTitle title="labs" color="#aaffff" />
-        {courseData.labs.map((lab, index) => <Lab key={lab.id} index={index} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Lab>)}
+        {courseData.labs.map((lab, index) => <Lab key={lab.id} index={index} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} release={lab.release}></Lab>)}
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
       </div>
     </div>
