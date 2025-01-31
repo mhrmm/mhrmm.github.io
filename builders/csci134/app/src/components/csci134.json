@@ -13,13 +13,21 @@
             "link": "https://docs.google.com/document/d/1mo7mOXF5FgIDSWgHfGxJz4ZgVr7P6DbX-E6U9zU7Brc/edit?usp=sharing"
         },
         {
-            "id": "activity2",
+            "id": "activity2a",
+            "title": "infix",
+            "release": "Feb 16 2025",
+            "link": "https://docs.google.com/document/d/1CyfQz_bWbe1Ilaa4B-p6kTWVtHpWxib3GkljB3m7cRo/edit?usp=sharing"
+        },
+        {
+            "id": "activity2b",
             "title": "swaparoo",
+            "release": "Feb 16 2025",
             "link": "https://docs.google.com/document/d/10iyywRNeHYInZrY16a0jc9mKioIXLDPUsj398H-AMLw/edit?usp=sharing"
         },
         {
             "id": "activity3",
             "title": "staffing",
+            "release": "Feb 18 2025",
             "link": "https://docs.google.com/document/d/1ZBFuhZ3oZ-UqsX21Yu9Q518j1Z8ulAUIME50dZVEvI4/edit?usp=sharing"
         },
         {
@@ -289,53 +297,58 @@
     ],
     "lectures": [
         {
-            "id": "lecture0",
+            "id": "lecture-0",
             "title": "primitive expressions",
             "release": "Jan 29 2025",
             "link": "https://drive.google.com/file/d/1Tq-4aTUBxIeSX7ESADGzUZvIz7930zhs/view?usp=sharing"            
         },
         {
-            "id": "lecture1",
+            "id": "lecture-1",
             "title": "functions and arguments",
             "release": "Feb 9 2025",
             "link": "https://drive.google.com/file/d/1AdXC2uhaK-JuaDMoP2nLPiZQK-Ya8CW4/view?usp=sharing"
         },
         {
-            "id": "lecture2",
+            "id": "lecture-2",
             "title": "expression trees",
             "release": "Feb 9 2025",
             "link": "https://drive.google.com/file/d/1rUhwrpSzKCyAtOAItPz2Mz94TY8asK4u/view?usp=sharing"
         },
         {
-            "id": "lecture3",
+            "id": "lecture-3",
             "title": "flattening expressions",
             "release": "Feb 11 2025",
-            "link": "https://drive.google.com/file/d/16cQMhd70Y_XXSfuasYuLuMhE6zCqQ4jr/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1SPnppgjabDfY8cBaBGUCSt2bZs-7qJGy/view?usp=sharing"
         },        
         {
-            "id": "lecture4",
-            "title": "built-in functions",
-            "link": "https://drive.google.com/file/d/1Oy6yVjoajby07zBKMTX-7gRirB4TAl1K/view?usp=sharing"
-        },
-        {
-            "id": "lecture5",
+            "id": "lecture-4",
             "title": "arithmetic",
+            "release": "Feb 16 2025",
             "link": "https://drive.google.com/file/d/11QBONCTsRt71PXQ4a1HejPB7TJOK4qyb/view?usp=sharing"
         },
         {
-            "id": "lecture6",
+            "id": "lecture-5",
             "title": "variables",
+            "release": "Feb 16 2025",
             "link": "https://drive.google.com/file/d/11QBONCTsRt71PXQ4a1HejPB7TJOK4qyb/view?usp=sharing"
         },
         {
-            "id": "lecture7",
+            "id": "lecture-6",
             "title": "boolean expressions",
+            "release": "Feb 18 2025",
             "link": "https://drive.google.com/file/d/1SS0LNa8D6FuPhuLjipDLoBydgQ8KC-xr/view?usp=sharing"
         },
         {
-            "id": "lecture8",
+            "id": "lecture-7",
             "title": "function expressions",
+            "release": "Feb 20 2025",
             "link": "https://drive.google.com/file/d/1T5f5qWcNNJkROv4CtBxv-uOrWpG-7aoU/view?usp=sharing"
+        },
+        {
+            "id": "lecture-8",
+            "title": "lambda expressions",
+            "release": "Feb 20 2025",
+            "link": "https://drive.google.com/file/d/1KbUq-5nZ2EME-uCDMd820QjEViDjYfJe/view?usp=sharing"
         },
         {
             "id": "lecture9",
