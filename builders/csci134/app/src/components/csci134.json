@@ -351,33 +351,38 @@
             "link": "https://drive.google.com/file/d/1KbUq-5nZ2EME-uCDMd820QjEViDjYfJe/view?usp=sharing"
         },
         {
-            "id": "lecture9",
+            "id": "lecture-9",
             "title": "def statements",
+            "release": "Feb 23 2025",
             "link": "https://drive.google.com/file/d/15_EaDdK5syScUIkwTqNMIcRvFmlbky5y/view?usp=sharing"
         },
         {
-            "id": "lecture10",
+            "id": "lecture-10",
             "title": "functions as arguments",
+            "release": "Feb 23 2025",
             "link": "https://drive.google.com/file/d/1T5f5qWcNNJkROv4CtBxv-uOrWpG-7aoU/view?usp=sharing"
         },
         {
-            "id": "lecture11",
+            "id": "lecture-11",
             "title": "nonetype",
+            "release": "Feb 25 2025",
             "link": "https://drive.google.com/file/d/1m1Q1kliQ74mGZIJyFsDnwWgQ8lSjyFrg/view?usp=sharing"
         },
         {
-            "id": "lecture12",
+            "id": "lecture-12",
             "title": "variable scope",
+            "release": "Feb 25 2025",
             "link": "https://drive.google.com/file/d/1KjDRojoaicOCLUpgePrCQHFIPUkApjrX/view?usp=sharing"
         },
         {
-            "id": "lecture13",
-            "title": "environment diagrams",
-            "link": "broken"
+            "id": "lecture-13",
+            "title": "inner functions",
+            "release": "Feb 27 2025",
+            "link": "https://drive.google.com/file/d/1nQQAXrkzcEaHRuoEJi3gBdDkTAOHUDae/view?usp=sharing"
         },
         {
             "id": "lecture14",
-            "title": "inner functions",
+            "title": "environment diagrams",
             "link": "broken"
         },
         {
