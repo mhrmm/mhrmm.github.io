@@ -553,7 +553,7 @@
             "title": "between the lines",
             "due": "Mar 6 2025",
             "release": "Feb 28 2025",
-            "link": "broken"
+            "link": "https://docs.google.com/document/d/1QGEpCwgtLzadqEZLHiupohj9PIAnxMa9CIp5Eqp_168/edit?usp=sharing"
         },
         {
             "id": "lab-4",
@@ -629,14 +629,8 @@
         {
             "id": "video-1",
             "title": "windows setup",
-            "locked": true,
-            "link": "broken"
-        },
-        {
-            "id": "video-2",
-            "title": "github classroom",
-            "locked": true,
-            "link": "broken"
+            "locked": false,
+            "link": "https://drive.google.com/file/d/16KoFVfkGlaFcEUIgihQ8CtI_kPxImy1A/view?usp=sharing"
         }
     ]
 }
