@@ -130,7 +130,7 @@ const Welcome = () => {
 }
 
 
-const TeachingAssistant = ({ image, name, hours, where }) => {
+const TeachingAssistant = ({ image, name, hours, hours2, where }) => {
   return (
     <div className="csci134-text" style={{
       display: 'flex',
@@ -153,6 +153,11 @@ const TeachingAssistant = ({ image, name, hours, where }) => {
       <div>
         {hours.toLowerCase()}
       </div>
+      {hours2 ?
+      <div>
+      {hours2.toLowerCase()}
+      </div>:<div></div>
+      }
       <div>
         {where.toLowerCase()}
       </div>
@@ -202,7 +207,8 @@ const TeachingAssistants = () => {
           <TeachingAssistant
             image="images/beaker.png"
             name="tas"
-            hours="sun-thu 7-9pm"
+            hours2="wed-thu 4-6pm"
+            hours="mon-thu 7-10pm"
             where="mac lab"
           />
         </div>
