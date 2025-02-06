@@ -222,7 +222,6 @@ const TeachingAssistants = () => {
 
 
 
-
 const BoxTitle = ({ title, color }) => {
   return (
     <div className="csci134-subtitle" style={{
