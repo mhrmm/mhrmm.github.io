@@ -27,6 +27,7 @@ const getFutureDate = daysAhead => {
   return new Date(Date.now() + daysAhead * 8.64e+7).toDateString()
 }
 
+
 const Upcoming = () => {
 
   const daysAhead = 0
@@ -403,7 +404,7 @@ const LabAssignments = () => {
   )
 }
 
-const Video = ({ title, link, due, locked }) => {
+const Info = ({ title, link, due, locked }) => {
 
   const renderContent = () => {
     return <div
@@ -425,7 +426,7 @@ const Video = ({ title, link, due, locked }) => {
   ) : renderContent()
 }
 
-const Videos = () => {
+const Infos = () => {
 
   return (
     <div className="csci134-colorblock" style={{
@@ -437,8 +438,8 @@ const Videos = () => {
         justifyContent: 'stretch',
         height: '100%'
       }}>
-        <BoxTitle title="videos" color="#ff8888" />
-        {courseData.videos.map(lab => <Video key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Video>)}
+        <BoxTitle title="info" color="#ff8888" />
+        {courseData.info.map(lab => <Info key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Info>)}
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
         
       </div>
@@ -479,7 +480,7 @@ function Csci134() {
               justifyContent: 'stretch',
               gap: '20px'
             }}>
-              <Videos />
+              <Infos />
               <TeachingAssistants />
             </div>
             <div style={{
@@ -552,7 +553,7 @@ function Csci134() {
           marginTop: '0px',
           paddingTop: '0px'
         }}>
-          <Videos />
+          <Infos />
         </div>
         <div className="csci134" style={{
           marginTop: '0px',

@@ -208,104 +208,49 @@
         {
             "id": "quiz-1",
             "title": "quiz 1",
-            "preplink": "https://docs.google.com/document/d/1-P-DfkRjXqQP1YA8Yrht3X8LSn8scbJE68O5ExB3QDM/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/1arP_4iSWn6PsYDZJErzqs1R7HayrkjwxjEN59I-mIAw/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Sep 16 2024"
+            "due": "Mar 7 2025"
         },
         {
             "id": "quiz-2",
             "title": "quiz 2",
-            "preplink": "https://docs.google.com/document/d/1YkA8y52qTo0gILfhAQyGXgClKA7htP9acpiHgLgP2e8/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/1-dTNVUXFgMqZdN1EK10Jd-PCQHirr2pGfESZUCm1_B8/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Sep 23 2024"
+            "due": "Mar 21 2025"
         },
         {
             "id": "quiz-3",
             "title": "quiz 3",
-            "preplink": "https://docs.google.com/document/d/1vi3ALDME9k_yMxCkmjGx1FWYZVZJYhBuomt7W3pX6ww/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/1o0js_bIS3nE65rbvS4Do9xOvGSPt4rMrlvJsuynWRtQ/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Sep 30 2024"
+            "due": "Apr 11 2025"
         },
         {
             "id": "quiz-4",
             "title": "quiz 4",
-            "preplink": "https://docs.google.com/document/d/1fc4gzERu3dhF7UoWMY2-cL0RC5ZKVLdpl8GrlINCsCM/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/14CWC5PocEsUSKRObfXqOgV09Ma0_4qBTW6HEbdpk7Xw/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Oct 7 2024"
+            "due": "Apr 25 2025"
         },
         {
             "id": "quiz-5",
             "title": "quiz 5",
-            "preplink": "https://docs.google.com/document/d/1LmjKtH6bZsMQ0LeSeIrmCZCxSQAUaBotA7pcRCqtT7s/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/1qDole57aEIjDZgJGQUaFaJC4r2nZO3ohimxsAjrZtIs/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Oct 16 2024"
-        },
-        {
-            "id": "quiz-6",
-            "title": "quiz 6",
-            "preplink": "https://docs.google.com/document/d/1ihi40o_f7lWq6R_9xusihb0AN7wPhTeDt5vKBVZVs8I/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/14JbWZZjnegE_T_9bjkcFmJisMsFinexsl3IkGuMxvws/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Oct 21 2024"
-        },
-        {
-            "id": "quiz-7",
-            "title": "quiz 7",
-            "preplink": "https://docs.google.com/document/d/1WE6yAk5UhqAovbBM9BqEW8mcwsT0zgxb0IZl_CleFGI/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/12rLt3Xz38ombh5kGfaimONwQec86hhGMcpMPZs1egac/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Oct 28 2024"
-        },
-        {
-            "id": "quiz-8",
-            "title": "quiz 8",
-            "preplink": "https://docs.google.com/document/d/1xseHneZm8u_tZfxZCJhct3orvkAe4wWr3ik_GnpUulc/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/1QLH5e0KFlCurJXq1c0Rc2k06p-BPe3Mt3mEDcYFDe7I/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Nov 4 2024"
-        },
-        {
-            "id": "quiz-9",
-            "title": "quiz 9",
-            "preplink": "https://docs.google.com/document/d/1Z8WwKk9nH7kEu3CVy7rclCIEfTr-5TLkDb94QwaYSGA/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/1DR1RiO7MUUFRvNSiF-9vdJynH10HNu04c81SRGtTDD0/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Nov 11 2024"
-        },
-        {
-            "id": "quiz-10",
-            "title": "quiz 10",
-            "preplink": "https://docs.google.com/document/d/1zc7X03wXwP23kwOEwdpxyxTeXlp4vH2Grr65vmxesjc/edit?usp=sharing",
-            "solutionlink": "https://docs.google.com/document/d/18Uy6WlSYQmN6gr61OGm2aGfj0e8umaLnZFRePEdALQ8/edit?usp=sharing",
-            "preplocked": false,
-            "solutionlocked": false,
-            "due": "Nov 18 2024"
+            "due": "May 9 2025"
         }
     ],
     "readings": [
         {
-            "id": "read-0",
-            "title": "dlamp 1",
-            "due": "Sep 9 2024"
+            "id": "read-1",
+            "title": "cp 1.2",
+            "due": "Feb 17 2025"
         },
         {
-            "id": "read-1",
-            "title": "dlamp 2",
-            "due": "Sep 26 2024"
+            "id": "read-2",
+            "title": "cp 1.3-1.4",
+            "due": "Feb 24 2025"
+        },
+        {
+            "id": "read-3",
+            "title": "cp 1.6.1-1.6.7",
+            "due": "Mar 3 2025"
+        },
+        {
+            "id": "read-4",
+            "title": "cp 1.5",
+            "due": "Mar 10 2025"
         }
     ],
     "lectures": [
@@ -632,15 +577,21 @@
             "link": "https://classroom.github.com/a/Qz5wcNmP"
         }
     ],
-    "videos": [       
+    "info": [    
         {
-            "id": "video-0",
+            "id": "info-0",
+            "title": "textbook: composing programs",
+            "locked": false,
+            "link": "https://www.composingprograms.com/"
+        },   
+        {
+            "id": "info-1",
             "title": "mac setup",
             "locked": false,
             "link": "https://drive.google.com/file/d/17btKFtgr5q5qn0pwWHi2OAbGildmm7-k/view?usp=drive_link"
         },
         {
-            "id": "video-1",
+            "id": "info-2",
             "title": "windows setup",
             "locked": false,
             "link": "https://drive.google.com/file/d/16KoFVfkGlaFcEUIgihQ8CtI_kPxImy1A/view?usp=sharing"
