@@ -343,41 +343,43 @@
         {
             "id": "lecture14",
             "title": "environment diagrams",
-            "link": "broken"
+            "release": "Mar 2 2025",
+            "link": "https://drive.google.com/file/d/1IKxOFHNxyErrOex4KYU4F87aL5QtgAEj/view?usp=sharing"
         },
         {
             "id": "lecture15",
             "title": "for statements",
+            "release": "Mar 4 2025",
             "link": "https://drive.google.com/file/d/1FR0XCO63i4G4YiyBcuQ-AZvyle2d0usU/view?usp=sharing"
         },
         {
             "id": "lecture16",
-            "title": "range expressions",
-            "link": "https://drive.google.com/file/d/1L4sb-OKFgjzE9HjIUXmE0pfck0lw-zco/view?usp=sharing"
-        },
-        {
-            "id": "lecture17",
             "title": "if statements",
+            "release": "Mar 4 2025",
             "link": "https://drive.google.com/file/d/1hYbN5-dCojt1fRyP3-VSL3I8hXPeHGq8/view?usp=sharing"
         },
         {
-            "id": "lecture18",
+            "id": "lecture17",
             "title": "while statements",
+            "release": "Mar 9 2025",
+            "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
+        },
+        {
+            "id": "lecture18",
+            "title": "lists",
+            "release": "Mar 11 2025",
             "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
         },
         {
             "id": "lecture19",
-            "title": "lists",
-            "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
-        },
-        {
-            "id": "lecture20",
             "title": "dictionaries",
+            "release": "Mar 13 2025",
             "link": "https://drive.google.com/file/d/1MgzZxgxnMdnOgbIuBrQwUTlbNYhHhzZF/view?usp=sharing"
         },
         {
             "id": "lecture21",
             "title": "sets",
+            "release": "Mar 13 2025",
             "link": "https://drive.google.com/file/d/13qSG3wCXgOebBn9z75UkAjvtVmgY90vJ/view?usp=sharing"
         },
         {
