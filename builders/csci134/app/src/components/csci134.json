@@ -93,6 +93,7 @@
         {
             "id": "activity13",
             "title": "market research",
+            "release": "Mar 16 2025",
             "link": "https://docs.google.com/document/d/1YY7iAaT5B4-_ldlVuH6vD0W2aXT9ERbioTZ75GorESI/edit?usp=sharing"
         },
         {
@@ -377,7 +378,7 @@
             "link": "https://drive.google.com/file/d/1MgzZxgxnMdnOgbIuBrQwUTlbNYhHhzZF/view?usp=sharing"
         },
         {
-            "id": "lecture21",
+            "id": "lecture20",
             "title": "sets",
             "release": "Mar 13 2025",
             "link": "https://drive.google.com/file/d/13qSG3wCXgOebBn9z75UkAjvtVmgY90vJ/view?usp=sharing"
@@ -385,11 +386,13 @@
         {
             "id": "lecture22",
             "title": "string slicing",
+            "release": "Mar 16 2025",
             "link": "https://drive.google.com/file/d/1bZ_92U6WF0EEsn5K_gK89oetzc-6R9_8/view?usp=sharing"
         },
         {
             "id": "lecture23",
             "title": "mutability and tuples",
+            "release": "Mar 16 2025",
             "link": "https://drive.google.com/file/d/1PltQBqJEZEfjQWTMM0v4H59orvQYMfHQ/view?usp=sharing"
         },
         {
