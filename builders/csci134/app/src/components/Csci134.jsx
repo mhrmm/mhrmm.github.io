@@ -210,7 +210,7 @@ const TeachingAssistants = () => {
             name="tas"
             hours2="wed-thu 4-6pm"
             hours="mon-thu 7-10pm"
-            where="mac lab"
+            where="tcl 216/217"
           />
         </div>
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
