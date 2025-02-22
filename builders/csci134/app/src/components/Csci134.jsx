@@ -117,9 +117,21 @@ const Welcome = () => {
           <br></br>
           <span className="csci134-textlink" style={{fontSize: '26px'}}><a className="csci134-textlink" href="https://docs.google.com/document/d/1GZV2lnWXe-CkDdvNDZRMgENnicuhT-EEjW3T1HYRgZQ/edit?usp=sharing" target="_blank">
             (syllabus)
-          </a></span>
-         
+          </a></span>          
         </div>
+        </div>
+        <div style={{ fontSize: "20px" }}>
+          <span style={{ fontSize: "30px" }}>quiz dates</span>
+          <br></br>
+          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Mar 7, 2025</span>
+          <br></br>
+          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Mar 21, 2025</span>  
+          <br></br>
+          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Apr 11, 2025</span>
+          <br></br>
+          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Apr 25, 2025</span>
+          <br></br>
+          <span className="csci134-upcoming" style={{color: "#F8E067"}}>May 9, 2025</span>
         </div>
         
         
