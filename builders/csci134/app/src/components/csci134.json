@@ -422,29 +422,46 @@
             "link": "https://drive.google.com/file/d/1Ye1lSq4qZatnkqvfNCaqvvXOQZ2W1tcW/view?usp=sharing"
         },
         {
+            "id": "lecture23c",
+            "title": "linked lists",
+            "release": "Apr 6 2025",
+            "link": "https://drive.google.com/file/d/15YGAo-5klVmN_yPb1at6SCfx0fJGikac/view?usp=sharing"
+        },
+        {
             "id": "lecture24",
             "title": "trees",
+            "release": "Apr 8 2025",
             "link": "https://drive.google.com/file/d/1Eg2cqU9zTQCyd6urU0miCB9zpocw4uTm/view?usp=sharing"
         },
         {
             "id": "lecture25",
             "title": "recursion",
+            "release": "Apr 13 2025",
             "link": "https://drive.google.com/file/d/1TXPIQ2TEhwUktsmXT9vYZGne8A_bxT7N/view?usp=sharing"
         },
         {
             "id": "lecture26",
             "title": "methods",
+            "release": "Apr 15 2025",
             "link": "https://drive.google.com/file/d/1KFNhtc1n0OB0MwqcONFYdCAOXb5f-QRs/view?usp=sharing"
         },
         {
             "id": "lecture27",
             "title": "classes",
+            "release": "Apr 15 2025",
             "link": "https://drive.google.com/file/d/1ksGYH0CLX82uV8lrFtDSKi8DsdKSuQxk/view?usp=sharing"
+        },
+        {
+            "id": "lecture27b",
+            "title": "object state",
+            "release": "Apr 17 2025",
+            "link": "https://drive.google.com/file/d/1NRAPN_6faJmMeqiI5xckxrpABh93ZmlX/view?usp=sharing"
         },
         {
             "id": "lecture28",
             "title": "special methods",
-            "link": "broken"
+            "release": "Apr 17 2025",
+            "link": "https://drive.google.com/file/d/1diXRKz7tW3Uu00F700_6RowAlDWsb9Zn/view?usp=sharing"
         },
         {
             "id": "lecture29",
@@ -649,9 +666,9 @@
         },
         {
             "id": "info-6",
-            "title": "quiz 2 preview",
+            "title": "quiz 3 preview",
             "locked": false,
-            "link": "https://drive.google.com/file/d/1VUwgmVOEdEAhPDFPdikcG7FIutfo57-E/view?usp=drive_link"
+            "link": "https://drive.google.com/file/d/19bb0s6Z7QoVolKHM2bey8PwmuTgaSlXn/view?usp=sharing"
         }
     ]
 }
