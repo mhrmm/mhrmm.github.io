@@ -195,11 +195,13 @@
         {
             "id": "activity28",
             "title": "baseless claims",
+            "release": "May 4 2025",
             "link": "https://docs.google.com/document/d/1VYk2qGMhO7ruHGUhdueG2rcwmyzoS5lQWGmtsMeyees/edit?usp=sharing"
         },
         {
             "id": "activity29",
             "title": "r & d",
+            "release": "May 4 2025",
             "link": "https://docs.google.com/document/d/1wk2D9AMZsNv5rTIH0QZQfZq_eOgodbr0Rf6xyChtASQ/edit?usp=sharing"
         },
         {
@@ -472,37 +474,44 @@
         {
             "id": "lecture29",
             "title": "inheritance",
+            "release": "Apr 20 2025",
             "link": "https://drive.google.com/file/d/1RF89w_LGCButyd3QkPtzSQ_tkf-XwBZx/view?usp=drive_link"
         },
         {
             "id": "lecture30",
             "title": "sorting",
+            "release": "Apr 22 2025",
             "link": "https://drive.google.com/file/d/18-_Jc_PnI5XpN8S21vorvxv9I4RhF5zN/view?usp=sharing"
         },
         {
             "id": "lecture31",
             "title": "worst-case analysis",
+            "release": "Apr 27 2025",
             "link": "https://drive.google.com/file/d/1zaSPQEnSLb9bvzqKMNyvNN8W68mA1Bxj/view?usp=sharing"
         },
         {
             "id": "lecture32",
             "title": "o-notation",
+            "release": "Apr 29 2025",
             "link": "https://drive.google.com/file/d/1mVDEH13-vj3mq5hXrBbAIaUrB8c2zNxx/view?usp=sharing"
         },
         {
             "id": "lecture33",
             "title": "mergesort",
+            "release": "May 1 2025",
             "link": "https://drive.google.com/file/d/1SnPfZa0PcrJ4BTe8Iauiw04vBz4xvwAD/view?usp=sharing"
         },
         {
             "id": "lecture34",
             "title": "logarithmic complexity",
+            "release": "May 1 2025",
             "link": "https://drive.google.com/file/d/1kFVljPnZypotymENZ3wn-gy7crd1TY6d/view?usp=sharing"
         },
         {
             "id": "lecture35",
             "title": "analyzing code",
-            "link": "broken"
+            "release": "May 4 2025",
+            "link": "https://drive.google.com/file/d/1VGoBAu_C2re0WvIMQ_2Laj85jxLt293L/view?usp=sharing"
         },
         {
             "id": "lecture36",
