@@ -218,23 +218,21 @@
         },
         {
             "id": "activity32",
-            "title": "product demo",
-            "link": "https://docs.google.com/document/d/1tmc2DKmeQrhJ0_ZTBPn69ZBDu2GhlFwyrGT7vC-atRw/edit?usp=sharing"
+            "title": "signal",
+            "release": "May 13 2025",
+            "link": "https://docs.google.com/document/d/1ASUlMGDYfCV0q28lkpCUeceMNCXH5RSYlYq_CSAP_xs/edit?usp=sharing"
         },
         {
             "id": "activity33",
-            "title": "key demo",
-            "link": "https://docs.google.com/document/d/1pob7xTwQZi7VVpeZdvDT9CrSHjhTDeN5lTqHJRpQHS8/edit?usp=sharing"
+            "title": "focus group",
+            "release": "May 13 2025",
+            "link": "https://docs.google.com/document/d/1LuuR79XwEpKxIphSjYhnqzpZFiK4IeFfpBij8ELNNtA/edit?usp=sharing"
         },
         {
             "id": "activity34",
             "title": "version 2.0",
+            "release": "May 15 2025",
             "link": "https://docs.google.com/document/d/1I4zPuw4DTt6M0Q33bh2ZnQzMvSXthi1K92NgqvzcT0s/edit?usp=sharing"
-        },
-        {
-            "id": "activity35",
-            "title": "relaunch",
-            "link": "https://docs.google.com/document/d/17-6n-UBttG7oN-8eo-Lxyd4M0q6jKBEddGTw1QSATyI/edit?usp=sharing"
         }
     ],
     "quizzes": [
@@ -518,37 +516,44 @@
         {
             "id": "lecture36",
             "title": "binary numbers",
+            "release": "May 6 2025",
             "link": "https://drive.google.com/file/d/1HSQTKc7Gou2T4ul7ql_VtvoK84ZbWL1D/view?usp=sharing"
         },
         {
             "id": "lecture37",
             "title": "alternative bases",
+            "release": "May 6 2025",
             "link": "https://drive.google.com/file/d/1u5dt_4Fd6oY4azsItf-HfRMTdz2TEEHh/view?usp=sharing"
         },
         {
             "id": "lecture38",
             "title": "hexadecimal representation",
+            "release": "May 11 2025",
             "link": "https://drive.google.com/file/d/1cQEAW1RoEXPT5kEVu62RaKFfyFOwrPvZ/view?usp=sharing"
         },
         {
             "id": "lecture39",
             "title": "files",
-            "link": "https://drive.google.com/file/d/18VmWVD7fQOhRfqypvjwggpK9IwIVEwtO/view?usp=sharing"
-        },
+            "release": "May 11 2025",
+            "link": "https://drive.google.com/file/d/19DxBJQPqLdQxDZzW8MIXOwOXw8Ia5nH-/view?usp=drive_link"
+        },        
         {
             "id": "lecture40",
-            "title": "timer events",
-            "link": "broken"
+            "title": "simple graphics",
+            "release": "May 13 2025",
+            "link": "https://drive.google.com/file/d/1rNmzmNdhEmvIjlHMn52HBzfBeKFGJ3Bo/view?usp=drive_link"
         },
         {
             "id": "lecture41",
             "title": "user events",
-            "link": "broken"
+            "release": "May 13 2025",
+            "link": "https://drive.google.com/file/d/1p5TpjUBE7UzPID7-2WEPgL5U4ODH3_gp/view?usp=drive_link"
         },
         {
             "id": "lecture42",
-            "title": "simple graphics",
-            "link": "broken"
+            "title": "timer events",
+            "release": "May 15 2025",
+            "link": "https://drive.google.com/file/d/1u8_tDU_qP1O5SH0_5Xqdkb8xrkbPCgng/view?usp=drive_link"
         }
     ],
     "labs": [       
