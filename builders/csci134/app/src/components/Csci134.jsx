@@ -203,19 +203,19 @@ const TeachingAssistants = () => {
             image="images/laura.jpg"
             name="Laura"
             hours="thu 130-330pm"
-            where="cs common room"
+            where="tcl 216"
           />
           <TeachingAssistant
             image="images/lida.jpg"
             name="Lida"
             hours="wed 130-3pm"
-            where="cs common room"
+            where="tcl 216"
           />
           <TeachingAssistant
             image="images/mark.png"
             name="Mark"
             hours="wed 2-4pm"
-            where="cs common room"
+            where="tcl 216"
           />
           <TeachingAssistant
             image="images/beaker.png"
