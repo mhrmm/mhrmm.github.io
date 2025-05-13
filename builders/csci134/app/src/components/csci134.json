@@ -676,21 +676,15 @@
         },
         {
             "id": "info-4",
-            "title": "quiz practice",
-            "locked": false,
-            "link": "https://docs.google.com/document/d/1uaNgK1yBJZNBtx3TQgOjmPxCROHW9HURz_cp99FZvKE/edit?usp=sharing"
-        },
-        {
-            "id": "info-5",
             "title": "environment diagram tool",
             "locked": false,
             "link": "https://composingprograms.com/tutor.html"
         },
         {
-            "id": "info-6",
-            "title": "quiz 5 preview",
+            "id": "info-5",
+            "title": "final exam practice",
             "locked": false,
-            "link": "https://drive.google.com/file/d/1csWClGH_dQaiRdOTrQprx-FYO3kN-voy/view?usp=drive_link"
+            "link": "https://docs.google.com/document/d/1uaNgK1yBJZNBtx3TQgOjmPxCROHW9HURz_cp99FZvKE/edit?usp=sharing"
         }
     ]
 }
