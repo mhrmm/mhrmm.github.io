@@ -43,6 +43,21 @@ ul {
   color: white
 }
 
+.csci134 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+/* Wide screens */
+@media (min-width: 1100px) {
+  .csci134 {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
 .csci134-textlink {
   font-weight: bold;
   color: #aa55aa
@@ -65,11 +80,46 @@ ul {
   background-color: rgb(35, 205, 205)
 }
 
+.csci134-info {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: white
+}
+
+.csci134-info:hover {
+  background-color: rgb(35, 205, 205);
+  color: black;
+}
+
 .csci134-welcome {
   font-family: "Bangers", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.welcome {
+  height: 200px;
+}
+
+@media (max-width: 1009px) {
+  .welcome {
+    height: 400px;
+  }
+}
+
+@media (max-width: 574px) {
+  .welcome {
+    height: 500px;
+  }
+}
+
+@media (max-width: 498px) {
+  .welcome {
+    height: 750px;
+  }
 }
 
 .csci134-colorblock {
@@ -117,10 +167,40 @@ ul {
   font-style: normal;
 }
 
+@media (max-width: 670px) {
+  .csci134-text {
+    font-size: 12px;
+  }
+}
+
 .csci134-lab-text {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
+}
+
+@media (max-width: 870px) {
+  .csci134-lab-text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 780px) {
+  .csci134-lab-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 670px) {
+  .csci134-lab-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 540px) {
+  .csci134-lab-text {
+    font-size: 14px;
+  }
 }
 

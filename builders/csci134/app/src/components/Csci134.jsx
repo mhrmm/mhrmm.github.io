@@ -103,34 +103,30 @@ const Emphasis = (props) => {
 const Welcome = () => {
   return (
     <div
-      className="csci134-welcome"
+      className="csci134-welcome welcome"
       style={{
         fontSize: "50px",
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent: "center",
       }}
     >
+      <img
+        style={{ maxHeight: "200px", width: "auto" }}
+        src="images/cookiemonster.png"
+      />
       <div
         style={{
-          display: "flex",
-          flexFlow: "row nowrap",
-          gap: "20px",
-          justifyContent: "left",
-          height: "150pt",
+          alignContent: "center",
         }}
       >
-        <img src="images/cookiemonster.png" />
-        <div
-          style={{
-            alignContent: "center",
-          }}
-        >
-          <div>welcome to 134</div>
-          <div style={{ fontSize: "20px", color: "aqua" }}>
-            an introduction to computer science
-          </div>
+        <div>welcome to 134</div>
+        <div style={{ fontSize: "20px", color: "aqua" }}>
+          an introduction to computer science
         </div>
-
-        <TeachingAssistants />
       </div>
+
+      <TeachingAssistants />
     </div>
   );
 };
@@ -527,7 +523,7 @@ const SlideDeck = ({ type, title, link, release }) => {
   );
 };
 
-const Infos = () => {
+const Schedule = () => {
   const columnProportions = "1fr 2fr 2fr 2fr 2fr";
   const startMonday = new Date(2026, 1, 9); // Feb is month 1 (0-based!)
 
@@ -658,6 +654,48 @@ const Infos = () => {
   );
 };
 
+const Information = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent: "space-around",
+        gap: "20px",
+        height: "auto",
+        padding: "10px",
+        borderStyle: "solid",
+      }}
+    >
+      {courseData.info.map((content) => (
+        <Info title={content.title} link={content.link} />
+      ))}
+    </div>
+  );
+};
+
+const Info = ({ title, link }) => {
+  const renderContent = () => {
+    return (
+      <div
+        className={"csci134-info"}
+        style={{
+          margin: "2px",
+          padding: "2px",
+        }}
+      >
+        <span>{title}</span>{" "}
+      </div>
+    );
+  };
+
+  return (
+    <a href={link} target="_blank">
+      {renderContent()}
+    </a>
+  );
+};
+
 function Csci134() {
   return (
     <div>
@@ -673,6 +711,7 @@ function Csci134() {
         }}
       >
         <Welcome />
+        <Information />
         <div
           style={{
             flexGrow: 1,
@@ -693,7 +732,7 @@ function Csci134() {
               gap: "20px",
             }}
           >
-            <Infos />
+            <Schedule />
           </div>
         </div>
       </div>

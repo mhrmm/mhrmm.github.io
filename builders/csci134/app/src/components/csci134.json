@@ -2,39 +2,39 @@
     "info": [
         {
             "id": "info-0",
-            "title": "textbook: composing programs",
+            "title": "syllabus",
             "locked": false,
-            "link": "https://www.composingprograms.com/"
+            "link": "https://docs.google.com/document/d/1GZV2lnWXe-CkDdvNDZRMgENnicuhT-EEjW3T1HYRgZQ/edit?tab=t.0#heading=h.gjdgxs"
         },
         {
             "id": "info-1",
+            "title": "gradescope",
+            "locked": false,
+            "link": "https://gradescope.com"
+        },
+        {
+            "id": "info-2",
             "title": "mac setup",
             "locked": false,
             "link": "https://drive.google.com/file/d/17btKFtgr5q5qn0pwWHi2OAbGildmm7-k/view?usp=drive_link"
         },
         {
-            "id": "info-2",
+            "id": "info-3",
             "title": "windows setup",
             "locked": false,
             "link": "https://drive.google.com/file/d/16KoFVfkGlaFcEUIgihQ8CtI_kPxImy1A/view?usp=sharing"
         },
         {
-            "id": "info-3",
-            "title": "github classroom",
+            "id": "info-4",
+            "title": "github classroom setup",
             "locked": false,
             "link": "https://docs.google.com/document/d/1vhZv_zhX6jcCMdSCeRIZ4tnHZrQRy0HARJqHmeMJo14/edit?usp=sharing"
         },
         {
-            "id": "info-4",
+            "id": "info-5",
             "title": "environment diagram tool",
             "locked": false,
             "link": "https://composingprograms.com/tutor.html"
-        },
-        {
-            "id": "info-5",
-            "title": "final exam practice",
-            "locked": false,
-            "link": "https://docs.google.com/document/d/1uaNgK1yBJZNBtx3TQgOjmPxCROHW9HURz_cp99FZvKE/edit?usp=sharing"
         }
     ],
     "schedule": [
