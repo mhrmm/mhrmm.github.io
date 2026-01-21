@@ -62,11 +62,11 @@ ul {
 }
 
 .csci134-button:hover {
-  background-color: rgb(248, 224, 103)
+  background-color: rgb(35, 205, 205)
 }
 
 .csci134-welcome {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Bangers", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -94,9 +94,10 @@ ul {
 }
 
 .csci134-schedule-header {
-  font-family: "Quicksand";
+  font-family: "Bangers";
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
 }
 
 .csci134-upcoming {
@@ -111,7 +112,15 @@ ul {
   font-weight: 800;
 }
 .csci134-text {
-  font-family: "Raleway";
+  font-family: "Quicksand";
   font-weight: 400;
   font-style: normal;
 }
+
+.csci134-lab-text {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+

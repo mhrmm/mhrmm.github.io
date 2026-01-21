@@ -1,652 +1,40 @@
 {
-    "activities": [
+    "info": [
         {
-            "id": "activity0",
-            "title": "expression trees",
-            "release": "Feb 9 2025",
-            "link": "https://docs.google.com/document/d/13gAnAbLOL6fDmpBchJIBo-nOsFp89hcy9jR589apNIo/edit?usp=sharing"
+            "id": "info-0",
+            "title": "textbook: composing programs",
+            "locked": false,
+            "link": "https://www.composingprograms.com/"
         },
         {
-            "id": "activity1",
-            "title": "expression telephone",
-            "release": "Feb 11 2025",
-            "link": "https://docs.google.com/document/d/1mo7mOXF5FgIDSWgHfGxJz4ZgVr7P6DbX-E6U9zU7Brc/edit?usp=sharing"
+            "id": "info-1",
+            "title": "mac setup",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/17btKFtgr5q5qn0pwWHi2OAbGildmm7-k/view?usp=drive_link"
         },
         {
-            "id": "activity2a",
-            "title": "infix",
-            "release": "Feb 16 2025",
-            "link": "https://docs.google.com/document/d/1CyfQz_bWbe1Ilaa4B-p6kTWVtHpWxib3GkljB3m7cRo/edit?usp=sharing"
+            "id": "info-2",
+            "title": "windows setup",
+            "locked": false,
+            "link": "https://drive.google.com/file/d/16KoFVfkGlaFcEUIgihQ8CtI_kPxImy1A/view?usp=sharing"
         },
         {
-            "id": "activity2b",
-            "title": "swaparoo",
-            "release": "Feb 16 2025",
-            "link": "https://docs.google.com/document/d/10iyywRNeHYInZrY16a0jc9mKioIXLDPUsj398H-AMLw/edit?usp=sharing"
+            "id": "info-3",
+            "title": "github classroom",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1vhZv_zhX6jcCMdSCeRIZ4tnHZrQRy0HARJqHmeMJo14/edit?usp=sharing"
         },
         {
-            "id": "activity3",
-            "title": "staffing",
-            "release": "Feb 18 2025",
-            "link": "https://docs.google.com/document/d/1ZBFuhZ3oZ-UqsX21Yu9Q518j1Z8ulAUIME50dZVEvI4/edit?usp=sharing"
+            "id": "info-4",
+            "title": "environment diagram tool",
+            "locked": false,
+            "link": "https://composingprograms.com/tutor.html"
         },
         {
-            "id": "activity4",
-            "title": "lambda lambda lambda",
-            "release": "Feb 20 2025",
-            "link": "https://docs.google.com/document/d/1BNllKf4Bfam_uXSKL8NSTUpdj1lSjF6CgkOWqwra3Ps/edit?usp=sharing"
-        },
-        {
-            "id": "activity5",
-            "title": "quality assurance",
-            "release": "Feb 23 2025",
-            "link": "https://docs.google.com/document/d/1JXJim_nmxFDgehOilYLoW-OpCflOVjOh6x6Fyf9VG8Q/edit?usp=sharing"
-        },
-        {
-            "id": "activity6",
-            "title": "composing",
-            "release": "Feb 23 2025",
-            "link": "https://docs.google.com/document/d/1MB2CwC1dIifU09wne-oWiyiQcL8bwYukC_R-4gD5pYQ/edit?usp=sharing"
-        },
-        {
-            "id": "activity7",
-            "title": "beaker",
-            "release": "Feb 27 2025",
-            "link": "https://docs.google.com/document/d/1r99HguQ_JTT9da95lZbsMqa-pxD5NlBcru405rv-uXE/edit?usp=sharing"
-        },
-        {
-            "id": "activity8",
-            "title": "being green",
-            "release": "Mar 2 2025",
-            "link": "https://docs.google.com/document/d/1SHitoJbhnK7TbtL2VqMtC9UFe-r1i-Ejl51FxPOvgjw/edit?usp=sharing"
-        },
-        {
-            "id": "activity9",
-            "title": "cookie swap",
-            "release": "Mar 4 2025",
-            "link": "https://docs.google.com/document/d/1RUob2Y1h6qbrZz_y2kcXkWIuSBQQRmzs-NNPLIwhlIw/edit?usp=sharing"
-        },
-        {
-            "id": "activity9b",
-            "title": "biscuitus, dirige nos",
-            "release": "Mar 4 2025",
-            "link": "https://docs.google.com/document/d/1NmIASMG19S3rlJ0vh3Uoow1fahIawUXqbKS4CfbbdII/edit?usp=sharing"
-        },
-        {
-            "id": "activity10",
-            "title": "cookie salon",
-            "release": "Mar 9 2025",
-            "link": "https://docs.google.com/document/d/1XIfyu6EZSN1NEH1GobixeowCQlPwZbDBAM7XfRJVoCY/edit?usp=sharing"
-        },
-        {
-            "id": "activity11",
-            "title": "hatters gonna hat",
-            "release": "Mar 11 2025",
-            "link": "https://docs.google.com/document/d/1qq4YrMKCF4Fo7aw1CE83W6_NyljYscU0mb7asDqj_S0/edit?usp=sharing"
-        },
-        {
-            "id": "activity12",
-            "title": "oscarpreneur",
-            "release": "Mar 13 2025",
-            "link": "https://docs.google.com/document/d/1IKbPtiwlwkDRxjTFEdLsl7TfXUSZ5RykkreoIafdzIw/edit?usp=sharing"
-        },
-        {
-            "id": "activity13",
-            "title": "market research",
-            "release": "Mar 16 2025",
-            "link": "https://docs.google.com/document/d/1YY7iAaT5B4-_ldlVuH6vD0W2aXT9ERbioTZ75GorESI/edit?usp=sharing"
-        },
-        {
-            "id": "activity14",
-            "title": "economies of scale 1",
-            "release": "Apr 6 2025",
-            "link": "https://docs.google.com/document/d/1QWANzzGW6b3tOGiZqsGc6yUdd3TF09GdeBENtybYfEQ/edit?usp=sharing"
-        },
-        {
-            "id": "activity15",
-            "title": "economies of scale 2",
-            "release": "Apr 6 2025",
-            "link": "https://docs.google.com/document/d/1LlCVZnotg6uwuNrXLF9Stb_YTS_2HHq21zJUC3oCCrE/edit?usp=sharing"
-        },
-        {
-            "id": "activity16",
-            "title": "economies of scale 3",
-            "release": "Apr 6 2025",
-            "link": "https://docs.google.com/document/d/1JslJXQ53ln3vLjLjpzqbZdy0RXpMb3X5LchF_itEr7Y/edit?usp=sharing"
-        },
-        {
-            "id": "activity17",
-            "title": "numerology",
-            "release": "Apr 8 2025",
-            "link": "https://docs.google.com/document/d/1Ws7JaWKztnPe8_ea3g5kH_4s0oEuLM_2CpJHbPQHxgU/edit?usp=sharing"
-        },
-        {
-            "id": "activity18",
-            "title": "inception",
-            "release": "Apr 13 2025",
-            "link": "https://docs.google.com/document/d/1iPjH4sLg59kg1O1pPpdve98wAtU-s6gatMsMAXaFUIM/edit?usp=sharing"
-        },
-        {
-            "id": "activity18b",
-            "title": "the fix is in",
-            "release": "Apr 13 2025",
-            "link": "https://docs.google.com/document/d/1QyIxJC7e5NLr-RxjDppQmfD8aG8mxXIvg3QOE1KWEB0/edit?usp=sharing"
-        },
-        {
-            "id": "activity19",
-            "title": "puzzling edicts",
-            "release": "Apr 13 2025",
-            "link": "https://docs.google.com/document/d/1eACy7UNpGuonlPEtXBMydaH6ulzYWcjySZzlsVvE2I0/edit?usp=sharing"
-        },
-        {
-            "id": "activity19b",
-            "title": "bookie monster",
-            "release": "Apr 15 2025",
-            "link": "https://docs.google.com/document/d/1LI7PoyfbVtEws2G9hjaTRwPjcPDTW5VyIn5Cr5ELFq4/edit?usp=sharing"
-        },
-        {
-            "id": "activity20",
-            "title": "rationalism",
-            "release": "Apr 17 2025",
-            "link": "https://docs.google.com/document/d/1-TnweFnIBmF7y8sf7BKgkZywe-WN6LuFoY75Wp1Utvw/edit?usp=sharing"
-        },
-        {
-            "id": "activity21",
-            "title": "cookipedia",
-            "release": "Apr 17 2025",
-            "link": "https://docs.google.com/document/d/1_w3QvHymlw0Zl5E-j1M_v86eL0ACyQPBUw6UoryDZmM/edit?usp=sharing"
-        },
-        {
-            "id": "activity22",
-            "title": "icdb",
-            "release": "Apr 20 2025",
-            "link": "https://docs.google.com/document/d/17FOwnjQT7QOtxCedquvKu25T7Boknvj_3HJVApwjMMs/edit?usp=sharing"
-        },
-        {
-            "id": "activity23",
-            "title": "dice assistance",
-            "release": "Apr 22 2025",
-            "link": "https://docs.google.com/presentation/d/1gos8Rpsas8GnHj-6bDC-ljXNFvGODiImWmz83q47T_o/copy"
-        },
-        {
-            "id": "activity24",
-            "title": "selection",
-            "release": "Apr 22 2025",
-            "link": "https://docs.google.com/document/d/1AIafJZPSVvnTNEGzrCYja7_Q6t0gO6czbJGnisYit_Y/edit?usp=sharing"
-        },
-        {
-            "id": "activity25",
-            "title": "selecting",
-            "release": "Apr 27 2025",
-            "link": "https://docs.google.com/document/d/1sGZLAhnADT9hciNaCEaTh6Ht2rW5tBigJc68pQZ8lsw/edit?usp=sharing"
-        },
-        {
-            "id": "activity26",
-            "title": "success metrics",
-            "release": "Apr 27 2025",
-            "link": "https://docs.google.com/document/d/1xp0BeUTmIqSAeMfe5hCNgfO2FUlHHkda7yZUtfF02kE/edit?usp=sharing"
-        },
-        {
-            "id": "activity27",
-            "title": "the devil of alphabet city",
-            "release": "Apr 29 2025",
-            "link": "https://docs.google.com/document/d/1crX_4iJUkWKWqUGj_yE6J9NtWKy_zqzCO-RECXhVzYw/edit?usp=sharing"
-        },
-        {
-            "id": "activity28",
-            "title": "baseless claims",
-            "release": "May 4 2025",
-            "link": "https://docs.google.com/document/d/1VYk2qGMhO7ruHGUhdueG2rcwmyzoS5lQWGmtsMeyees/edit?usp=sharing"
-        },
-        {
-            "id": "activity29",
-            "title": "r & d",
-            "release": "May 4 2025",
-            "link": "https://docs.google.com/document/d/1wk2D9AMZsNv5rTIH0QZQfZq_eOgodbr0Rf6xyChtASQ/edit?usp=sharing"
-        },
-        {
-            "id": "activity30",
-            "title": "globalization",
-            "release": "May 6 2025",
-            "link": "https://docs.google.com/document/d/18zCJypnfpWAOVrfNSOPgRPHGXYT3ScYEwUd_f3wpiZ8/edit?usp=sharing"
-        },
-        {
-            "id": "activity31",
-            "title": "memoranda",
-            "release": "May 11 2025",
-            "link": "https://docs.google.com/document/d/1INILeLL7_IPm05zXSFHpPkJVJ-Cp-0rHXZv7BI9dDxg/edit?usp=sharing"
-        },
-        {
-            "id": "activity32",
-            "title": "signal",
-            "release": "May 13 2025",
-            "link": "https://docs.google.com/document/d/1ASUlMGDYfCV0q28lkpCUeceMNCXH5RSYlYq_CSAP_xs/edit?usp=sharing"
-        },
-        {
-            "id": "activity33",
-            "title": "focus group",
-            "release": "May 13 2025",
-            "link": "https://docs.google.com/document/d/1LuuR79XwEpKxIphSjYhnqzpZFiK4IeFfpBij8ELNNtA/edit?usp=sharing"
-        },
-        {
-            "id": "activity34",
-            "title": "version 2.0",
-            "release": "May 15 2025",
-            "link": "https://docs.google.com/document/d/1I4zPuw4DTt6M0Q33bh2ZnQzMvSXthi1K92NgqvzcT0s/edit?usp=sharing"
-        }
-    ],
-    "quizzes": [
-        {
-            "id": "quiz-1",
-            "title": "quiz 1",
-            "due": "Mar 7 2025"
-        },
-        {
-            "id": "quiz-2",
-            "title": "quiz 2",
-            "due": "Mar 21 2025"
-        },
-        {
-            "id": "quiz-3",
-            "title": "quiz 3",
-            "due": "Apr 11 2025"
-        },
-        {
-            "id": "quiz-4",
-            "title": "quiz 4",
-            "due": "Apr 25 2025"
-        },
-        {
-            "id": "quiz-5",
-            "title": "quiz 5",
-            "due": "May 9 2025"
-        }
-    ],
-    "readings": [
-        {
-            "id": "read-1",
-            "title": "cp 1.2",
-            "due": "Feb 17 2025"
-        },
-        {
-            "id": "read-2",
-            "title": "cp 1.3-1.4",
-            "due": "Feb 24 2025"
-        },
-        {
-            "id": "read-3",
-            "title": "cp 1.6.1-1.6.7",
-            "due": "Mar 3 2025"
-        },
-        {
-            "id": "read-4",
-            "title": "cp 1.5",
-            "due": "Mar 10 2025"
-        }
-    ],
-    "lectures": [
-        {
-            "id": "lecture-0",
-            "title": "primitive expressions",
-            "release": "Jan 29 2025",
-            "link": "https://drive.google.com/file/d/1Tq-4aTUBxIeSX7ESADGzUZvIz7930zhs/view?usp=sharing"
-        },
-        {
-            "id": "lecture-1",
-            "title": "functions and arguments",
-            "release": "Feb 9 2025",
-            "link": "https://drive.google.com/file/d/1AdXC2uhaK-JuaDMoP2nLPiZQK-Ya8CW4/view?usp=sharing"
-        },
-        {
-            "id": "lecture-2",
-            "title": "expression trees",
-            "release": "Feb 9 2025",
-            "link": "https://drive.google.com/file/d/1rUhwrpSzKCyAtOAItPz2Mz94TY8asK4u/view?usp=sharing"
-        },
-        {
-            "id": "lecture-3",
-            "title": "flattening expressions",
-            "release": "Feb 11 2025",
-            "link": "https://drive.google.com/file/d/1SPnppgjabDfY8cBaBGUCSt2bZs-7qJGy/view?usp=sharing"
-        },
-        {
-            "id": "lecture-4",
-            "title": "arithmetic",
-            "release": "Feb 16 2025",
-            "link": "https://drive.google.com/file/d/11QBONCTsRt71PXQ4a1HejPB7TJOK4qyb/view?usp=sharing"
-        },
-        {
-            "id": "lecture-5",
-            "title": "variables",
-            "release": "Feb 16 2025",
-            "link": "https://drive.google.com/file/d/1yO5QTe8-FFO6rvuquteaNCaSBRhYu4bT/view?usp=sharing"
-        },
-        {
-            "id": "lecture-6",
-            "title": "boolean expressions",
-            "release": "Feb 18 2025",
-            "link": "https://drive.google.com/file/d/1SS0LNa8D6FuPhuLjipDLoBydgQ8KC-xr/view?usp=sharing"
-        },
-        {
-            "id": "lecture-7",
-            "title": "function expressions",
-            "release": "Feb 20 2025",
-            "link": "https://drive.google.com/file/d/1T5f5qWcNNJkROv4CtBxv-uOrWpG-7aoU/view?usp=sharing"
-        },
-        {
-            "id": "lecture-8",
-            "title": "lambda expressions",
-            "release": "Feb 20 2025",
-            "link": "https://drive.google.com/file/d/1KbUq-5nZ2EME-uCDMd820QjEViDjYfJe/view?usp=sharing"
-        },
-        {
-            "id": "lecture-9",
-            "title": "def statements",
-            "release": "Feb 20 2025",
-            "link": "https://drive.google.com/file/d/15_EaDdK5syScUIkwTqNMIcRvFmlbky5y/view?usp=sharing"
-        },
-        {
-            "id": "lecture-10",
-            "title": "functions as arguments",
-            "release": "Feb 23 2025",
-            "link": "https://drive.google.com/file/d/14_iOIQkjsfwI-x9Q2mOreRmLnih23MAY/view?usp=sharing"
-        },
-        {
-            "id": "lecture-11",
-            "title": "nonetype",
-            "release": "Feb 24 2025",
-            "link": "https://drive.google.com/file/d/1m1Q1kliQ74mGZIJyFsDnwWgQ8lSjyFrg/view?usp=sharing"
-        },
-        {
-            "id": "lecture-12",
-            "title": "variable scope",
-            "release": "Feb 25 2025",
-            "link": "https://drive.google.com/file/d/1KjDRojoaicOCLUpgePrCQHFIPUkApjrX/view?usp=sharing"
-        },
-        {
-            "id": "lecture-13",
-            "title": "inner functions",
-            "release": "Feb 27 2025",
-            "link": "https://drive.google.com/file/d/1nQQAXrkzcEaHRuoEJi3gBdDkTAOHUDae/view?usp=sharing"
-        },
-        {
-            "id": "lecture14",
-            "title": "environment diagrams",
-            "release": "Mar 2 2025",
-            "link": "https://drive.google.com/file/d/1IKxOFHNxyErrOex4KYU4F87aL5QtgAEj/view?usp=sharing"
-        },
-        {
-            "id": "lecture15",
-            "title": "for statements",
-            "release": "Mar 4 2025",
-            "link": "https://drive.google.com/file/d/1FR0XCO63i4G4YiyBcuQ-AZvyle2d0usU/view?usp=sharing"
-        },
-        {
-            "id": "lecture16",
-            "title": "if statements",
-            "release": "Mar 4 2025",
-            "link": "https://drive.google.com/file/d/1hYbN5-dCojt1fRyP3-VSL3I8hXPeHGq8/view?usp=sharing"
-        },
-        {
-            "id": "lecture17",
-            "title": "while statements",
-            "release": "Mar 9 2025",
-            "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
-        },
-        {
-            "id": "lecture18",
-            "title": "lists",
-            "release": "Mar 11 2025",
-            "link": "https://drive.google.com/file/d/1nvMM4RFdZ7uywzFo87t5QamT1y61NdPq/view?usp=sharing"
-        },
-        {
-            "id": "lecture19",
-            "title": "dictionaries",
-            "release": "Mar 13 2025",
-            "link": "https://drive.google.com/file/d/1MgzZxgxnMdnOgbIuBrQwUTlbNYhHhzZF/view?usp=sharing"
-        },
-        {
-            "id": "lecture20",
-            "title": "sets",
-            "release": "Mar 13 2025",
-            "link": "https://drive.google.com/file/d/13qSG3wCXgOebBn9z75UkAjvtVmgY90vJ/view?usp=sharing"
-        },
-        {
-            "id": "lecture22",
-            "title": "string slicing",
-            "release": "Mar 16 2025",
-            "link": "https://drive.google.com/file/d/1bZ_92U6WF0EEsn5K_gK89oetzc-6R9_8/view?usp=sharing"
-        },
-        {
-            "id": "lecture23",
-            "title": "mutability and tuples",
-            "release": "Mar 16 2025",
-            "link": "https://drive.google.com/file/d/1PltQBqJEZEfjQWTMM0v4H59orvQYMfHQ/view?usp=sharing"
-        },
-        {
-            "id": "lecture23b",
-            "title": "list comprehensions",
-            "release": "Mar 16 2025",
-            "link": "https://drive.google.com/file/d/1Ye1lSq4qZatnkqvfNCaqvvXOQZ2W1tcW/view?usp=sharing"
-        },
-        {
-            "id": "lecture23c",
-            "title": "linked lists",
-            "release": "Apr 6 2025",
-            "link": "https://drive.google.com/file/d/15YGAo-5klVmN_yPb1at6SCfx0fJGikac/view?usp=sharing"
-        },
-        {
-            "id": "lecture24",
-            "title": "trees",
-            "release": "Apr 8 2025",
-            "link": "https://drive.google.com/file/d/1Eg2cqU9zTQCyd6urU0miCB9zpocw4uTm/view?usp=sharing"
-        },
-        {
-            "id": "lecture25",
-            "title": "recursion",
-            "release": "Apr 13 2025",
-            "link": "https://drive.google.com/file/d/1TXPIQ2TEhwUktsmXT9vYZGne8A_bxT7N/view?usp=sharing"
-        },
-        {
-            "id": "lecture26",
-            "title": "methods",
-            "release": "Apr 15 2025",
-            "link": "https://drive.google.com/file/d/1KFNhtc1n0OB0MwqcONFYdCAOXb5f-QRs/view?usp=sharing"
-        },
-        {
-            "id": "lecture27",
-            "title": "classes",
-            "release": "Apr 15 2025",
-            "link": "https://drive.google.com/file/d/1ksGYH0CLX82uV8lrFtDSKi8DsdKSuQxk/view?usp=sharing"
-        },
-        {
-            "id": "lecture27b",
-            "title": "object state",
-            "release": "Apr 17 2025",
-            "link": "https://drive.google.com/file/d/1NRAPN_6faJmMeqiI5xckxrpABh93ZmlX/view?usp=sharing"
-        },
-        {
-            "id": "lecture28",
-            "title": "special methods",
-            "release": "Apr 17 2025",
-            "link": "https://drive.google.com/file/d/1diXRKz7tW3Uu00F700_6RowAlDWsb9Zn/view?usp=sharing"
-        },
-        {
-            "id": "lecture29",
-            "title": "inheritance",
-            "release": "Apr 20 2025",
-            "link": "https://drive.google.com/file/d/1RF89w_LGCButyd3QkPtzSQ_tkf-XwBZx/view?usp=drive_link"
-        },
-        {
-            "id": "lecture30",
-            "title": "sorting",
-            "release": "Apr 22 2025",
-            "link": "https://drive.google.com/file/d/18-_Jc_PnI5XpN8S21vorvxv9I4RhF5zN/view?usp=sharing"
-        },
-        {
-            "id": "lecture31",
-            "title": "worst-case analysis",
-            "release": "Apr 27 2025",
-            "link": "https://drive.google.com/file/d/1zaSPQEnSLb9bvzqKMNyvNN8W68mA1Bxj/view?usp=sharing"
-        },
-        {
-            "id": "lecture32",
-            "title": "o-notation",
-            "release": "Apr 29 2025",
-            "link": "https://drive.google.com/file/d/1mVDEH13-vj3mq5hXrBbAIaUrB8c2zNxx/view?usp=sharing"
-        },
-        {
-            "id": "lecture33",
-            "title": "mergesort",
-            "release": "May 1 2025",
-            "link": "https://drive.google.com/file/d/1SnPfZa0PcrJ4BTe8Iauiw04vBz4xvwAD/view?usp=sharing"
-        },
-        {
-            "id": "lecture34",
-            "title": "logarithmic complexity",
-            "release": "May 1 2025",
-            "link": "https://drive.google.com/file/d/1kFVljPnZypotymENZ3wn-gy7crd1TY6d/view?usp=sharing"
-        },
-        {
-            "id": "lecture35",
-            "title": "analyzing code",
-            "release": "May 4 2025",
-            "link": "https://drive.google.com/file/d/1VGoBAu_C2re0WvIMQ_2Laj85jxLt293L/view?usp=sharing"
-        },
-        {
-            "id": "lecture36",
-            "title": "binary numbers",
-            "release": "May 6 2025",
-            "link": "https://drive.google.com/file/d/1HSQTKc7Gou2T4ul7ql_VtvoK84ZbWL1D/view?usp=sharing"
-        },
-        {
-            "id": "lecture37",
-            "title": "alternative bases",
-            "release": "May 6 2025",
-            "link": "https://drive.google.com/file/d/1u5dt_4Fd6oY4azsItf-HfRMTdz2TEEHh/view?usp=sharing"
-        },
-        {
-            "id": "lecture38",
-            "title": "hexadecimal representation",
-            "release": "May 11 2025",
-            "link": "https://drive.google.com/file/d/1cQEAW1RoEXPT5kEVu62RaKFfyFOwrPvZ/view?usp=sharing"
-        },
-        {
-            "id": "lecture39",
-            "title": "files",
-            "release": "May 11 2025",
-            "link": "https://drive.google.com/file/d/19DxBJQPqLdQxDZzW8MIXOwOXw8Ia5nH-/view?usp=drive_link"
-        },
-        {
-            "id": "lecture40",
-            "title": "simple graphics",
-            "release": "May 13 2025",
-            "link": "https://drive.google.com/file/d/1rNmzmNdhEmvIjlHMn52HBzfBeKFGJ3Bo/view?usp=drive_link"
-        },
-        {
-            "id": "lecture41",
-            "title": "user events",
-            "release": "May 13 2025",
-            "link": "https://drive.google.com/file/d/1p5TpjUBE7UzPID7-2WEPgL5U4ODH3_gp/view?usp=drive_link"
-        },
-        {
-            "id": "lecture42",
-            "title": "timer events",
-            "release": "May 15 2025",
-            "link": "https://drive.google.com/file/d/1u8_tDU_qP1O5SH0_5Xqdkb8xrkbPCgng/view?usp=drive_link"
-        }
-    ],
-    "labs": [
-        {
-            "id": "lab-0",
-            "title": "prologue",
-            "due": "Feb 13 2025",
-            "release": "Jan 29 2025",
-            "link": "https://docs.google.com/document/d/1zUX2mVQ67jtGe64ulqAaN2qidU4shO-0xMLBc-t2uZ8/edit?usp=sharing"
-        },
-        {
-            "id": "lab-1",
-            "title": "bake sale",
-            "due": "Feb 20 2025",
-            "release": "Feb 14 2025",
-            "link": "https://classroom.github.com/a/xYzumLAo"
-        },
-        {
-            "id": "lab-2",
-            "title": "book tour",
-            "due": "Feb 27 2025",
-            "release": "Feb 21 2025",
-            "link": "https://classroom.github.com/a/5KtIC-CB"
-        },
-        {
-            "id": "lab-3",
-            "title": "between the lines",
-            "due": "Mar 6 2025",
-            "release": "Feb 28 2025",
-            "link": "https://docs.google.com/document/d/1QGEpCwgtLzadqEZLHiupohj9PIAnxMa9CIp5Eqp_168/edit?usp=sharing"
-        },
-        {
-            "id": "lab-4",
-            "title": "the count's account",
-            "due": "Mar 13 2025",
-            "release": "Mar 7 2025",
-            "link": "https://classroom.github.com/a/vEYS8tOI"
-        },
-        {
-            "id": "lab-5",
-            "title": "to the carpathians!",
-            "due": "Mar 20 2025",
-            "release": "Mar 14 2025",
-            "link": "https://classroom.github.com/a/avTM_E-P"
-        },
-        {
-            "id": "lab-6",
-            "title": "the coffins of cluj",
-            "due": "Apr 10 2025",
-            "release": "Apr 4 2025",
-            "link": "https://classroom.github.com/a/fOftMWQ1"
-        },
-        {
-            "id": "lab-7",
-            "title": "newcroak",
-            "due": "Apr 17 2025",
-            "release": "Apr 11 2025",
-            "link": "https://classroom.github.com/a/Ndn1TJJZ"
-        },
-        {
-            "id": "lab-8",
-            "title": "dispatches",
-            "due": "Apr 24 2025",
-            "release": "Apr 18 2025",
-            "link": "https://classroom.github.com/a/QxaXJNUR"
-        },
-        {
-            "id": "lab-9",
-            "title": "order muppets",
-            "due": "May 1 2025",
-            "release": "Apr 25 2025",
-            "link": "https://classroom.github.com/a/xgQMV19h"
-        },
-        {
-            "id": "lab-10",
-            "title": "the great escape",
-            "due": "May 8 2025",
-            "release": "May 2 2025",
-            "link": "https://classroom.github.com/a/JHqMUkRo"
-        },
-        {
-            "id": "lab-11",
-            "title": "a little bit of knowledge",
-            "due": "May 15 2025",
-            "release": "May 9 2025",
-            "link": "https://classroom.github.com/a/dQbWlVko"
-        },
-        {
-            "id": "lab-12",
-            "title": "breakout",
-            "due": "May 20 2025",
-            "release": "May 14 2025",
-            "link": "https://classroom.github.com/a/o2L0z3Qq"
+            "id": "info-5",
+            "title": "final exam practice",
+            "locked": false,
+            "link": "https://docs.google.com/document/d/1uaNgK1yBJZNBtx3TQgOjmPxCROHW9HURz_cp99FZvKE/edit?usp=sharing"
         }
     ],
     "schedule": [
@@ -886,44 +274,675 @@
                     "link": "https://docs.google.com/document/d/1r99HguQ_JTT9da95lZbsMqa-pxD5NlBcru405rv-uXE/edit?usp=sharing"
                 }
             ]
-        }
-    ],
-    "info": [
-        {
-            "id": "info-0",
-            "title": "textbook: composing programs",
-            "locked": false,
-            "link": "https://www.composingprograms.com/"
         },
         {
-            "id": "info-1",
-            "title": "mac setup",
-            "locked": false,
-            "link": "https://drive.google.com/file/d/17btKFtgr5q5qn0pwWHi2OAbGildmm7-k/view?usp=drive_link"
+            "id": "week-4",
+            "week": 4,
+            "lab": {
+                "id": "lab-3",
+                "title": "between the lines",
+                "release": "Feb 28 2025",
+                "link": "https://docs.google.com/document/d/1QGEpCwgtLzadqEZLHiupohj9PIAnxMa9CIp5Eqp_168/edit?usp=sharing"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "environment diagrams",
+                    "release": "Mar 2 2025",
+                    "link": "https://drive.google.com/file/d/1IKxOFHNxyErrOex4KYU4F87aL5QtgAEj/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "being green",
+                    "release": "Mar 2 2025",
+                    "link": "https://docs.google.com/document/d/1SHitoJbhnK7TbtL2VqMtC9UFe-r1i-Ejl51FxPOvgjw/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "for statements",
+                    "release": "Mar 4 2025",
+                    "link": "https://drive.google.com/file/d/1FR0XCO63i4G4YiyBcuQ-AZvyle2d0usU/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "cookie swap",
+                    "release": "Mar 4 2025",
+                    "link": "https://docs.google.com/document/d/1RUob2Y1h6qbrZz_y2kcXkWIuSBQQRmzs-NNPLIwhlIw/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "if statements",
+                    "release": "Mar 4 2025",
+                    "link": "https://drive.google.com/file/d/1hYbN5-dCojt1fRyP3-VSL3I8hXPeHGq8/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "biscuitus, dirige nos",
+                    "release": "Mar 4 2025",
+                    "link": "https://docs.google.com/document/d/1NmIASMG19S3rlJ0vh3Uoow1fahIawUXqbKS4CfbbdII/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "quiz",
+                    "title": "quiz 1",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
         },
         {
-            "id": "info-2",
-            "title": "windows setup",
-            "locked": false,
-            "link": "https://drive.google.com/file/d/16KoFVfkGlaFcEUIgihQ8CtI_kPxImy1A/view?usp=sharing"
+            "id": "week-5",
+            "week": 5,
+            "lab": {
+                "id": "lab-4",
+                "title": "the count's account",
+                "release": "Mar 7 2025",
+                "link": "https://classroom.github.com/a/vEYS8tOI"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "while statements",
+                    "release": "Mar 9 2025",
+                    "link": "https://drive.google.com/file/d/1t-np6lNzCn6yn44Khr3AqTrJLdQRipP2/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "cookie salon",
+                    "release": "Mar 9 2025",
+                    "link": "https://docs.google.com/document/d/1XIfyu6EZSN1NEH1GobixeowCQlPwZbDBAM7XfRJVoCY/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "lists",
+                    "release": "Mar 11 2025",
+                    "link": "https://drive.google.com/file/d/1nvMM4RFdZ7uywzFo87t5QamT1y61NdPq/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "lists",
+                    "release": "Mar 11 2025",
+                    "link": "https://create.kahoot.it/share/lists/e8d9faa8-3bd9-4eec-8e40-0e3c8d443759"
+                },
+                {
+                    "type": "activity",
+                    "title": "hatters gonna hat",
+                    "release": "Mar 11 2025",
+                    "link": "https://docs.google.com/document/d/1qq4YrMKCF4Fo7aw1CE83W6_NyljYscU0mb7asDqj_S0/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "lecture",
+                    "title": "dictionaries",
+                    "release": "Mar 13 2025",
+                    "link": "https://drive.google.com/file/d/1MgzZxgxnMdnOgbIuBrQwUTlbNYhHhzZF/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "dictionaries",
+                    "release": "Mar 13 2025",
+                    "link": "https://create.kahoot.it/share/dictionaries/600fdc92-2591-44ae-8662-f895c29700d4"
+                },
+                {
+                    "type": "activity",
+                    "title": "oscarpreneur",
+                    "release": "Mar 13 2025",
+                    "link": "https://docs.google.com/document/d/1IKbPtiwlwkDRxjTFEdLsl7TfXUSZ5RykkreoIafdzIw/edit?usp=sharing"
+                }
+            ]
         },
         {
-            "id": "info-3",
-            "title": "github classroom",
-            "locked": false,
-            "link": "https://docs.google.com/document/d/1vhZv_zhX6jcCMdSCeRIZ4tnHZrQRy0HARJqHmeMJo14/edit?usp=sharing"
+            "id": "week-6",
+            "week": 6,
+            "lab": {
+                "id": "lab-5",
+                "title": "to the carpathians!",
+                "due": "Mar 20 2025",
+                "release": "Mar 14 2025",
+                "link": "https://classroom.github.com/a/avTM_E-P"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "sets",
+                    "release": "Mar 13 2025",
+                    "link": "https://drive.google.com/file/d/13qSG3wCXgOebBn9z75UkAjvtVmgY90vJ/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "sets",
+                    "release": "Mar 13 2025",
+                    "link": "https://create.kahoot.it/share/sets/d61f74ce-c68f-4eb2-8384-d3274252add2"
+                },
+                {
+                    "type": "lecture",
+                    "title": "string slicing",
+                    "release": "Mar 16 2025",
+                    "link": "https://drive.google.com/file/d/1bZ_92U6WF0EEsn5K_gK89oetzc-6R9_8/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "string slicing",
+                    "release": "Mar 16 2025",
+                    "link": "https://create.kahoot.it/share/string-indexing/7af2d2f0-3ec7-4779-8959-70814a8bb06e"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "mutability and tuples",
+                    "release": "Mar 16 2025",
+                    "link": "https://drive.google.com/file/d/1PltQBqJEZEfjQWTMM0v4H59orvQYMfHQ/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "market research",
+                    "release": "Mar 16 2025",
+                    "link": "https://docs.google.com/document/d/1YY7iAaT5B4-_ldlVuH6vD0W2aXT9ERbioTZ75GorESI/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "list comprehensions",
+                    "release": "Mar 16 2025",
+                    "link": "https://drive.google.com/file/d/1Ye1lSq4qZatnkqvfNCaqvvXOQZ2W1tcW/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "list comprehensions",
+                    "release": "Mar 16 2025",
+                    "link": "https://create.kahoot.it/share/list-comprehensions/07ca18c1-e915-42f2-bc1f-7e4c75f75203"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "quiz",
+                    "title": "quiz 2",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
         },
         {
-            "id": "info-4",
-            "title": "environment diagram tool",
-            "locked": false,
-            "link": "https://composingprograms.com/tutor.html"
+            "id": "week-7",
+            "week": 7,
+            "lab": {
+                "id": "lab-spring-break1",
+                "title": "no lab",
+                "release": "Mar 7 2030",
+                "link": "no link"
+            },
+            "mon": [
+                {
+                    "type": "holiday",
+                    "title": "spring break",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "holiday",
+                    "title": "spring break",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "holiday",
+                    "title": "spring break",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
         },
         {
-            "id": "info-5",
-            "title": "final exam practice",
-            "locked": false,
-            "link": "https://docs.google.com/document/d/1uaNgK1yBJZNBtx3TQgOjmPxCROHW9HURz_cp99FZvKE/edit?usp=sharing"
+            "id": "week-8",
+            "week": 8,
+            "lab": {
+                "id": "lab-spring-break1",
+                "title": "no lab",
+                "release": "Mar 7 2030",
+                "link": "no link"
+            },
+            "mon": [
+                {
+                    "type": "holiday",
+                    "title": "spring break",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "holiday",
+                    "title": "spring break",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "holiday",
+                    "title": "spring break",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
+        },
+        {
+            "id": "week-9",
+            "week": 9,
+            "lab": {
+                "id": "lab-6",
+                "title": "the coffins of cluj",
+                "due": "Apr 10 2025",
+                "release": "Apr 4 2025",
+                "link": "https://classroom.github.com/a/fOftMWQ1"
+            },
+            "mon": [
+                {
+                    "type": "activity",
+                    "title": "economies of scale 1",
+                    "release": "Apr 6 2025",
+                    "link": "https://docs.google.com/document/d/1QWANzzGW6b3tOGiZqsGc6yUdd3TF09GdeBENtybYfEQ/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "linked lists",
+                    "release": "Apr 6 2025",
+                    "link": "https://drive.google.com/file/d/15YGAo-5klVmN_yPb1at6SCfx0fJGikac/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "economies of scale 2",
+                    "release": "Apr 6 2025",
+                    "link": "https://docs.google.com/document/d/1LlCVZnotg6uwuNrXLF9Stb_YTS_2HHq21zJUC3oCCrE/edit?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "economies of scale 3",
+                    "release": "Apr 6 2025",
+                    "link": "https://docs.google.com/document/d/1JslJXQ53ln3vLjLjpzqbZdy0RXpMb3X5LchF_itEr7Y/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "trees",
+                    "release": "Apr 8 2025",
+                    "link": "https://drive.google.com/file/d/1Eg2cqU9zTQCyd6urU0miCB9zpocw4uTm/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "numerology",
+                    "release": "Apr 8 2025",
+                    "link": "https://docs.google.com/document/d/1Ws7JaWKztnPe8_ea3g5kH_4s0oEuLM_2CpJHbPQHxgU/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "activity",
+                    "title": "inception",
+                    "release": "Apr 8 2025",
+                    "link": "https://docs.google.com/document/d/1iPjH4sLg59kg1O1pPpdve98wAtU-s6gatMsMAXaFUIM/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "recursion",
+                    "release": "Apr 13 2025",
+                    "link": "https://drive.google.com/file/d/1TXPIQ2TEhwUktsmXT9vYZGne8A_bxT7N/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "id": "week-10",
+            "week": 10,
+            "lab": {
+                "id": "lab-7",
+                "title": "newcroak",
+                "due": "Apr 17 2025",
+                "release": "Apr 11 2025",
+                "link": "https://classroom.github.com/a/Ndn1TJJZ"
+            },
+            "mon": [
+                {
+                    "type": "activity",
+                    "title": "the fix is in",
+                    "release": "Apr 13 2025",
+                    "link": "https://docs.google.com/document/d/1QyIxJC7e5NLr-RxjDppQmfD8aG8mxXIvg3QOE1KWEB0/edit?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "puzzling edicts",
+                    "release": "Apr 13 2025",
+                    "link": "https://docs.google.com/document/d/1eACy7UNpGuonlPEtXBMydaH6ulzYWcjySZzlsVvE2I0/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "methods",
+                    "release": "Apr 15 2025",
+                    "link": "https://drive.google.com/file/d/1KFNhtc1n0OB0MwqcONFYdCAOXb5f-QRs/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "methods",
+                    "release": "Apr 15 2025",
+                    "link": "https://create.kahoot.it/share/methods/4a1b932f-2ed8-4776-9afb-e2d09aa7bd23"
+                },
+                {
+                    "type": "lecture",
+                    "title": "classes",
+                    "release": "Apr 15 2025",
+                    "link": "https://drive.google.com/file/d/1ksGYH0CLX82uV8lrFtDSKi8DsdKSuQxk/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "bookie monster",
+                    "release": "Apr 15 2025",
+                    "link": "https://docs.google.com/document/d/1LI7PoyfbVtEws2G9hjaTRwPjcPDTW5VyIn5Cr5ELFq4/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "lecture",
+                    "title": "object state",
+                    "release": "Apr 17 2025",
+                    "link": "https://drive.google.com/file/d/1NRAPN_6faJmMeqiI5xckxrpABh93ZmlX/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "rationalism",
+                    "release": "Apr 17 2025",
+                    "link": "https://docs.google.com/document/d/1-TnweFnIBmF7y8sf7BKgkZywe-WN6LuFoY75Wp1Utvw/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "special methods",
+                    "release": "Apr 17 2025",
+                    "link": "https://drive.google.com/file/d/1diXRKz7tW3Uu00F700_6RowAlDWsb9Zn/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "cookipedia",
+                    "release": "Apr 17 2025",
+                    "link": "https://docs.google.com/document/d/1_w3QvHymlw0Zl5E-j1M_v86eL0ACyQPBUw6UoryDZmM/edit?usp=sharing"
+                }
+            ]
+        },
+        {
+            "id": "week-11",
+            "week": 11,
+            "lab": {
+                "id": "lab-8",
+                "title": "dispatches",
+                "due": "Apr 24 2025",
+                "release": "Apr 18 2025",
+                "link": "https://classroom.github.com/a/QxaXJNUR"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "inheritance",
+                    "release": "Apr 20 2025",
+                    "link": "https://drive.google.com/file/d/1RF89w_LGCButyd3QkPtzSQ_tkf-XwBZx/view?usp=drive_link"
+                },
+                {
+                    "type": "activity",
+                    "title": "icdb",
+                    "release": "Apr 20 2025",
+                    "link": "https://docs.google.com/document/d/17FOwnjQT7QOtxCedquvKu25T7Boknvj_3HJVApwjMMs/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "activity",
+                    "title": "dice assistance",
+                    "release": "Apr 22 2025",
+                    "link": "https://docs.google.com/presentation/d/1gos8Rpsas8GnHj-6bDC-ljXNFvGODiImWmz83q47T_o/copy"
+                },
+                {
+                    "type": "lecture",
+                    "title": "sorting",
+                    "release": "Apr 22 2025",
+                    "link": "https://drive.google.com/file/d/18-_Jc_PnI5XpN8S21vorvxv9I4RhF5zN/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "sorting",
+                    "release": "Apr 22 2025",
+                    "link": "https://create.kahoot.it/share/sorting/1930467d-938d-4c4f-be58-9882514bf0aa"
+                },
+                {
+                    "type": "activity",
+                    "title": "selection",
+                    "release": "Apr 22 2025",
+                    "link": "https://docs.google.com/document/d/1AIafJZPSVvnTNEGzrCYja7_Q6t0gO6czbJGnisYit_Y/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "quiz",
+                    "title": "quiz 3",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
+        },
+        {
+            "id": "week-12",
+            "week": 12,
+            "lab": {
+                "id": "lab-9",
+                "title": "order muppets",
+                "due": "May 1 2025",
+                "release": "Apr 25 2025",
+                "link": "https://classroom.github.com/a/xgQMV19h"
+            },
+            "mon": [
+                {
+                    "type": "activity",
+                    "title": "selecting",
+                    "release": "Apr 27 2025",
+                    "link": "https://docs.google.com/document/d/1sGZLAhnADT9hciNaCEaTh6Ht2rW5tBigJc68pQZ8lsw/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "worst-case analysis",
+                    "release": "Apr 27 2025",
+                    "link": "https://drive.google.com/file/d/1zaSPQEnSLb9bvzqKMNyvNN8W68mA1Bxj/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "success metrics",
+                    "release": "Apr 27 2025",
+                    "link": "https://docs.google.com/document/d/1xp0BeUTmIqSAeMfe5hCNgfO2FUlHHkda7yZUtfF02kE/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "o-notation",
+                    "release": "Apr 29 2025",
+                    "link": "https://drive.google.com/file/d/1mVDEH13-vj3mq5hXrBbAIaUrB8c2zNxx/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "the devil of alphabet city",
+                    "release": "Apr 29 2025",
+                    "link": "https://docs.google.com/document/d/1crX_4iJUkWKWqUGj_yE6J9NtWKy_zqzCO-RECXhVzYw/edit?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "polynomial complexity",
+                    "release": "Apr 29 2025",
+                    "link": "https://create.kahoot.it/share/polynomial-complexity/8d42c2da-55e0-4633-b9ec-e00a3d763112"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "lecture",
+                    "title": "mergesort",
+                    "release": "May 1 2025",
+                    "link": "https://drive.google.com/file/d/1SnPfZa0PcrJ4BTe8Iauiw04vBz4xvwAD/view?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "logarithmic complexity",
+                    "release": "May 1 2025",
+                    "link": "https://drive.google.com/file/d/1kFVljPnZypotymENZ3wn-gy7crd1TY6d/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "logarithmic complexity",
+                    "release": "May 1 2025",
+                    "link": "https://create.kahoot.it/share/logarithmic-complexity/387d5a58-a441-49fa-92da-0fa7abe38372"
+                }
+            ]
+        },
+        {
+            "id": "week-13",
+            "week": 13,
+            "lab": {
+                "id": "lab-10",
+                "title": "the great escape",
+                "due": "May 8 2025",
+                "release": "May 2 2025",
+                "link": "https://classroom.github.com/a/JHqMUkRo"
+            },
+            "mon": [
+                {
+                    "type": "activity",
+                    "title": "baseless claims",
+                    "release": "May 4 2025",
+                    "link": "https://docs.google.com/document/d/1VYk2qGMhO7ruHGUhdueG2rcwmyzoS5lQWGmtsMeyees/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "analyzing code",
+                    "release": "May 4 2025",
+                    "link": "https://drive.google.com/file/d/1VGoBAu_C2re0WvIMQ_2Laj85jxLt293L/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "r & d",
+                    "release": "May 4 2025",
+                    "link": "https://docs.google.com/document/d/1wk2D9AMZsNv5rTIH0QZQfZq_eOgodbr0Rf6xyChtASQ/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "binary numbers",
+                    "release": "May 6 2025",
+                    "link": "https://drive.google.com/file/d/1HSQTKc7Gou2T4ul7ql_VtvoK84ZbWL1D/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "globalization",
+                    "release": "May 6 2025",
+                    "link": "https://docs.google.com/document/d/18zCJypnfpWAOVrfNSOPgRPHGXYT3ScYEwUd_f3wpiZ8/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "alternative bases",
+                    "release": "May 6 2025",
+                    "link": "https://drive.google.com/file/d/1u5dt_4Fd6oY4azsItf-HfRMTdz2TEEHh/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "alternative bases",
+                    "release": "May 6 2025",
+                    "link": "https://create.kahoot.it/share/alternative-bases/3930015f-1a40-4386-9e73-ab667c1e0bae"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "quiz",
+                    "title": "quiz 4",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
+        },
+        {
+            "id": "week-14",
+            "week": 14,
+            "lab": {
+                "id": "lab-11",
+                "title": "a little bit of knowledge",
+                "due": "May 15 2025",
+                "release": "May 9 2025",
+                "link": "https://classroom.github.com/a/dQbWlVko"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "hexadecimal representation",
+                    "release": "May 11 2025",
+                    "link": "https://drive.google.com/file/d/1cQEAW1RoEXPT5kEVu62RaKFfyFOwrPvZ/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "memoranda",
+                    "release": "May 11 2025",
+                    "link": "https://docs.google.com/document/d/1INILeLL7_IPm05zXSFHpPkJVJ-Cp-0rHXZv7BI9dDxg/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "files",
+                    "release": "May 11 2025",
+                    "link": "https://drive.google.com/file/d/19DxBJQPqLdQxDZzW8MIXOwOXw8Ia5nH-/view?usp=drive_link"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "simple graphics",
+                    "release": "May 13 2025",
+                    "link": "https://drive.google.com/file/d/1rNmzmNdhEmvIjlHMn52HBzfBeKFGJ3Bo/view?usp=drive_link"
+                },
+                {
+                    "type": "activity",
+                    "title": "signal",
+                    "release": "May 13 2025",
+                    "link": "https://docs.google.com/document/d/1ASUlMGDYfCV0q28lkpCUeceMNCXH5RSYlYq_CSAP_xs/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "user events",
+                    "release": "May 13 2025",
+                    "link": "https://drive.google.com/file/d/1p5TpjUBE7UzPID7-2WEPgL5U4ODH3_gp/view?usp=drive_link"
+                },
+                {
+                    "type": "activity",
+                    "title": "focus group",
+                    "release": "May 13 2025",
+                    "link": "https://docs.google.com/document/d/1LuuR79XwEpKxIphSjYhnqzpZFiK4IeFfpBij8ELNNtA/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "lecture",
+                    "title": "timer events",
+                    "release": "May 15 2025",
+                    "link": "https://drive.google.com/file/d/1u8_tDU_qP1O5SH0_5Xqdkb8xrkbPCgng/view?usp=drive_link"
+                },
+                {
+                    "type": "activity",
+                    "title": "version 2.0",
+                    "release": "May 15 2025",
+                    "link": "https://docs.google.com/document/d/1I4zPuw4DTt6M0Q33bh2ZnQzMvSXthi1K92NgqvzcT0s/edit?usp=sharing"
+                }
+            ]
         }
     ]
 }

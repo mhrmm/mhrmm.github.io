@@ -105,7 +105,7 @@ const Welcome = () => {
     <div
       className="csci134-welcome"
       style={{
-        fontSize: "40px",
+        fontSize: "50px",
       }}
     >
       <div
@@ -124,7 +124,7 @@ const Welcome = () => {
           }}
         >
           <div>welcome to 134</div>
-          <div style={{ fontSize: "16px", color: "aqua" }}>
+          <div style={{ fontSize: "20px", color: "aqua" }}>
             an introduction to computer science
           </div>
         </div>
@@ -430,7 +430,7 @@ const WeekItem = ({ title }) => {
   const renderContent = () => {
     return (
       <div
-        className={"csci134-text csci134-button"}
+        className={"csci134-text csci134-locked"}
         style={{
           borderStyle: "solid",
           margin: "2px",
@@ -447,6 +447,43 @@ const WeekItem = ({ title }) => {
   return renderContent();
 };
 
+const LabAssignment = ({ type, title, link, release }) => {
+  const now = new Date(Date.now());
+  const locked = release ? now <= new Date(release) : true;
+
+  const renderContent = () => {
+    return (
+      <div
+        className={
+          locked
+            ? "csci134-lab-text csci134-locked"
+            : "csci134-lab-text csci134-button"
+        }
+        style={{
+          border: "5px solid #000044",
+          margin: "0",
+          padding: "2px",
+          color: "black",
+          width: "100%",
+          height: "100%",
+          boxSizing: "border-box",
+          alignContent: "center",
+        }}
+      >
+        <span>{title}</span>
+      </div>
+    );
+  };
+
+  return !locked ? (
+    <a href={link} target="_blank">
+      {renderContent()}
+    </a>
+  ) : (
+    renderContent()
+  );
+};
+
 const SlideDeck = ({ type, title, link, release }) => {
   const now = new Date(Date.now());
   const locked = release ? now <= new Date(release) : true;
@@ -455,6 +492,7 @@ const SlideDeck = ({ type, title, link, release }) => {
     activity: "✍️",
     kahoot: "🏆",
     holiday: "🏖️",
+    quiz: "💪",
   };
 
   const icon = iconMap[type] ?? "";
@@ -495,7 +533,7 @@ const Infos = () => {
 
   const weeks = [];
 
-  for (let week = 1; week <= 13; week++) {
+  for (let week = 1; week <= 20; week++) {
     const monday = new Date(startMonday);
     monday.setDate(startMonday.getDate() + (week - 1) * 7);
 
@@ -513,7 +551,7 @@ const Infos = () => {
     <div
       className="csci134-colorblock"
       style={{
-        backgroundColor: "#2222aa",
+        backgroundColor: "#000044",
       }}
     >
       <div
@@ -552,9 +590,10 @@ const Infos = () => {
               }}
             >
               <WeekItem
-                title={`${weeks[week.week - 1].monday.toDateString()} – ${weeks[week.week - 1].friday.toDateString()}`}
+                title={`${weeks[week.week - 1].monday.toDateString().toLowerCase()} – ${weeks[week.week - 1].friday.toDateString().toLowerCase()}`}
               />
-              <SlideDeck
+
+              <LabAssignment
                 type={week.lab.type}
                 title={week.lab.title}
                 link={week.lab.link}
