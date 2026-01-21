@@ -1,221 +1,216 @@
-import React from 'react'
-import { useState } from 'react'
-import { useEffect } from 'react'
+import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import courseData from './csci134.json';
-
+import courseData from "./csci134.json";
 
 const UpcomingItem = ({ description, deadline, border }) => {
   return (
-    <div style={{
-      border: "coral",
-      padding: "3px",
-    }}>
-
-      <div className="csci134-upcoming">
-        {description.toUpperCase()}
-      </div>
-      <div className="csci134-upcoming" style={{color: "#F8E067"}}>
+    <div
+      style={{
+        border: "coral",
+        padding: "3px",
+      }}
+    >
+      <div className="csci134-upcoming">{description.toUpperCase()}</div>
+      <div className="csci134-upcoming" style={{ color: "#F8E067" }}>
         {deadline}
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
-const getFutureDate = daysAhead => {
-  return new Date(Date.now() + daysAhead * 8.64e+7).toDateString()
-}
-
+const getFutureDate = (daysAhead) => {
+  return new Date(Date.now() + daysAhead * 8.64e7).toDateString();
+};
 
 const Upcoming = () => {
+  const daysAhead = 0;
+  const now = new Date(Date.now() + daysAhead * 8.64e7);
+  const assignments = courseData.quizzes
+    .concat(courseData.labs)
+    .concat(courseData.readings)
+    .sort((lab1, lab2) => new Date(lab1.due) - new Date(lab2.due));
 
-  const daysAhead = 0
-  const now = new Date(Date.now() + daysAhead * 8.64e+7)
-  const assignments = courseData.quizzes.concat(courseData.labs).concat(courseData.readings).sort((lab1, lab2) => new Date(lab1.due) - new Date(lab2.due))
-
-  const labsDueSoon = assignments.filter(lab =>
-    now <= new Date(lab.due)
-  ).slice(0, 3)
+  const labsDueSoon = assignments
+    .filter((lab) => now <= new Date(lab.due))
+    .slice(0, 3);
 
   return (
-    <div className="upcoming" style={{
-      fontSize: "20px",
-    }}>
+    <div
+      className="upcoming"
+      style={{
+        fontSize: "20px",
+      }}
+    >
       {labsDueSoon.length > 0 ? "coming up..." : null}
-      {labsDueSoon.length > 0 ? 
-        <UpcomingItem 
-          key={labsDueSoon[0].id} 
-          description={`${labsDueSoon[0].id.split('-')[0]}: ${labsDueSoon[0].title}`} deadline={labsDueSoon[0].due}
-        >
-        </UpcomingItem> : null} 
-        {labsDueSoon.length > 1 ? 
-        <UpcomingItem 
-          key={labsDueSoon[1].id} 
-          description={`${labsDueSoon[1].id.split('-')[0]}: ${labsDueSoon[1].title}`} deadline={labsDueSoon[1].due}
+      {labsDueSoon.length > 0 ? (
+        <UpcomingItem
+          key={labsDueSoon[0].id}
+          description={`${labsDueSoon[0].id.split("-")[0]}: ${labsDueSoon[0].title}`}
+          deadline={labsDueSoon[0].due}
+        ></UpcomingItem>
+      ) : null}
+      {labsDueSoon.length > 1 ? (
+        <UpcomingItem
+          key={labsDueSoon[1].id}
+          description={`${labsDueSoon[1].id.split("-")[0]}: ${labsDueSoon[1].title}`}
+          deadline={labsDueSoon[1].due}
           border="1px solid orange"
-        >
-        </UpcomingItem> : null}
-        {labsDueSoon.length > 2 ? 
-        <UpcomingItem 
-          key={labsDueSoon[2].id} 
-          description={`${labsDueSoon[2].id.split('-')[0]}: ${labsDueSoon[2].title}`} deadline={labsDueSoon[2].due}
+        ></UpcomingItem>
+      ) : null}
+      {labsDueSoon.length > 2 ? (
+        <UpcomingItem
+          key={labsDueSoon[2].id}
+          description={`${labsDueSoon[2].id.split("-")[0]}: ${labsDueSoon[2].title}`}
+          deadline={labsDueSoon[2].due}
           border="1px solid orange"
-        >
-        </UpcomingItem> : null}      
+        ></UpcomingItem>
+      ) : null}
     </div>
-
-  )
-}
+  );
+};
 
 const Emphasis = (props) => {
-
-  const colors = ["skyblue", "blue"]
+  const colors = ["skyblue", "blue"];
   const [fontColor, setFontColor] = useState(colors[0]);
-  let fontSize = 40
+  let fontSize = 40;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFontColor(prevFontColor => (prevFontColor === colors[0] ? colors[1] : colors[0]));
+      setFontColor((prevFontColor) =>
+        prevFontColor === colors[0] ? colors[1] : colors[0],
+      );
     }, 2000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="csci134-course-number" style={{
-      color: fontColor,
-      fontSize: `${fontSize}px`,
-      transition: 'color 2s linear'
-    }}>
+    <div
+      className="csci134-course-number"
+      style={{
+        color: fontColor,
+        fontSize: `${fontSize}px`,
+        transition: "color 2s linear",
+      }}
+    >
       {props.children}
     </div>
   );
 };
 
 const Welcome = () => {
-
   return (
-    <div className="csci134-welcome" style={{
-      fontSize: "40px",
-      width: "200px"
-    }}>
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        gap: '20px',
-        justifyContent: "space-around",
-        height: '100%',
-      }}>
+    <div
+      className="csci134-welcome"
+      style={{
+        fontSize: "40px",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "row nowrap",
+          gap: "20px",
+          justifyContent: "left",
+          height: "150pt",
+        }}
+      >
         <img src="images/cookiemonster.png" />
-        <div>
-          <div>hello</div>
-          <div style={{ fontSize: "16px" }}>welcome to</div>
-          <Emphasis>134</Emphasis>
-          <div style={{ fontSize: "16px" }}>
-          an introduction to computer science
-          <br></br>
-          <span className="csci134-textlink" style={{fontSize: '26px'}}><a className="csci134-textlink" href="https://docs.google.com/document/d/1GZV2lnWXe-CkDdvNDZRMgENnicuhT-EEjW3T1HYRgZQ/edit?usp=sharing" target="_blank">
-            (syllabus)
-          </a></span>          
+        <div
+          style={{
+            alignContent: "center",
+          }}
+        >
+          <div>welcome to 134</div>
+          <div style={{ fontSize: "16px", color: "aqua" }}>
+            an introduction to computer science
+          </div>
         </div>
-        </div>
-        <div style={{ fontSize: "20px" }}>
-          <span style={{ fontSize: "30px" }}>quiz dates</span>
-          <br></br>
-          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Mar 7, 2025</span>
-          <br></br>
-          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Mar 21, 2025</span>  
-          <br></br>
-          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Apr 11, 2025</span>
-          <br></br>
-          <span className="csci134-upcoming" style={{color: "#F8E067"}}>Apr 25, 2025</span>
-          <br></br>
-          <span className="csci134-upcoming" style={{color: "#F8E067"}}>May 9, 2025</span>
-        </div>
-        
-        
-        <Upcoming />
+
+        <TeachingAssistants />
       </div>
     </div>
-
-  )
-}
-
+  );
+};
 
 const TeachingAssistant = ({ image, name, hours, hours2, where }) => {
   return (
-    <div className="csci134-text" style={{
-      display: 'flex',
-      flexFlow: 'column nowrap',
-      justifyContent: 'stretch',
-      fontSize: '14px'
-    }}>
-      <img src={image} style={{
-        borderStyle: "solid",
-        borderColor: "white",
-        width: "100px"
-      }} />
-      <div style={{
-        width: "100px",
-        fontWeight: "bold",
-        fontSize: "29px"
-      }}>
+    <div
+      className="csci134-subtitle"
+      style={{
+        display: "flex",
+        flexFlow: "column nowrap",
+        justifyContent: "stretch",
+        fontSize: "14px",
+      }}
+    >
+      <img
+        src={image}
+        style={{
+          borderStyle: "solid",
+          borderColor: "white",
+          width: "100px",
+        }}
+      />
+      <div
+        style={{
+          width: "100px",
+          fontWeight: "bold",
+          fontSize: "29px",
+        }}
+      >
         {name.toLowerCase()}
       </div>
-      <div>
-        {hours.toLowerCase()}
-      </div>
-      {hours2 ?
-      <div>
-      {hours2.toLowerCase()}
-      </div>:<div></div>
-      }
-      <div>
-        {where.toLowerCase()}
-      </div>
-
+      <div>{hours.toLowerCase()}</div>
+      {hours2 ? <div>{hours2.toLowerCase()}</div> : <div></div>}
+      <div>{where.toLowerCase()}</div>
     </div>
-  )
-}
+  );
+};
 
 const TeachingAssistants = () => {
-
   return (
-    <div className="csci134-colorblock" style={{
-      backgroundColor: '#CC5F30'
-    }}>
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        justifyContent: 'stretch',
-        height: '100%'
-      }}>
-        <BoxTitle title="help hours" color="#FFC590" />
+    <div
+      className="csci134-colorblock"
+      style={{
+        backgroundColor: "#000000",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "column nowrap",
+          justifyContent: "stretch",
+          height: "100%",
+        }}
+      >
         <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        <div style={{
-          display: 'flex',
-          flexFlow: 'row wrap',
-          justifyContent: 'space-evenly'
-        }}>
-          
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "row wrap",
+            justifyContent: "space-evenly",
+          }}
+        >
           <TeachingAssistant
-            image="images/laura.jpg"
-            name="Laura"
+            image="images/jeannie.jpg"
+            name="Jeannie"
             hours="thu 130-330pm"
-            where="tcl 216"
+            where="tcl 305"
           />
           <TeachingAssistant
             image="images/lida.jpg"
             name="Lida"
             hours="wed 130-3pm"
-            where="tcl 216"
+            where="tcl 301"
           />
           <TeachingAssistant
             image="images/mark.png"
             name="Mark"
             hours="wed 2-4pm"
-            where="tcl 216"
+            where="tcl 307"
           />
           <TeachingAssistant
             image="images/beaker.png"
@@ -225,369 +220,446 @@ const TeachingAssistants = () => {
             where="tcl 216/217"
           />
         </div>
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
       </div>
     </div>
-  )
-}
-
-
-
-
+  );
+};
 
 const BoxTitle = ({ title, color }) => {
   return (
-    <div className="csci134-subtitle" style={{
-      fontSize: "35px",
-      color: color
-    }}>
+    <div
+      className="csci134-subtitle"
+      style={{
+        fontSize: "35px",
+        color: color,
+      }}
+    >
       {title}
     </div>
-  )
-}
-
-const SlideDeck = ({ title, index, link, release }) => {
-  const now = new Date(Date.now())
-  const locked = release ? now <= new Date(release) : true
-
-  const renderContent = () => {
-    return <div
-      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-      }}>
-      <span>{index+1}. {title}</span> {locked ? '🔒' : null}
-    </div>
-  }
-
-  return !locked ? (
-    <a href={link} target="_blank">
-      {renderContent()}
-    </a>
-  ) : renderContent()
-}
+  );
+};
 
 const Activity = ({ title, index, link, release }) => {
+  const now = new Date(Date.now());
+  const locked = release ? now <= new Date(release) : true;
 
-  const now = new Date(Date.now())
-  const locked = release ? now <= new Date(release) : true
- 
   const renderContent = () => {
-    return <div
-      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-      }}>
-      <span>{index+1}. {title}</span> {locked ? '🔒' : null}
-    </div>
-  }
+    return (
+      <div
+        className={
+          locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"
+        }
+        style={{
+          borderStyle: "solid",
+          margin: "2px",
+          padding: "2px",
+          color: "black",
+        }}
+      >
+        <span>
+          {index + 1}. {title}
+        </span>{" "}
+        {locked ? "🔒" : null}
+      </div>
+    );
+  };
 
   return !locked ? (
     <a href={link} target="_blank">
       {renderContent()}
     </a>
-  ) : renderContent()
-}
+  ) : (
+    renderContent()
+  );
+};
 
 const LectureSlides = () => {
-
   return (
-    <div className="csci134-colorblock" style={{
-      backgroundColor: "#226622",
-      flexGrow: 6
-    }}>
+    <div
+      className="csci134-colorblock"
+      style={{
+        backgroundColor: "#226622",
+        flexGrow: 6,
+      }}
+    >
       <BoxTitle title="lectures" color="#ccffcc" />
-      <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        justifyContent: 'stretch',
-        alignItems: 'stretch',
-      }}>
-
-        <div style={{
-          display: 'flex',
-          flexFlow: 'column wrap',
-          gap: '5px',
-          height: window.innerWidth > 800 ? '700px' : null
-        }}>
+      <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "column nowrap",
+          justifyContent: "stretch",
+          alignItems: "stretch",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column wrap",
+            gap: "5px",
+            height: window.innerWidth > 800 ? "700px" : null,
+          }}
+        >
           {courseData.lectures.map((lecture, index) => (
             <SlideDeck
               key={lecture.id}
               index={index}
               title={lecture.title.toLowerCase()}
               link={lecture.link}
-              release={lecture.release} />
+              release={lecture.release}
+            />
           ))}
         </div>
-        
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Activities = () => {
-
   return (
-    <div className="csci134-colorblock" style={{
-      backgroundColor: '#442244'
-    }}>
-
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column nowrap',
-        justifyContent: 'stretch',
-        alignItems: 'stretch',
-      }}>
+    <div
+      className="csci134-colorblock"
+      style={{
+        backgroundColor: "#442244",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "column nowrap",
+          justifyContent: "stretch",
+          alignItems: "stretch",
+        }}
+      >
         <BoxTitle title="activities" color="#ffccff" />
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>          
-        <div style={{
-          display: 'flex',
-          flexFlow: 'column wrap',
-          gap: '5px',
-          height: window.innerWidth > 800 ? '600px' : null
-        }}>
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column wrap",
+            gap: "5px",
+            height: window.innerWidth > 800 ? "600px" : null,
+          }}
+        >
           {courseData.activities.map((activity, index) => (
             <Activity
               key={activity.id}
               index={index}
               title={activity.title.toLowerCase()}
               link={activity.link}
-              release={activity.release} />
+              release={activity.release}
+            />
           ))}
         </div>
-        
       </div>
     </div>
-  )
-}
-
+  );
+};
 
 const Lab = ({ title, index, link, due, release }) => {
-
-  const now = new Date(Date.now())
-  const locked = release ? now <= new Date(release) : true
+  const now = new Date(Date.now());
+  const locked = release ? now <= new Date(release) : true;
 
   const renderContent = () => {
-    return <div
-      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-      }}>
-      <span>{index}. {title}</span> {locked ? '🔒' : null}
-    </div>
-  }
+    return (
+      <div
+        className={
+          locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"
+        }
+        style={{
+          borderStyle: "solid",
+          margin: "2px",
+          padding: "2px",
+          color: "black",
+        }}
+      >
+        <span>
+          {index}. {title}
+        </span>{" "}
+        {locked ? "🔒" : null}
+      </div>
+    );
+  };
 
   return !locked ? (
     <a href={link} target="_blank">
       {renderContent()}
     </a>
-  ) : renderContent()
-}
+  ) : (
+    renderContent()
+  );
+};
 
 const LabAssignments = () => {
-
   return (
-    <div className="csci134-colorblock" style={{
-      backgroundColor: "navy"
-    }}>
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column wrap',
-        gap: '5px',
-        justifyContent: 'stretch',
-        alignContent: 'stretch',
-        height: '100%'
-      }}>
+    <div
+      className="csci134-colorblock"
+      style={{
+        backgroundColor: "navy",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "column wrap",
+          gap: "5px",
+          justifyContent: "stretch",
+          alignContent: "stretch",
+          height: "100%",
+        }}
+      >
         <BoxTitle title="labs" color="#aaffff" />
-        {courseData.labs.map((lab, index) => <Lab key={lab.id} index={index} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} release={lab.release}></Lab>)}
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>        
+        {courseData.labs.map((lab, index) => (
+          <Lab
+            key={lab.id}
+            index={index}
+            title={lab.title.toLowerCase()}
+            link={lab.link}
+            due={lab.due}
+            release={lab.release}
+          ></Lab>
+        ))}
+        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-const Info = ({ title, link, due, locked }) => {
+const WeekItem = ({ title }) => {
+  const renderContent = () => {
+    return (
+      <div
+        className={"csci134-text csci134-button"}
+        style={{
+          borderStyle: "solid",
+          margin: "2px",
+          padding: "2px",
+          color: "black",
+          alignContent: "center",
+        }}
+      >
+        <span>{title}</span>
+      </div>
+    );
+  };
+
+  return renderContent();
+};
+
+const SlideDeck = ({ type, title, link, release }) => {
+  const now = new Date(Date.now());
+  const locked = release ? now <= new Date(release) : true;
+  const iconMap = {
+    lecture: "👨‍🏫",
+    activity: "✍️",
+    kahoot: "🏆",
+    holiday: "🏖️",
+  };
+
+  const icon = iconMap[type] ?? "";
 
   const renderContent = () => {
-    return <div
-      className={locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"}
-      style={{
-        borderStyle: "solid",
-        margin: '2px',
-        padding: '2px',
-        color: 'black',
-      }}>
-      <span>{title}</span> {locked ? '🔒' : null}
-    </div>
-  }
+    return (
+      <div
+        className={
+          locked ? "csci134-text csci134-locked" : "csci134-text csci134-button"
+        }
+        style={{
+          borderStyle: "solid",
+          margin: "2px",
+          padding: "2px",
+          color: "black",
+        }}
+      >
+        <span>
+          {icon} {title}
+        </span>{" "}
+        {locked ? "🔒" : null}
+      </div>
+    );
+  };
 
   return !locked ? (
     <a href={link} target="_blank">
       {renderContent()}
     </a>
-  ) : renderContent()
-}
+  ) : (
+    renderContent()
+  );
+};
 
 const Infos = () => {
+  const columnProportions = "1fr 2fr 2fr 2fr 2fr";
+  const startMonday = new Date(2026, 1, 9); // Feb is month 1 (0-based!)
+
+  const weeks = [];
+
+  for (let week = 1; week <= 13; week++) {
+    const monday = new Date(startMonday);
+    monday.setDate(startMonday.getDate() + (week - 1) * 7);
+
+    const friday = new Date(monday);
+    friday.setDate(monday.getDate() + 4);
+
+    weeks.push({
+      week,
+      monday,
+      friday,
+    });
+  }
 
   return (
-    <div className="csci134-colorblock" style={{
-      backgroundColor: "darkred"
-    }}>
-      <div style={{
-        display: 'flex',
-        flexFlow: 'column wrap',
-        justifyContent: 'stretch',
-        height: '100%'
-      }}>
-        <BoxTitle title="info" color="#ff8888" />
-        {courseData.info.map(lab => <Info key={lab.id} title={lab.title.toLowerCase()} link={lab.link} due={lab.due} locked={lab.locked}></Info>)}
-        <div style={{ flexGrow: 1, flexShrink: 1 }}></div>
-        
+    <div
+      className="csci134-colorblock"
+      style={{
+        backgroundColor: "#2222aa",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexFlow: "column",
+          justifyContent: "stretch",
+          height: "100%",
+        }}
+      >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: columnProportions,
+          }}
+        >
+          <div className="csci134-schedule-header">week</div>
+          <div className="csci134-schedule-header">lab</div>
+          <div className="csci134-schedule-header">mon</div>
+          <div className="csci134-schedule-header">wed</div>
+          <div className="csci134-schedule-header">fri</div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column nowrap",
+            justifyContent: "stretch",
+            height: "100%",
+          }}
+        >
+          {courseData.schedule.map((week) => (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: columnProportions,
+              }}
+            >
+              <WeekItem
+                title={`${weeks[week.week - 1].monday.toDateString()} – ${weeks[week.week - 1].friday.toDateString()}`}
+              />
+              <SlideDeck
+                type={week.lab.type}
+                title={week.lab.title}
+                link={week.lab.link}
+                release={week.lab.release}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexFlow: "column nowrap",
+                  justifyContent: "stretch",
+                  height: "100%",
+                }}
+              >
+                {week.mon.map((content) => (
+                  <SlideDeck
+                    type={content.type}
+                    title={content.title}
+                    link={content.link}
+                    release={content.release}
+                  />
+                ))}
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexFlow: "column nowrap",
+                  justifyContent: "stretch",
+                  height: "100%",
+                }}
+              >
+                {week.wed.map((content) => (
+                  <SlideDeck
+                    type={content.type}
+                    title={content.title}
+                    link={content.link}
+                    release={content.release}
+                  />
+                ))}
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexFlow: "column nowrap",
+                  justifyContent: "stretch",
+                  height: "100%",
+                }}
+              >
+                {week.fri.map((content) => (
+                  <SlideDeck
+                    type={content.type}
+                    title={content.title}
+                    link={content.link}
+                    release={content.release}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-
     </div>
-  )
-}
-
-
+  );
+};
 
 function Csci134() {
-
-  if (window.innerWidth > 1300) {
-    return (
-      <div>
-        <div className="csci134" style={{
-          display: 'flex',
-          flexFlow: 'row nowrap',
-          justifyContent: 'center',
-          gap: '20px',
-          height: 'auto',
-          paddingBottom: '20px'
-        }}>
-          <Welcome />
-          <div style={{
+  return (
+    <div>
+      <div
+        className="csci134"
+        style={{
+          display: "flex",
+          flexFlow: "column nowrap",
+          justifyContent: "center",
+          gap: "20px",
+          height: "auto",
+          paddingBottom: "20px",
+        }}
+      >
+        <Welcome />
+        <div
+          style={{
             flexGrow: 1,
-            display: 'flex',
-            flexFlow: 'column nowrap',
-            justifyContent: 'stretch',
-            gap: '20px',
-            height: 'auto'
-          }}>
-            <div style={{
-              display: 'flex',
-              flexFlow: 'row nowrap',
+            display: "flex",
+            flexFlow: "column nowrap",
+            justifyContent: "stretch",
+            gap: "20px",
+            height: "auto",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexFlow: "row nowrap",
               flexGrow: 1,
               flexShrink: 1,
-              justifyContent: 'stretch',
-              gap: '20px'
-            }}>
-              <Infos />
-              <TeachingAssistants />
-            </div>
-            <div style={{
-              display: 'flex',
-              flexFlow: 'row nowrap',
-              flexGrow: 1,
-              flexShrink: 1,
-              justifyContent: 'stretch',
-              gap: '20px'
-            }}>
-              <LabAssignments />
-              <LectureSlides />
-            </div>
-
+              justifyContent: "stretch",
+              gap: "20px",
+            }}
+          >
+            <Infos />
           </div>
-          
-        </div>
-        <div className="csci134" style={{
-          marginTop: '0px',
-          paddingTop: '0px'
-        }}>
-            <Activities />
-            
-
         </div>
       </div>
-
-    )
-  } else {
-    return (
-      <div>
-        <div className="csci134" style={{
-          display: 'flex',
-          flexFlow: 'row nowrap',
-          justifyContent: 'center',
-          gap: '20px',
-          height: 'auto',
-          paddingBottom: '20px'
-        }}>
-          <Welcome />
-          <div style={{
-            flexGrow: 1,
-            display: 'flex',
-            flexFlow: 'column nowrap',
-            justifyContent: 'stretch',
-            gap: '20px',
-            height: 'auto'
-          }}>
-            <div style={{
-              display: 'flex',
-              flexFlow: 'row nowrap',
-              flexGrow: 1,
-              flexShrink: 1,
-              justifyContent: 'stretch',
-              gap: '20px'
-            }}>
-              <LabAssignments />              
-            </div>
-
-          </div>
-          
-        </div>
-        <div className="csci134" style={{
-          marginTop: '0px',
-          paddingTop: '0px'
-        }}>
-          <TeachingAssistants />
-        </div>
-        <div className="csci134" style={{
-          marginTop: '0px',
-          paddingTop: '0px'
-        }}>
-          <Infos />
-        </div>
-        <div className="csci134" style={{
-          marginTop: '0px',
-          paddingTop: '0px'
-        }}>
-          <LectureSlides />
-        </div>
-        <div className="csci134" style={{
-          marginTop: '0px',
-          paddingTop: '0px'
-        }}>
-          
-            <Activities />
-            
-
-        </div>
-      </div>
-
-    )
-  }
+    </div>
+  );
 }
 
-
-
-export default Csci134
+export default Csci134;

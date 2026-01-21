@@ -66,7 +66,7 @@ ul {
 }
 
 .csci134-welcome {
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -74,23 +74,29 @@ ul {
 
 .csci134-colorblock {
   padding: 10px;
-  padding-top: 0px;
+  padding-top: 10px;
   flex-grow: 1;
   flex-shrink: 1;
 }
 
 .csci134-subtitle {
-  font-family: "Permanent Marker", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-style: normal;
   font-size: 24px;
 }
 
 .csci134-question {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Matemasie";
   font-weight: 400;
   font-style: normal;
   color: crimson
+}
+
+.csci134-schedule-header {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .csci134-upcoming {
@@ -104,10 +110,8 @@ ul {
   font-optical-sizing: auto;
   font-weight: 800;
 }
-
 .csci134-text {
-  font-family: "Permanent Marker", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
 }

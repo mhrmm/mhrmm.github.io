@@ -4,7 +4,7 @@
             "id": "activity0",
             "title": "expression trees",
             "release": "Feb 9 2025",
-            "link": "https://docs.google.com/document/d/13gAnAbLOL6fDmpBchJIBo-nOsFp89hcy9jR589apNIo/edit?usp=sharing"            
+            "link": "https://docs.google.com/document/d/13gAnAbLOL6fDmpBchJIBo-nOsFp89hcy9jR589apNIo/edit?usp=sharing"
         },
         {
             "id": "activity1",
@@ -289,7 +289,7 @@
             "id": "lecture-0",
             "title": "primitive expressions",
             "release": "Jan 29 2025",
-            "link": "https://drive.google.com/file/d/1Tq-4aTUBxIeSX7ESADGzUZvIz7930zhs/view?usp=sharing"            
+            "link": "https://drive.google.com/file/d/1Tq-4aTUBxIeSX7ESADGzUZvIz7930zhs/view?usp=sharing"
         },
         {
             "id": "lecture-1",
@@ -308,7 +308,7 @@
             "title": "flattening expressions",
             "release": "Feb 11 2025",
             "link": "https://drive.google.com/file/d/1SPnppgjabDfY8cBaBGUCSt2bZs-7qJGy/view?usp=sharing"
-        },        
+        },
         {
             "id": "lecture-4",
             "title": "arithmetic",
@@ -536,7 +536,7 @@
             "title": "files",
             "release": "May 11 2025",
             "link": "https://drive.google.com/file/d/19DxBJQPqLdQxDZzW8MIXOwOXw8Ia5nH-/view?usp=drive_link"
-        },        
+        },
         {
             "id": "lecture40",
             "title": "simple graphics",
@@ -556,7 +556,7 @@
             "link": "https://drive.google.com/file/d/1u8_tDU_qP1O5SH0_5Xqdkb8xrkbPCgng/view?usp=drive_link"
         }
     ],
-    "labs": [       
+    "labs": [
         {
             "id": "lab-0",
             "title": "prologue",
@@ -649,13 +649,252 @@
             "link": "https://classroom.github.com/a/o2L0z3Qq"
         }
     ],
-    "info": [    
+    "schedule": [
+        {
+            "id": "week-1",
+            "week": 1,
+            "lab": {
+                "id": "lab-0",
+                "title": "prologue",
+                "due": "Feb 13 2025",
+                "release": "Jan 29 2025",
+                "link": "https://docs.google.com/document/d/1zUX2mVQ67jtGe64ulqAaN2qidU4shO-0xMLBc-t2uZ8/edit?usp=sharing"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "primitive expressions",
+                    "release": "Jan 29 2025",
+                    "link": "https://drive.google.com/file/d/1Tq-4aTUBxIeSX7ESADGzUZvIz7930zhs/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "primitive expressions",
+                    "release": "Jan 29 2025",
+                    "link": "https://create.kahoot.it/share/primitive-expressions/6213f26c-1eaf-4d39-b293-432da620e85e"
+                },
+                {
+                    "type": "lecture",
+                    "title": "functions and arguments",
+                    "release": "Feb 9 2025",
+                    "link": "https://drive.google.com/file/d/1AdXC2uhaK-JuaDMoP2nLPiZQK-Ya8CW4/view?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "expression trees",
+                    "release": "Feb 9 2025",
+                    "link": "https://drive.google.com/file/d/1rUhwrpSzKCyAtOAItPz2Mz94TY8asK4u/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "expression trees",
+                    "release": "Feb 9 2025",
+                    "link": "https://docs.google.com/document/d/13gAnAbLOL6fDmpBchJIBo-nOsFp89hcy9jR589apNIo/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "kahoot",
+                    "title": "simple expression trees",
+                    "release": "Jan 29 2025",
+                    "link": "https://create.kahoot.it/share/expression-trees/61b8bb85-1787-49c9-ba46-d76413502fd6"
+                },
+                {
+                    "type": "activity",
+                    "title": "expression telephone",
+                    "release": "Feb 11 2025",
+                    "link": "https://docs.google.com/document/d/1mo7mOXF5FgIDSWgHfGxJz4ZgVr7P6DbX-E6U9zU7Brc/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "flattening expressions",
+                    "release": "Feb 11 2025",
+                    "link": "https://drive.google.com/file/d/1SPnppgjabDfY8cBaBGUCSt2bZs-7qJGy/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "flattened expressions",
+                    "release": "Feb 9 2025",
+                    "link": "https://create.kahoot.it/share/flattened-expressions/1a2891ae-9355-423b-8b17-4adeec463e3a"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "holiday",
+                    "title": "winter carnival",
+                    "release": "Feb 9 2030",
+                    "link": "none"
+                }
+            ]
+        },
+        {
+            "id": "week-2",
+            "week": 2,
+            "lab": {
+                "id": "lab-1",
+                "title": "bake sale",
+                "due": "Feb 20 2025",
+                "release": "Feb 14 2025",
+                "link": "https://classroom.github.com/a/xYzumLAo"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "arithmetic",
+                    "release": "Feb 16 2025",
+                    "link": "https://drive.google.com/file/d/11QBONCTsRt71PXQ4a1HejPB7TJOK4qyb/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "infix",
+                    "release": "Feb 16 2025",
+                    "link": "https://docs.google.com/document/d/1CyfQz_bWbe1Ilaa4B-p6kTWVtHpWxib3GkljB3m7cRo/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "variables",
+                    "release": "Feb 16 2025",
+                    "link": "https://drive.google.com/file/d/1yO5QTe8-FFO6rvuquteaNCaSBRhYu4bT/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "swaparoo",
+                    "release": "Feb 16 2025",
+                    "link": "https://docs.google.com/document/d/10iyywRNeHYInZrY16a0jc9mKioIXLDPUsj398H-AMLw/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "boolean expressions",
+                    "release": "Feb 18 2025",
+                    "link": "https://drive.google.com/file/d/1SS0LNa8D6FuPhuLjipDLoBydgQ8KC-xr/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "boolean expressions",
+                    "release": "Feb 19 2025",
+                    "link": "https://create.kahoot.it/share/boolean-expressions/d8f40f56-292b-4298-b5a7-72da1d57b5d5"
+                },
+                {
+                    "type": "activity",
+                    "title": "staffing",
+                    "release": "Feb 18 2025",
+                    "link": "https://docs.google.com/document/d/1ZBFuhZ3oZ-UqsX21Yu9Q518j1Z8ulAUIME50dZVEvI4/edit?usp=sharing"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "lecture",
+                    "title": "function expressions",
+                    "release": "Feb 20 2025",
+                    "link": "https://drive.google.com/file/d/1T5f5qWcNNJkROv4CtBxv-uOrWpG-7aoU/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "function expressions",
+                    "release": "Feb 20 2025",
+                    "link": "https://create.kahoot.it/share/function-expressions/735ee790-0127-4d8e-aa43-838279f13d0f"
+                },
+                {
+                    "type": "lecture",
+                    "title": "lambda expressions",
+                    "release": "Feb 20 2025",
+                    "link": "https://drive.google.com/file/d/1KbUq-5nZ2EME-uCDMd820QjEViDjYfJe/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "lambda lambda lambda",
+                    "release": "Feb 20 2025",
+                    "link": "https://docs.google.com/document/d/1BNllKf4Bfam_uXSKL8NSTUpdj1lSjF6CgkOWqwra3Ps/edit?usp=sharing"
+                }
+            ]
+        },
+        {
+            "id": "week-3",
+            "week": 3,
+            "lab": {
+                "id": "lab-2",
+                "title": "book tour",
+                "due": "Feb 27 2025",
+                "release": "Feb 21 2025",
+                "link": "https://classroom.github.com/a/5KtIC-CB"
+            },
+            "mon": [
+                {
+                    "type": "lecture",
+                    "title": "def statements",
+                    "release": "Feb 20 2025",
+                    "link": "https://drive.google.com/file/d/15_EaDdK5syScUIkwTqNMIcRvFmlbky5y/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "quality assurance",
+                    "release": "Feb 23 2025",
+                    "link": "https://docs.google.com/document/d/1JXJim_nmxFDgehOilYLoW-OpCflOVjOh6x6Fyf9VG8Q/edit?usp=sharing"
+                },
+                {
+                    "type": "lecture",
+                    "title": "functions as arguments",
+                    "release": "Feb 23 2025",
+                    "link": "https://drive.google.com/file/d/14_iOIQkjsfwI-x9Q2mOreRmLnih23MAY/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "composing",
+                    "release": "Feb 23 2025",
+                    "link": "https://docs.google.com/document/d/1MB2CwC1dIifU09wne-oWiyiQcL8bwYukC_R-4gD5pYQ/edit?usp=sharing"
+                }
+            ],
+            "wed": [
+                {
+                    "type": "lecture",
+                    "title": "nonetype",
+                    "release": "Feb 24 2025",
+                    "link": "https://drive.google.com/file/d/1m1Q1kliQ74mGZIJyFsDnwWgQ8lSjyFrg/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "functions and nonetype",
+                    "release": "Feb 24 2025",
+                    "link": "https://create.kahoot.it/share/functions-and-nonetype/49675df1-e775-4377-9990-325b212d49ae"
+                },
+                {
+                    "type": "lecture",
+                    "title": "variable scope",
+                    "release": "Feb 25 2025",
+                    "link": "https://drive.google.com/file/d/1KjDRojoaicOCLUpgePrCQHFIPUkApjrX/view?usp=sharing"
+                },
+                {
+                    "type": "kahoot",
+                    "title": "variable scope",
+                    "release": "Feb 24 2025",
+                    "link": "https://create.kahoot.it/share/variable-scope/4fb7cbb5-ab6b-462b-ab68-858eeefb26fa"
+                }
+            ],
+            "fri": [
+                {
+                    "type": "lecture",
+                    "title": "inner functions",
+                    "release": "Feb 27 2025",
+                    "link": "https://drive.google.com/file/d/1nQQAXrkzcEaHRuoEJi3gBdDkTAOHUDae/view?usp=sharing"
+                },
+                {
+                    "type": "activity",
+                    "title": "beaker",
+                    "release": "Feb 27 2025",
+                    "link": "https://docs.google.com/document/d/1r99HguQ_JTT9da95lZbsMqa-pxD5NlBcru405rv-uXE/edit?usp=sharing"
+                }
+            ]
+        }
+    ],
+    "info": [
         {
             "id": "info-0",
             "title": "textbook: composing programs",
             "locked": false,
             "link": "https://www.composingprograms.com/"
-        },   
+        },
         {
             "id": "info-1",
             "title": "mac setup",
